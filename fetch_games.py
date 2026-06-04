@@ -35,7 +35,7 @@ def fetch_games(sport, league_path, league_name):
 
     return games
 
-def build_html(nfl_games, nba_games):
+def build_html(nfl_games, nba_games, mlb_games, nhl_games):
     def games_html(games):
         if not games:
             return "<p class='no-games'>No games found.</p>"
@@ -92,10 +92,14 @@ def build_html(nfl_games, nba_games):
     <div class="tabs">
         <button class="tab active" onclick="show('nfl', this)">🏈 NFL</button>
         <button class="tab" onclick="show('nba', this)">🏀 NBA</button>
+        <button class="tab" onclick="show('mlb', this)">⚾ MLB</button>
+        <button class="tab" onclick="show('nhl', this)">🏒 NHL</button>
     </div>
 
     <div id="nfl" class="section active">{games_html(nfl_games)}</div>
     <div id="nba" class="section">{games_html(nba_games)}</div>
+    <div id="mlb" class="section">{games_html(mlb_games)}</div>
+    <div id="nhl" class="section">{games_html(nhl_games)}</div>
 
     <footer>Data from ESPN · Refreshes daily · Free &amp; open</footer>
 
@@ -134,7 +138,16 @@ if __name__ == "__main__":
     nba = fetch_games("basketball", "basketball/nba", "NBA")
     print(f"  Got {len(nba)} games")
 
-    html = build_html(nfl, nba)
+    print("Fetching MLB games...")
+    mlb = fetch_games("baseball", "baseball/mlb", "MLB")
+    print(f"  Got {len(mlb)} games")
+
+    print("Fetching NHL games...")
+    nhl = fetch_games("hockey", "hockey/nhl", "NHL")
+    print(f"  Got {len(nhl)} games")
+
+    html = build_html(nfl, nba, mlb, nhl)
     with open("index.html", "w") as f:
         f.write(html)
     print("Done! index.html written.")
+        
