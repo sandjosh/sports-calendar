@@ -17,7 +17,7 @@ def fetch_games(sport, league_path, league_name):
             date_str = event["date"]
             dt = datetime.strptime(date_str, "%Y-%m-%dT%H:%MZ")
             readable_date = dt.strftime("%a %b %d")
-            readable_time = dt.strftime("%I:%M %p UTC")
+            readable_time = dt.strftime("%Y-%m-%dT%H:%M:00Z")
 
             competitors = event["competitions"][0]["competitors"]
             home = next(t for t in competitors if t["homeAway"] == "home")
@@ -44,13 +44,13 @@ def build_html(nfl_games, nba_games):
             rows += f"""
             <tr>
                 <td>{g['date']}</td>
-                <td>{g['time']}</td>
+                <td data-utc="{g['time']}">{g['time']}</td>
                 <td>{g['away']}</td>
                 <td class='vs'>vs</td>
                 <td>{g['home']}</td>
                 <td class='status'>{g['status']}</td>
             </tr>"""
-        return f"<table><thead><tr><th>Date</th><th>Time (UTC)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table>"
+        return f"<table><thead><tr><th>Date</th><th>Time (Local)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table>"
 
     updated = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
 
@@ -106,6 +106,21 @@ def build_html(nfl_games, nba_games):
             document.getElementById(id).classList.add('active');
             el.classList.add('active');
         }}
+
+        function convertTimes() {{
+            document.querySelectorAll('td[data-utc]').forEach(td => {{
+                const utc = td.getAttribute('data-utc');
+                const local = new Date(utc);
+                const dateStr = local.toLocaleDateString(undefined, {{ weekday: 'short', month: 'short', day: 'numeric' }});
+                const timeStr = local.toLocaleTimeString(undefined, {{ hour: '2-digit', minute: '2-digit' }});
+                td.textContent = timeStr;
+                // Also update the date cell
+                const row = td.closest('tr');
+                if (row) row.cells[0].textContent = dateStr;
+            }});
+        }}
+
+        convertTimes();
     </script>
 </body>
 </html>"""
