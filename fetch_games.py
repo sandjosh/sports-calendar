@@ -28,6 +28,8 @@ def fetch_games(sport, league_path, league_name):
                 "time": readable_time,
                 "home": home["team"]["displayName"],
                 "away": away["team"]["displayName"],
+                "home_logo": home["team"].get("logo", ""),
+                "away_logo": away["team"].get("logo", ""),
                 "status": event["status"]["type"]["description"]
             })
         except Exception:
@@ -45,9 +47,9 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games):
             <tr>
                 <td>{g['date']}</td>
                 <td data-utc="{g['time']}">{g['time']}</td>
-                <td>{g['away']}</td>
+                <td class='team'><img src='{g['away_logo']}' class='logo'/>{g['away']}</td>
                 <td class='vs'>vs</td>
-                <td>{g['home']}</td>
+                <td class='team'><img src='{g['home_logo']}' class='logo'/>{g['home']}</td>
                 <td class='status'>{g['status']}</td>
             </tr>"""
         return f"<table><thead><tr><th>Date</th><th>Time (Local)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table>"
@@ -80,6 +82,8 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games):
         td.vs {{ color: #555; font-size: 0.8rem; }}
         td.status {{ color: #888; font-size: 0.85rem; font-style: italic; }}
         .no-games {{ color: #666; padding: 2rem; text-align: center; }}
+        .logo {{ width: 28px; height: 28px; object-fit: contain; margin-right: 8px; vertical-align: middle; }}
+        td.team {{ display: flex; align-items: center; }}
         footer {{ text-align: center; padding: 2rem; color: #444; font-size: 0.8rem; border-top: 1px solid #222; }}
     </style>
 </head>
