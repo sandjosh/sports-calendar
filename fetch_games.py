@@ -38,6 +38,13 @@ def fetch_games(sport, league_path, league_name):
 
     return games
 
+SPORT_DURATIONS = {
+    "NFL": 210,
+    "NBA": 150,
+    "MLB": 180,
+    "NHL": 150,
+}
+
 def build_ical(games, sport_name):
     lines = [
         "BEGIN:VCALENDAR",
@@ -49,23 +56,27 @@ def build_ical(games, sport_name):
         "METHOD:PUBLISH",
     ]
 
+    duration_minutes = SPORT_DURATIONS.get(sport_name, 120)
+
     for g in games:
         try:
             dt = datetime.strptime(g["time"], "%Y-%m-%dT%H:%M:00Z")
             dtstart = dt.strftime("%Y%m%dT%H%M%SZ")
+            duration = f"PT{duration_minutes}M"
             summary = f"{g['away']} vs {g['home']}"
             uid = str(uuid.uuid4())
             lines += [
                 "BEGIN:VEVENT",
                 f"UID:{uid}",
                 f"DTSTART:{dtstart}",
+                f"DURATION:{duration}",
                 f"SUMMARY:{summary}",
                 f"STATUS:{g['status'].upper()}",
                 "END:VEVENT",
             ]
         except Exception:
             continue
-
+    
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines)
 
