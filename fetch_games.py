@@ -1,6 +1,7 @@
 import urllib.request
 import json
 from datetime import datetime
+import uuid
 
 def fetch_games(sport, league_path, league_name):
     url = f"https://site.api.espn.com/apis/site/v2/sports/{league_path}/scoreboard?limit=100"
@@ -36,6 +37,37 @@ def fetch_games(sport, league_path, league_name):
             continue
 
     return games
+
+def build_ical(games, sport_name):
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Global Sports Calendar//EN",
+        f"X-WR-CALNAME:{sport_name} Schedule",
+        "X-WR-TIMEZONE:UTC",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+    ]
+
+    for g in games:
+        try:
+            dt = datetime.strptime(g["time"], "%Y-%m-%dT%H:%M:00Z")
+            dtstart = dt.strftime("%Y%m%dT%H%M%SZ")
+            summary = f"{g['away']} vs {g['home']}"
+            uid = str(uuid.uuid4())
+            lines += [
+                "BEGIN:VEVENT",
+                f"UID:{uid}",
+                f"DTSTART:{dtstart}",
+                f"SUMMARY:{summary}",
+                f"STATUS:{g['status'].upper()}",
+                "END:VEVENT",
+            ]
+        except Exception:
+            continue
+
+    lines.append("END:VCALENDAR")
+    return "\r\n".join(lines)
 
 def build_html(nfl_games, nba_games, mlb_games, nhl_games):
     def games_html(games):
@@ -85,6 +117,12 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games):
         .logo {{ width: 28px; height: 28px; object-fit: contain; margin-right: 8px; vertical-align: middle; }}
         td.team {{ display: flex; align-items: center; }}
         footer {{ text-align: center; padding: 2rem; color: #444; font-size: 0.8rem; border-top: 1px solid #222; }}
+        .subscribe {{ display: flex; justify-content: center; align-items: center; gap: 1rem;
+                     padding: 0.75rem; background: #1a1d27; border-bottom: 1px solid #333;
+                     font-size: 0.85rem; flex-wrap: wrap; }}
+        .subscribe a {{ color: #f0a500; text-decoration: none; padding: 0.3rem 0.8rem;
+                       border: 1px solid #f0a500; border-radius: 3px; }}
+        .subscribe a:hover {{ background: #f0a500; color: #0f1117; }}
     </style>
 </head>
 <body>
@@ -98,6 +136,13 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games):
         <button class="tab" onclick="show('nba', this)">🏀 NBA</button>
         <button class="tab" onclick="show('mlb', this)">⚾ MLB</button>
         <button class="tab" onclick="show('nhl', this)">🏒 NHL</button>
+    </div>
+    <div class="subscribe">
+        <span>📅 Subscribe in your calendar app:</span>
+        <a href="nfl.ics">🏈 NFL</a>
+        <a href="nba.ics">🏀 NBA</a>
+        <a href="mlb.ics">⚾ MLB</a>
+        <a href="nhl.ics">🏒 NHL</a>
     </div>
 
     <div id="nfl" class="section active">{games_html(nfl_games)}</div>
@@ -150,8 +195,18 @@ if __name__ == "__main__":
     nhl = fetch_games("hockey", "hockey/nhl", "NHL")
     print(f"  Got {len(nhl)} games")
 
+
     html = build_html(nfl, nba, mlb, nhl)
     with open("index.html", "w") as f:
         f.write(html)
-    print("Done! index.html written.")
+    print("index.html written.")
+
+    for sport_name, games in [("NFL", nfl), ("NBA", nba), ("MLB", mlb), ("NHL", nhl)]:
+        ical = build_ical(games, sport_name)
+        filename = f"{sport_name.lower()}.ics"
+        with open(filename, "w") as f:
+            f.write(ical)
+        print(f"{filename} written.")
+
+    print("Done!")
         
