@@ -58,12 +58,13 @@ def fetch_cricket_games(league, days_ahead=28):
     date_from = today.strftime("%Y-%m-%dT00:00:00Z")
     date_to = end.strftime("%Y-%m-%dT23:59:59Z")
     url = (f"https://sports.core.api.espn.com/v2/sports/cricket/leagues/{league}/events"
-           f"?limit=100")
+           f"?limit=100&dates={today.strftime('%Y%m%d')}-{end.strftime('%Y%m%d')}")
     try:
         with urllib.request.urlopen(url) as response:
             data = json.loads(response.read())
     except Exception as e:
         print(f"  Error fetching cricket league {league}: {e}")
+        print(f"  URL was: {url}")
         return []
 
     games = []
