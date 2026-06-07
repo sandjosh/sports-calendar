@@ -169,8 +169,8 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
                     <div class='ticket-wrap'>
                         <button class='tickets-btn' onclick='toggleDropdown(this)'>🎟 Tickets ▾</button>
                         <div class='ticket-dropdown'>
-                            <a href='https://www.seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")}' target='_blank'>SeatGeek</a>
-                            <a href='https://www.stubhub.com/search?q={g["away"].replace(" ", "+")}+{g["home"].replace(" ", "+")}' target='_blank'>StubHub</a>
+                            <a href='https://www.seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")}' target='_blank'><img src='https://www.google.com/s2/favicons?domain=seatgeek.com&sz=16' class='vendor-logo'/>SeatGeek</a>
+                            <a href='https://www.stubhub.com/search?q={g["away"].replace(" ", "+")}+{g["home"].replace(" ", "+")}' target='_blank'><img src='https://www.google.com/s2/favicons?domain=stubhub.com&sz=16' class='vendor-logo'/>StubHub</a>
                         </div>
                     </div>
                 </div>"""
@@ -271,6 +271,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
                               color: #1a1f2e; text-decoration: none; }}
         .ticket-dropdown a:hover {{ background: #f0f5ff; color: #1a6ef5; }}
         .ticket-dropdown.open {{ display: block; }}
+        .vendor-logo {{ width: 16px; height: 16px; margin-right: 6px; vertical-align: middle; border-radius: 3px; }}
     </style>
 </head>
 <body>
