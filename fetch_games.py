@@ -51,6 +51,47 @@ SPORT_DURATIONS = {
     "NHL": 150,
 }
 
+def fetch_games_schedule(league_path, league_name):
+    from datetime import timedelta
+    today = datetime.utcnow()
+    end = today + timedelta(days=28)
+    date_from = today.strftime("%Y%m%d")
+    date_to = end.strftime("%Y%m%d")
+    url = (f"https://site.api.espn.com/apis/site/v2/sports/{league_path}/schedule"
+           f"?dates={date_from}-{date_to}&limit=200")
+    try:
+        with urllib.request.urlopen(url) as response:
+            data = json.loads(response.read())
+    except Exception as e:
+        print(f"Error fetching schedule for {league_name}: {e}")
+        return []
+
+    games = []
+    for event in data.get("events", []):
+        try:
+            date_str = event["date"]
+            dt = datetime.strptime(date_str, "%Y-%m-%dT%H:%MZ")
+            readable_date = dt.strftime("%a %b %d")
+            readable_time = dt.strftime("%Y-%m-%dT%H:%M:00Z")
+
+            competitors = event["competitions"][0]["competitors"]
+            home = next(t for t in competitors if t["homeAway"] == "home")
+            away = next(t for t in competitors if t["homeAway"] == "away")
+
+            games.append({
+                "date": readable_date,
+                "time": readable_time,
+                "home": home["team"]["displayName"],
+                "away": away["team"]["displayName"],
+                "home_logo": home["team"].get("logo", ""),
+                "away_logo": away["team"].get("logo", ""),
+                "status": event["status"]["type"]["description"]
+            })
+        except Exception:
+            continue
+
+    return games
+
 def build_ical(games, sport_name):
     lines = [
         "BEGIN:VCALENDAR",
@@ -282,7 +323,7 @@ if __name__ == "__main__":
     print(f"  Got {len(nba)} games")
 
     print("Fetching MLB games...")
-    mlb = fetch_games("baseball", "baseball/mlb", "MLB")
+    mlb = fetch_games_schedule("baseball/mlb", "MLB")
     print(f"  Got {len(mlb)} games")
 
     print("Fetching NHL games...")
