@@ -157,12 +157,12 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
                 html += f"""
                 <div class='game-row'>
                     <div class='team-pill'>
-                        <img class='team-logo' src='{g['away_logo']}' alt='{g['away']}'/>
+                        <img class='team-logo' src='{g['away_logo']}' alt='{g['away']}' onerror='this.style.display="none"'/>
                         <span class='team-name'>{g['away']}</span>
                     </div>
                     <span class='vs-text'>vs</span>
                     <div class='team-pill'>
-                        <img class='team-logo' src='{g['home_logo']}' alt='{g['home']}'/>
+                        <img class='team-logo' src='{g['home_logo']}' alt='{g['home']}' onerror='this.style.display="none"'/>
                         <span class='team-name'>{g['home']}</span>
                     </div>
                     <span class='game-time' data-utc='{g['time']}'>{g['time']}</span>
@@ -241,6 +241,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
         .game-row:last-child {{ border-bottom: none; }}
         .team-pill {{ display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }}
         .team-logo {{ width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }}
+        .team-logo[src=''] {{ display: none; }}
         .team-name {{ font-size: 13px; color: #1a1f2e; white-space: nowrap;
                       overflow: hidden; text-overflow: ellipsis; }}
         .vs-text {{ font-size: 11px; color: #c0c5d4; padding: 0 4px; flex-shrink: 0; }}
@@ -305,7 +306,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
 </main>
 
 <footer>
-    <p>Updated: {updated} &nbsp;·&nbsp; Data from ESPN &nbsp;·&nbsp;
+    <p>Updated: {updated} &nbsp;·&nbsp; Data from ESPN & CricketData &nbsp;·&nbsp;
     <a href="#subscribe">Subscribe via iCal</a> &nbsp;·&nbsp; Free forever</p>
 </footer>
 
