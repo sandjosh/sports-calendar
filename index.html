@@ -3,351 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Sports Calendar</title>
+    <title>PlyCal — Every game. Every timezone. Free.</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Georgia, serif; background: #0f1117; color: #e8e8e8; min-height: 100vh; }
-        header { background: #1a1d27; border-bottom: 3px solid #f0a500; padding: 2rem; text-align: center; }
-        header h1 { font-size: 2.2rem; color: #f0a500; letter-spacing: 2px; text-transform: uppercase; }
-        header p { color: #888; margin-top: 0.4rem; font-size: 0.9rem; }
-        .tabs { display: flex; justify-content: center; gap: 1rem; padding: 1.5rem; }
-        .tab { padding: 0.6rem 2rem; background: #1a1d27; border: 2px solid #333; color: #aaa;
-                cursor: pointer; font-size: 1rem; border-radius: 4px; transition: all 0.2s; }
-        .tab.active { border-color: #f0a500; color: #f0a500; background: #22263a; }
-        .section { display: none; padding: 0 2rem 3rem; max-width: 1000px; margin: 0 auto; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                background: #f7f8fc; color: #1a1f2e; min-height: 100vh; }
+
+        /* Header */
+        header { background: #ffffff; border-bottom: 1px solid #eaecf4; padding: 0.9rem 1.5rem;
+                  display: flex; align-items: center; justify-content: space-between; }
+        .logo-wrap { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+        .logo-icon { width: 30px; height: 30px; background: #1a6ef5; border-radius: 7px;
+                      display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .logo-icon svg { width: 16px; height: 16px; }
+        .logo-text { font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.5px; }
+        .logo-text span { color: #1a6ef5; }
+        nav { display: flex; gap: 1.5rem; }
+        nav a { font-size: 13px; color: #9099b0; text-decoration: none; }
+        nav a.active { color: #1a6ef5; font-weight: 500; }
+
+        /* Tabs */
+        .tabs-bar { background: #ffffff; border-bottom: 1px solid #eaecf4;
+                     display: flex; padding: 0 1.5rem; overflow-x: auto; }
+        .tab { padding: 0.75rem 1.1rem; font-size: 13px; color: #9099b0; border: none;
+                border-bottom: 2px solid transparent; background: none; cursor: pointer;
+                white-space: nowrap; transition: color 0.15s; }
+        .tab.active { color: #1a6ef5; border-bottom-color: #1a6ef5; font-weight: 500; }
+        .tab:hover { color: #1a6ef5; }
+
+        /* Subscribe bar */
+        .subscribe-bar { background: #f0f5ff; border-bottom: 1px solid #dde8fd;
+                          padding: 0.6rem 1.5rem; display: flex; align-items: center;
+                          gap: 0.75rem; flex-wrap: wrap; }
+        .subscribe-bar span { font-size: 12px; color: #6b7a9e; }
+        .sub-btn { font-size: 12px; color: #1a6ef5; border: 1px solid #c0d4fb;
+                    border-radius: 20px; padding: 3px 12px; background: #ffffff;
+                    cursor: pointer; text-decoration: none; transition: background 0.15s; }
+        .sub-btn:hover { background: #1a6ef5; color: #ffffff; }
+
+        /* Main content */
+        main { max-width: 820px; margin: 1.25rem auto; padding: 0 1rem; }
+        .section { display: none; }
         .section.active { display: block; }
-        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-        th { background: #1a1d27; color: #f0a500; padding: 0.75rem 1rem; text-align: left;
-              font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
-        td { padding: 0.7rem 1rem; border-bottom: 1px solid #222; font-size: 0.95rem; }
-        tr:hover td { background: #1a1d27; }
-        td.vs { color: #555; font-size: 0.8rem; }
-        td.status { color: #888; font-size: 0.85rem; font-style: italic; }
-        .no-games { color: #666; padding: 2rem; text-align: center; }
-        .logo { width: 28px; height: 28px; object-fit: contain; margin-right: 8px; vertical-align: middle; }
-        td.team { display: flex; align-items: center; }
-        footer { text-align: center; padding: 2rem; color: #444; font-size: 0.8rem; border-top: 1px solid #222; }
-        .subscribe { display: flex; justify-content: center; align-items: center; gap: 1rem;
-                     padding: 0.75rem; background: #1a1d27; border-bottom: 1px solid #333;
-                     font-size: 0.85rem; flex-wrap: wrap; }
-        .subscribe a { color: #f0a500; text-decoration: none; padding: 0.3rem 0.8rem;
-                       border: 1px solid #f0a500; border-radius: 3px; }
-        .subscribe a:hover { background: #f0a500; color: #0f1117; }
+        .card { background: #ffffff; border: 0.5px solid #eaecf4; border-radius: 10px;
+                 overflow: hidden; }
+
+        /* Date headers */
+        .date-header { font-size: 11px; font-weight: 600; color: #9099b0;
+                        letter-spacing: 1.5px; text-transform: uppercase;
+                        padding: 0.75rem 1.25rem 0.4rem;
+                        border-top: 0.5px solid #f0f2f8; }
+        .date-header:first-child { border-top: none; }
+
+        /* Game rows */
+        .game-row { display: flex; align-items: center; gap: 8px;
+                     padding: 0.6rem 1.25rem; border-bottom: 0.5px solid #f0f2f8; }
+        .game-row:last-child { border-bottom: none; }
+        .team-pill { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+        .team-logo { width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }
+        .team-name { font-size: 13px; color: #1a1f2e; white-space: nowrap;
+                      overflow: hidden; text-overflow: ellipsis; }
+        .vs-text { font-size: 11px; color: #c0c5d4; padding: 0 4px; flex-shrink: 0; }
+        .game-time { font-size: 12px; color: #1a6ef5; font-weight: 500;
+                      margin-left: auto; white-space: nowrap; padding-left: 8px;
+                      flex-shrink: 0; }
+        .no-games { padding: 2rem; text-align: center; color: #9099b0; font-size: 14px; }
+
+        /* Footer */
+        footer { text-align: center; padding: 2rem 1rem; color: #b0b7c9; font-size: 12px; }
+        footer a { color: #9099b0; text-decoration: none; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>⚡ Global Sports Calendar</h1>
-        <p>Updated: June 06, 2026 at 08:32 UTC</p>
-    </header>
 
-    <div class="tabs">
-        <button class="tab active" onclick="show('nfl', this)">🏈 NFL</button>
-        <button class="tab" onclick="show('nba', this)">🏀 NBA</button>
-        <button class="tab" onclick="show('mlb', this)">⚾ MLB</button>
-        <button class="tab" onclick="show('nhl', this)">🏒 NHL</button>
-    </div>
-    <div class="subscribe">
-        <span>📅 Subscribe in your calendar app:</span>
-        <a href="nfl.ics">🏈 NFL</a>
-        <a href="nba.ics">🏀 NBA</a>
-        <a href="mlb.ics">⚾ MLB</a>
-        <a href="nhl.ics">🏒 NHL</a>
-    </div>
+<header>
+    <a class="logo-wrap" href="/">
+        <div class="logo-icon">
+            <svg viewBox="0 0 16 16" fill="none">
+                <rect x="1" y="3" width="14" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+                <path d="M1 6.5h14" stroke="white" stroke-width="1.5"/>
+                <path d="M5 1v3M11 1v3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="5.5" cy="10" r="1" fill="white"/>
+                <circle cx="8" cy="10" r="1" fill="white"/>
+                <circle cx="10.5" cy="10" r="1" fill="white"/>
+            </svg>
+        </div>
+        <div class="logo-text">Ply<span>Cal</span></div>
+    </a>
+    <nav>
+        <a href="/" class="active">Schedule</a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+</header>
 
-    <div id="nfl" class="section active"><table><thead><tr><th>Date</th><th>Time (Local)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>
-            <tr>
-                <td>Thu Sep 10</td>
-                <td data-utc="2026-09-10T00:20:00Z">2026-09-10T00:20:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png' class='logo'/>New England Patriots</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png' class='logo'/>Seattle Seahawks</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Fri Sep 11</td>
-                <td data-utc="2026-09-11T00:35:00Z">2026-09-11T00:35:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png' class='logo'/>San Francisco 49ers</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png' class='logo'/>Los Angeles Rams</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png' class='logo'/>Tampa Bay Buccaneers</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png' class='logo'/>Cincinnati Bengals</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png' class='logo'/>New Orleans Saints</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png' class='logo'/>Detroit Lions</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png' class='logo'/>New York Jets</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png' class='logo'/>Tennessee Titans</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png' class='logo'/>Baltimore Ravens</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png' class='logo'/>Indianapolis Colts</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png' class='logo'/>Atlanta Falcons</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png' class='logo'/>Pittsburgh Steelers</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png' class='logo'/>Chicago Bears</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png' class='logo'/>Carolina Panthers</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png' class='logo'/>Cleveland Browns</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png' class='logo'/>Jacksonville Jaguars</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T17:00:00Z">2026-09-13T17:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png' class='logo'/>Buffalo Bills</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png' class='logo'/>Houston Texans</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T20:25:00Z">2026-09-13T20:25:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png' class='logo'/>Miami Dolphins</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png' class='logo'/>Las Vegas Raiders</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T20:25:00Z">2026-09-13T20:25:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png' class='logo'/>Green Bay Packers</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png' class='logo'/>Minnesota Vikings</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T20:25:00Z">2026-09-13T20:25:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png' class='logo'/>Washington Commanders</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png' class='logo'/>Philadelphia Eagles</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Sun Sep 13</td>
-                <td data-utc="2026-09-13T20:25:00Z">2026-09-13T20:25:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png' class='logo'/>Arizona Cardinals</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png' class='logo'/>Los Angeles Chargers</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Mon Sep 14</td>
-                <td data-utc="2026-09-14T00:20:00Z">2026-09-14T00:20:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png' class='logo'/>Dallas Cowboys</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png' class='logo'/>New York Giants</td>
-                <td class='status'>Scheduled</td>
-            </tr>
-            <tr>
-                <td>Tue Sep 15</td>
-                <td data-utc="2026-09-15T00:15:00Z">2026-09-15T00:15:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png' class='logo'/>Denver Broncos</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png' class='logo'/>Kansas City Chiefs</td>
-                <td class='status'>Scheduled</td>
-            </tr></tbody></table></div>
-    <div id="nba" class="section"><table><thead><tr><th>Date</th><th>Time (Local)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T00:30:00Z">2026-06-06T00:30:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png' class='logo'/>New York Knicks</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png' class='logo'/>San Antonio Spurs</td>
-                <td class='status'>Final</td>
-            </tr></tbody></table></div>
-    <div id="mlb" class="section"><table><thead><tr><th>Date</th><th>Time (Local)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>
-            <tr>
-                <td>Fri Jun 05</td>
-                <td data-utc="2026-06-05T18:20:00Z">2026-06-05T18:20:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sf.png' class='logo'/>San Francisco Giants</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png' class='logo'/>Chicago Cubs</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Fri Jun 05</td>
-                <td data-utc="2026-06-05T22:40:00Z">2026-06-05T22:40:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chw.png' class='logo'/>Chicago White Sox</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/phi.png' class='logo'/>Philadelphia Phillies</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Fri Jun 05</td>
-                <td data-utc="2026-06-05T22:40:00Z">2026-06-05T22:40:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sea.png' class='logo'/>Seattle Mariners</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/det.png' class='logo'/>Detroit Tigers</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Fri Jun 05</td>
-                <td data-utc="2026-06-05T23:05:00Z">2026-06-05T23:05:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/bos.png' class='logo'/>Boston Red Sox</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nyy.png' class='logo'/>New York Yankees</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Fri Jun 05</td>
-                <td data-utc="2026-06-05T23:07:00Z">2026-06-05T23:07:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/bal.png' class='logo'/>Baltimore Orioles</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tor.png' class='logo'/>Toronto Blue Jays</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Fri Jun 05</td>
-                <td data-utc="2026-06-05T23:10:00Z">2026-06-05T23:10:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png' class='logo'/>Tampa Bay Rays</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mia.png' class='logo'/>Miami Marlins</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Fri Jun 05</td>
-                <td data-utc="2026-06-05T23:15:00Z">2026-06-05T23:15:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/pit.png' class='logo'/>Pittsburgh Pirates</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/atl.png' class='logo'/>Atlanta Braves</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T00:10:00Z">2026-06-06T00:10:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/ath.png' class='logo'/>Athletics</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/hou.png' class='logo'/>Houston Astros</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T00:15:00Z">2026-06-06T00:15:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png' class='logo'/>Cincinnati Reds</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/stl.png' class='logo'/>St. Louis Cardinals</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T00:15:00Z">2026-06-06T00:15:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png' class='logo'/>Cleveland Guardians</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tex.png' class='logo'/>Texas Rangers</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T00:15:00Z">2026-06-06T00:15:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/kc.png' class='logo'/>Kansas City Royals</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/min.png' class='logo'/>Minnesota Twins</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T00:40:00Z">2026-06-06T00:40:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png' class='logo'/>Milwaukee Brewers</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/col.png' class='logo'/>Colorado Rockies</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T01:40:00Z">2026-06-06T01:40:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nym.png' class='logo'/>New York Mets</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sd.png' class='logo'/>San Diego Padres</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T01:40:00Z">2026-06-06T01:40:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/wsh.png' class='logo'/>Washington Nationals</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/ari.png' class='logo'/>Arizona Diamondbacks</td>
-                <td class='status'>Final</td>
-            </tr>
-            <tr>
-                <td>Sat Jun 06</td>
-                <td data-utc="2026-06-06T02:10:00Z">2026-06-06T02:10:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/laa.png' class='logo'/>Los Angeles Angels</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png' class='logo'/>Los Angeles Dodgers</td>
-                <td class='status'>Final</td>
-            </tr></tbody></table></div>
-    <div id="nhl" class="section"><table><thead><tr><th>Date</th><th>Time (Local)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>
-            <tr>
-                <td>Sun Jun 07</td>
-                <td data-utc="2026-06-07T00:00:00Z">2026-06-07T00:00:00Z</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png' class='logo'/>Carolina Hurricanes</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png' class='logo'/>Vegas Golden Knights</td>
-                <td class='status'>Scheduled</td>
-            </tr></tbody></table></div>
+<div class="tabs-bar">
+    <button class="tab active" onclick="show('nfl', this)">🏈 NFL</button>
+    <button class="tab" onclick="show('nba', this)">🏀 NBA</button>
+    <button class="tab" onclick="show('mlb', this)">⚾ MLB</button>
+    <button class="tab" onclick="show('nhl', this)">🏒 NHL</button>
+</div>
 
-    <footer>Data from ESPN · Refreshes daily · Free &amp; open</footer>
+<div class="subscribe-bar" id="subscribe">
+    <span>📅 Subscribe in your calendar app:</span>
+    <a class="sub-btn" href="nfl.ics">🏈 NFL</a>
+    <a class="sub-btn" href="nba.ics">🏀 NBA</a>
+    <a class="sub-btn" href="mlb.ics">⚾ MLB</a>
+    <a class="sub-btn" href="nhl.ics">🏒 NHL</a>
+</div>
 
-    <script>
-        function show(id, el) {
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-            el.classList.add('active');
-        }
+<main>
+    <div id="nfl" class="section active"><div class="card"><div class='date-header'>Thu Sep 10</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png' alt='New England Patriots'/>
+                        <span class='team-name'>New England Patriots</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png' alt='Seattle Seahawks'/>
+                        <span class='team-name'>Seattle Seahawks</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-10T00:20:00Z'>2026-09-10T00:20:00Z</span>
+                </div><div class='date-header'>Fri Sep 11</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png' alt='San Francisco 49ers'/>
+                        <span class='team-name'>San Francisco 49ers</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png' alt='Los Angeles Rams'/>
+                        <span class='team-name'>Los Angeles Rams</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-11T00:35:00Z'>2026-09-11T00:35:00Z</span>
+                </div><div class='date-header'>Sun Sep 13</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png' alt='Tampa Bay Buccaneers'/>
+                        <span class='team-name'>Tampa Bay Buccaneers</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png' alt='Cincinnati Bengals'/>
+                        <span class='team-name'>Cincinnati Bengals</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png' alt='New Orleans Saints'/>
+                        <span class='team-name'>New Orleans Saints</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png' alt='Detroit Lions'/>
+                        <span class='team-name'>Detroit Lions</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png' alt='New York Jets'/>
+                        <span class='team-name'>New York Jets</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png' alt='Tennessee Titans'/>
+                        <span class='team-name'>Tennessee Titans</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png' alt='Baltimore Ravens'/>
+                        <span class='team-name'>Baltimore Ravens</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png' alt='Indianapolis Colts'/>
+                        <span class='team-name'>Indianapolis Colts</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png' alt='Atlanta Falcons'/>
+                        <span class='team-name'>Atlanta Falcons</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png' alt='Pittsburgh Steelers'/>
+                        <span class='team-name'>Pittsburgh Steelers</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png' alt='Chicago Bears'/>
+                        <span class='team-name'>Chicago Bears</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png' alt='Carolina Panthers'/>
+                        <span class='team-name'>Carolina Panthers</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png' alt='Cleveland Browns'/>
+                        <span class='team-name'>Cleveland Browns</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png' alt='Jacksonville Jaguars'/>
+                        <span class='team-name'>Jacksonville Jaguars</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png' alt='Buffalo Bills'/>
+                        <span class='team-name'>Buffalo Bills</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png' alt='Houston Texans'/>
+                        <span class='team-name'>Houston Texans</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T17:00:00Z'>2026-09-13T17:00:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png' alt='Miami Dolphins'/>
+                        <span class='team-name'>Miami Dolphins</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png' alt='Las Vegas Raiders'/>
+                        <span class='team-name'>Las Vegas Raiders</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T20:25:00Z'>2026-09-13T20:25:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png' alt='Green Bay Packers'/>
+                        <span class='team-name'>Green Bay Packers</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png' alt='Minnesota Vikings'/>
+                        <span class='team-name'>Minnesota Vikings</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T20:25:00Z'>2026-09-13T20:25:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png' alt='Washington Commanders'/>
+                        <span class='team-name'>Washington Commanders</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png' alt='Philadelphia Eagles'/>
+                        <span class='team-name'>Philadelphia Eagles</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T20:25:00Z'>2026-09-13T20:25:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png' alt='Arizona Cardinals'/>
+                        <span class='team-name'>Arizona Cardinals</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png' alt='Los Angeles Chargers'/>
+                        <span class='team-name'>Los Angeles Chargers</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-13T20:25:00Z'>2026-09-13T20:25:00Z</span>
+                </div><div class='date-header'>Mon Sep 14</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png' alt='Dallas Cowboys'/>
+                        <span class='team-name'>Dallas Cowboys</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png' alt='New York Giants'/>
+                        <span class='team-name'>New York Giants</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-14T00:20:00Z'>2026-09-14T00:20:00Z</span>
+                </div><div class='date-header'>Tue Sep 15</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png' alt='Denver Broncos'/>
+                        <span class='team-name'>Denver Broncos</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png' alt='Kansas City Chiefs'/>
+                        <span class='team-name'>Kansas City Chiefs</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-09-15T00:15:00Z'>2026-09-15T00:15:00Z</span>
+                </div></div></div>
+    <div id="nba" class="section"><div class="card"><div class='date-header'>Tue Jun 09</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png' alt='San Antonio Spurs'/>
+                        <span class='team-name'>San Antonio Spurs</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png' alt='New York Knicks'/>
+                        <span class='team-name'>New York Knicks</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-09T00:30:00Z'>2026-06-09T00:30:00Z</span>
+                </div></div></div>
+    <div id="mlb" class="section"><div class="card"><div class='date-header'>Sat Jun 06</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sea.png' alt='Seattle Mariners'/>
+                        <span class='team-name'>Seattle Mariners</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/det.png' alt='Detroit Tigers'/>
+                        <span class='team-name'>Detroit Tigers</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T17:10:00Z'>2026-06-06T17:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/kc.png' alt='Kansas City Royals'/>
+                        <span class='team-name'>Kansas City Royals</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/min.png' alt='Minnesota Twins'/>
+                        <span class='team-name'>Minnesota Twins</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T18:10:00Z'>2026-06-06T18:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png' alt='Cincinnati Reds'/>
+                        <span class='team-name'>Cincinnati Reds</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/stl.png' alt='St. Louis Cardinals'/>
+                        <span class='team-name'>St. Louis Cardinals</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T18:15:00Z'>2026-06-06T18:15:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sf.png' alt='San Francisco Giants'/>
+                        <span class='team-name'>San Francisco Giants</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png' alt='Chicago Cubs'/>
+                        <span class='team-name'>Chicago Cubs</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T18:20:00Z'>2026-06-06T18:20:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/bal.png' alt='Baltimore Orioles'/>
+                        <span class='team-name'>Baltimore Orioles</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tor.png' alt='Toronto Blue Jays'/>
+                        <span class='team-name'>Toronto Blue Jays</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T19:07:00Z'>2026-06-06T19:07:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chw.png' alt='Chicago White Sox'/>
+                        <span class='team-name'>Chicago White Sox</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/phi.png' alt='Philadelphia Phillies'/>
+                        <span class='team-name'>Philadelphia Phillies</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T20:05:00Z'>2026-06-06T20:05:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/pit.png' alt='Pittsburgh Pirates'/>
+                        <span class='team-name'>Pittsburgh Pirates</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/atl.png' alt='Atlanta Braves'/>
+                        <span class='team-name'>Atlanta Braves</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T20:10:00Z'>2026-06-06T20:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png' alt='Tampa Bay Rays'/>
+                        <span class='team-name'>Tampa Bay Rays</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mia.png' alt='Miami Marlins'/>
+                        <span class='team-name'>Miami Marlins</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T20:10:00Z'>2026-06-06T20:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/ath.png' alt='Athletics'/>
+                        <span class='team-name'>Athletics</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/hou.png' alt='Houston Astros'/>
+                        <span class='team-name'>Houston Astros</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T20:10:00Z'>2026-06-06T20:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/wsh.png' alt='Washington Nationals'/>
+                        <span class='team-name'>Washington Nationals</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/ari.png' alt='Arizona Diamondbacks'/>
+                        <span class='team-name'>Arizona Diamondbacks</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T20:10:00Z'>2026-06-06T20:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/bos.png' alt='Boston Red Sox'/>
+                        <span class='team-name'>Boston Red Sox</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nyy.png' alt='New York Yankees'/>
+                        <span class='team-name'>New York Yankees</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T23:35:00Z'>2026-06-06T23:35:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png' alt='Cleveland Guardians'/>
+                        <span class='team-name'>Cleveland Guardians</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tex.png' alt='Texas Rangers'/>
+                        <span class='team-name'>Texas Rangers</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-06T23:35:00Z'>2026-06-06T23:35:00Z</span>
+                </div><div class='date-header'>Sun Jun 07</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png' alt='Milwaukee Brewers'/>
+                        <span class='team-name'>Milwaukee Brewers</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/col.png' alt='Colorado Rockies'/>
+                        <span class='team-name'>Colorado Rockies</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-07T01:10:00Z'>2026-06-07T01:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/laa.png' alt='Los Angeles Angels'/>
+                        <span class='team-name'>Los Angeles Angels</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png' alt='Los Angeles Dodgers'/>
+                        <span class='team-name'>Los Angeles Dodgers</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-07T02:10:00Z'>2026-06-07T02:10:00Z</span>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nym.png' alt='New York Mets'/>
+                        <span class='team-name'>New York Mets</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sd.png' alt='San Diego Padres'/>
+                        <span class='team-name'>San Diego Padres</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-07T02:10:00Z'>2026-06-07T02:10:00Z</span>
+                </div></div></div>
+    <div id="nhl" class="section"><div class="card"><div class='date-header'>Sun Jun 07</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png' alt='Carolina Hurricanes'/>
+                        <span class='team-name'>Carolina Hurricanes</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png' alt='Vegas Golden Knights'/>
+                        <span class='team-name'>Vegas Golden Knights</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-07T00:00:00Z'>2026-06-07T00:00:00Z</span>
+                </div></div></div>
+</main>
 
-        function convertTimes() {
-            document.querySelectorAll('td[data-utc]').forEach(td => {
-                const utc = td.getAttribute('data-utc');
-                const local = new Date(utc);
-                const dateStr = local.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
-                const timeStr = local.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
-                td.textContent = timeStr;
-                // Also update the date cell
-                const row = td.closest('tr');
-                if (row) row.cells[0].textContent = dateStr;
-            });
-        }
+<footer>
+    <p>Updated: June 07, 2026 at 04:52 UTC &nbsp;·&nbsp; Data from ESPN &nbsp;·&nbsp;
+    <a href="#subscribe">Subscribe via iCal</a> &nbsp;·&nbsp; Free forever</p>
+</footer>
 
-        convertTimes();
-    </script>
+<script>
+    function show(id, el) {
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        el.classList.add('active');
+    }
+
+    function convertTimes() {
+        document.querySelectorAll('.game-time[data-utc]').forEach(el => {
+            const utc = el.getAttribute('data-utc');
+            const local = new Date(utc);
+            if (!isNaN(local)) {
+                el.textContent = local.toLocaleTimeString(undefined, {
+                    hour: '2-digit', minute: '2-digit'
+                });
+            }
+        });
+    }
+
+    convertTimes();
+</script>
+
 </body>
 </html>
