@@ -2,6 +2,7 @@ import urllib.request
 import json
 from datetime import datetime
 import uuid
+import os
 
 def fetch_games(sport, league_path, league_name, days_ahead=28):
     from datetime import timedelta
@@ -51,59 +52,54 @@ SPORT_DURATIONS = {
     "NHL": 150,
 }
 
-def fetch_cricket_games(league, days_ahead=28):
+def fetch_cricket_games(days_ahead=28):
+    api_key = os.environ.get("CRICKET_API_KEY", "")
+    if not api_key:
+        print("  No CRICKET_API_KEY found, skipping cricket")
+        return []
+
     from datetime import timedelta
     today = datetime.utcnow()
     end = today + timedelta(days=days_ahead)
-    date_from = today.strftime("%Y-%m-%dT00:00:00Z")
-    date_to = end.strftime("%Y-%m-%dT23:59:59Z")
-    url = (f"https://sports.core.api.espn.com/v2/sports/cricket/leagues/{league}/events"
-           f"?limit=100&dates={today.strftime('%Y%m%d')}-{end.strftime('%Y%m%d')}")
+
+    url = f"https://api.cricapi.com/v1/matches?apikey={api_key}&offset=0"
     try:
         with urllib.request.urlopen(url) as response:
             data = json.loads(response.read())
     except Exception as e:
-        print(f"  Error fetching cricket league {league}: {e}")
-        print(f"  URL was: {url}")
+        print(f"  Error fetching cricket: {e}")
+        return []
+
+    if data.get("status") != "success":
+        print(f"  Cricket API error: {data.get('status')}")
         return []
 
     games = []
-    for item in data.get("items", []):
+    for match in data.get("data", []):
         try:
-            ref_url = item.get("$ref", "")
-            with urllib.request.urlopen(ref_url) as r:
-                event = json.loads(r.read())
-
-            date_str = event.get("date", "")
+            date_str = match.get("dateTimeGMT", "")
             if not date_str:
                 continue
             dt = datetime.strptime(date_str[:19], "%Y-%m-%dT%H:%M:%S")
             if dt < today or dt > end:
                 continue
 
-            readable_date = dt.strftime("%a %b %d")
-            readable_time = dt.strftime("%Y-%m-%dT%H:%M:00Z")
-
-            competitors = event.get("competitions", [{}])[0].get("competitors", [])
-            if len(competitors) < 2:
+            teams = match.get("teams", [])
+            if len(teams) < 2:
                 continue
 
-            home = next((t for t in competitors if t.get("homeAway") == "home"), competitors[0])
-            away = next((t for t in competitors if t.get("homeAway") == "away"), competitors[1])
-
-            home_name = home.get("team", {}).get("displayName", "TBD")
-            away_name = away.get("team", {}).get("displayName", "TBD")
-            home_logo = home.get("team", {}).get("logo", "")
-            away_logo = away.get("team", {}).get("logo", "")
+            name = match.get("name", "")
+            match_type = match.get("matchType", "").upper()
+            series = match.get("series", "")
 
             games.append({
-                "date": readable_date,
-                "time": readable_time,
-                "home": home_name,
-                "away": away_name,
-                "home_logo": home_logo,
-                "away_logo": away_logo,
-                "status": event.get("status", {}).get("type", {}).get("description", "Scheduled")
+                "date": dt.strftime("%a %b %d"),
+                "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
+                "home": teams[1],
+                "away": teams[0],
+                "home_logo": "",
+                "away_logo": "",
+                "status": f"{match_type} · {series}" if series else match_type
             })
         except Exception:
             continue
@@ -361,18 +357,7 @@ if __name__ == "__main__":
     print(f"  Got {len(epl)} games")
 
     print("Fetching Cricket games...")
-    cricket_leagues = [
-        "icc.t20",
-        "icc.odi",
-        "icc.test",
-        "ipl",
-        "mlc",
-    ]
-    cricket = []
-    for league in cricket_leagues:
-        matches = fetch_cricket_games(league)
-        cricket.extend(matches)
-    cricket = list({f"{g['date']}{g['home']}{g['away']}": g for g in cricket}.values())
+    cricket = fetch_cricket_games()
     cricket.sort(key=lambda x: x['time'])
     print(f"  Got {len(cricket)} cricket games total")
 
