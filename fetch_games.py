@@ -3,8 +3,14 @@ import json
 from datetime import datetime
 import uuid
 
-def fetch_games(sport, league_path, league_name):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{league_path}/scoreboard?limit=100"
+def fetch_games(sport, league_path, league_name, days_ahead=28):
+    from datetime import timedelta
+    today = datetime.utcnow()
+    end = today + timedelta(days=days_ahead)
+    date_from = today.strftime("%Y%m%d")
+    date_to = end.strftime("%Y%m%d")
+    url = (f"https://site.api.espn.com/apis/site/v2/sports/{league_path}/scoreboard"
+           f"?limit=100&dates={date_from}-{date_to}")
     try:
         with urllib.request.urlopen(url) as response:
             data = json.loads(response.read())
