@@ -83,109 +83,186 @@ def build_ical(games, sport_name):
 def build_html(nfl_games, nba_games, mlb_games, nhl_games):
     def games_html(games):
         if not games:
-            return "<p class='no-games'>No games found.</p>"
-        rows = ""
+            return "<p class='no-games'>No games scheduled.</p>"
+
+        by_date = {}
         for g in games:
-            rows += f"""
-            <tr>
-                <td>{g['date']}</td>
-                <td data-utc="{g['time']}">{g['time']}</td>
-                <td class='team'><img src='{g['away_logo']}' class='logo'/>{g['away']}</td>
-                <td class='vs'>vs</td>
-                <td class='team'><img src='{g['home_logo']}' class='logo'/>{g['home']}</td>
-                <td class='status'>{g['status']}</td>
-            </tr>"""
-        return f"<table><thead><tr><th>Date</th><th>Time (Local)</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table>"
+            by_date.setdefault(g['date'], []).append(g)
+
+        html = ""
+        for date, day_games in by_date.items():
+            html += f"<div class='date-header'>{date}</div>"
+            for g in day_games:
+                html += f"""
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='{g['away_logo']}' alt='{g['away']}'/>
+                        <span class='team-name'>{g['away']}</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='{g['home_logo']}' alt='{g['home']}'/>
+                        <span class='team-name'>{g['home']}</span>
+                    </div>
+                    <span class='game-time' data-utc='{g['time']}'>{g['time']}</span>
+                </div>"""
+        return html
 
     updated = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
+
+    nfl_html  = games_html(nfl_games)
+    nba_html  = games_html(nba_games)
+    mlb_html  = games_html(mlb_games)
+    nhl_html  = games_html(nhl_games)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Sports Calendar</title>
+    <title>PlyCal — Every game. Every timezone. Free.</title>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: Georgia, serif; background: #0f1117; color: #e8e8e8; min-height: 100vh; }}
-        header {{ background: #1a1d27; border-bottom: 3px solid #f0a500; padding: 2rem; text-align: center; }}
-        header h1 {{ font-size: 2.2rem; color: #f0a500; letter-spacing: 2px; text-transform: uppercase; }}
-        header p {{ color: #888; margin-top: 0.4rem; font-size: 0.9rem; }}
-        .tabs {{ display: flex; justify-content: center; gap: 1rem; padding: 1.5rem; }}
-        .tab {{ padding: 0.6rem 2rem; background: #1a1d27; border: 2px solid #333; color: #aaa;
-                cursor: pointer; font-size: 1rem; border-radius: 4px; transition: all 0.2s; }}
-        .tab.active {{ border-color: #f0a500; color: #f0a500; background: #22263a; }}
-        .section {{ display: none; padding: 0 2rem 3rem; max-width: 1000px; margin: 0 auto; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                background: #f7f8fc; color: #1a1f2e; min-height: 100vh; }}
+
+        /* Header */
+        header {{ background: #ffffff; border-bottom: 1px solid #eaecf4; padding: 0.9rem 1.5rem;
+                  display: flex; align-items: center; justify-content: space-between; }}
+        .logo-wrap {{ display: flex; align-items: center; gap: 9px; text-decoration: none; }}
+        .logo-icon {{ width: 30px; height: 30px; background: #1a6ef5; border-radius: 7px;
+                      display: flex; align-items: center; justify-content: center; flex-shrink: 0; }}
+        .logo-icon svg {{ width: 16px; height: 16px; }}
+        .logo-text {{ font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.5px; }}
+        .logo-text span {{ color: #1a6ef5; }}
+        nav {{ display: flex; gap: 1.5rem; }}
+        nav a {{ font-size: 13px; color: #9099b0; text-decoration: none; }}
+        nav a.active {{ color: #1a6ef5; font-weight: 500; }}
+
+        /* Tabs */
+        .tabs-bar {{ background: #ffffff; border-bottom: 1px solid #eaecf4;
+                     display: flex; padding: 0 1.5rem; overflow-x: auto; }}
+        .tab {{ padding: 0.75rem 1.1rem; font-size: 13px; color: #9099b0; border: none;
+                border-bottom: 2px solid transparent; background: none; cursor: pointer;
+                white-space: nowrap; transition: color 0.15s; }}
+        .tab.active {{ color: #1a6ef5; border-bottom-color: #1a6ef5; font-weight: 500; }}
+        .tab:hover {{ color: #1a6ef5; }}
+
+        /* Subscribe bar */
+        .subscribe-bar {{ background: #f0f5ff; border-bottom: 1px solid #dde8fd;
+                          padding: 0.6rem 1.5rem; display: flex; align-items: center;
+                          gap: 0.75rem; flex-wrap: wrap; }}
+        .subscribe-bar span {{ font-size: 12px; color: #6b7a9e; }}
+        .sub-btn {{ font-size: 12px; color: #1a6ef5; border: 1px solid #c0d4fb;
+                    border-radius: 20px; padding: 3px 12px; background: #ffffff;
+                    cursor: pointer; text-decoration: none; transition: background 0.15s; }}
+        .sub-btn:hover {{ background: #1a6ef5; color: #ffffff; }}
+
+        /* Main content */
+        main {{ max-width: 820px; margin: 1.25rem auto; padding: 0 1rem; }}
+        .section {{ display: none; }}
         .section.active {{ display: block; }}
-        table {{ width: 100%; border-collapse: collapse; margin-top: 1rem; }}
-        th {{ background: #1a1d27; color: #f0a500; padding: 0.75rem 1rem; text-align: left;
-              font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }}
-        td {{ padding: 0.7rem 1rem; border-bottom: 1px solid #222; font-size: 0.95rem; }}
-        tr:hover td {{ background: #1a1d27; }}
-        td.vs {{ color: #555; font-size: 0.8rem; }}
-        td.status {{ color: #888; font-size: 0.85rem; font-style: italic; }}
-        .no-games {{ color: #666; padding: 2rem; text-align: center; }}
-        .logo {{ width: 28px; height: 28px; object-fit: contain; margin-right: 8px; vertical-align: middle; }}
-        td.team {{ display: flex; align-items: center; }}
-        footer {{ text-align: center; padding: 2rem; color: #444; font-size: 0.8rem; border-top: 1px solid #222; }}
-        .subscribe {{ display: flex; justify-content: center; align-items: center; gap: 1rem;
-                     padding: 0.75rem; background: #1a1d27; border-bottom: 1px solid #333;
-                     font-size: 0.85rem; flex-wrap: wrap; }}
-        .subscribe a {{ color: #f0a500; text-decoration: none; padding: 0.3rem 0.8rem;
-                       border: 1px solid #f0a500; border-radius: 3px; }}
-        .subscribe a:hover {{ background: #f0a500; color: #0f1117; }}
+        .card {{ background: #ffffff; border: 0.5px solid #eaecf4; border-radius: 10px;
+                 overflow: hidden; }}
+
+        /* Date headers */
+        .date-header {{ font-size: 11px; font-weight: 600; color: #9099b0;
+                        letter-spacing: 1.5px; text-transform: uppercase;
+                        padding: 0.75rem 1.25rem 0.4rem;
+                        border-top: 0.5px solid #f0f2f8; }}
+        .date-header:first-child {{ border-top: none; }}
+
+        /* Game rows */
+        .game-row {{ display: flex; align-items: center; gap: 8px;
+                     padding: 0.6rem 1.25rem; border-bottom: 0.5px solid #f0f2f8; }}
+        .game-row:last-child {{ border-bottom: none; }}
+        .team-pill {{ display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }}
+        .team-logo {{ width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }}
+        .team-name {{ font-size: 13px; color: #1a1f2e; white-space: nowrap;
+                      overflow: hidden; text-overflow: ellipsis; }}
+        .vs-text {{ font-size: 11px; color: #c0c5d4; padding: 0 4px; flex-shrink: 0; }}
+        .game-time {{ font-size: 12px; color: #1a6ef5; font-weight: 500;
+                      margin-left: auto; white-space: nowrap; padding-left: 8px;
+                      flex-shrink: 0; }}
+        .no-games {{ padding: 2rem; text-align: center; color: #9099b0; font-size: 14px; }}
+
+        /* Footer */
+        footer {{ text-align: center; padding: 2rem 1rem; color: #b0b7c9; font-size: 12px; }}
+        footer a {{ color: #9099b0; text-decoration: none; }}
     </style>
 </head>
 <body>
-    <header>
-        <h1>⚡ Global Sports Calendar</h1>
-        <p>Updated: {updated}</p>
-    </header>
 
-    <div class="tabs">
-        <button class="tab active" onclick="show('nfl', this)">🏈 NFL</button>
-        <button class="tab" onclick="show('nba', this)">🏀 NBA</button>
-        <button class="tab" onclick="show('mlb', this)">⚾ MLB</button>
-        <button class="tab" onclick="show('nhl', this)">🏒 NHL</button>
-    </div>
-    <div class="subscribe">
-        <span>📅 Subscribe in your calendar app:</span>
-        <a href="nfl.ics">🏈 NFL</a>
-        <a href="nba.ics">🏀 NBA</a>
-        <a href="mlb.ics">⚾ MLB</a>
-        <a href="nhl.ics">🏒 NHL</a>
-    </div>
+<header>
+    <a class="logo-wrap" href="/">
+        <div class="logo-icon">
+            <svg viewBox="0 0 16 16" fill="none">
+                <rect x="1" y="3" width="14" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+                <path d="M1 6.5h14" stroke="white" stroke-width="1.5"/>
+                <path d="M5 1v3M11 1v3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="5.5" cy="10" r="1" fill="white"/>
+                <circle cx="8" cy="10" r="1" fill="white"/>
+                <circle cx="10.5" cy="10" r="1" fill="white"/>
+            </svg>
+        </div>
+        <div class="logo-text">Ply<span>Cal</span></div>
+    </a>
+    <nav>
+        <a href="/" class="active">Schedule</a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+</header>
 
-    <div id="nfl" class="section active">{games_html(nfl_games)}</div>
-    <div id="nba" class="section">{games_html(nba_games)}</div>
-    <div id="mlb" class="section">{games_html(mlb_games)}</div>
-    <div id="nhl" class="section">{games_html(nhl_games)}</div>
+<div class="tabs-bar">
+    <button class="tab active" onclick="show('nfl', this)">🏈 NFL</button>
+    <button class="tab" onclick="show('nba', this)">🏀 NBA</button>
+    <button class="tab" onclick="show('mlb', this)">⚾ MLB</button>
+    <button class="tab" onclick="show('nhl', this)">🏒 NHL</button>
+</div>
 
-    <footer>Data from ESPN · Refreshes daily · Free &amp; open</footer>
+<div class="subscribe-bar" id="subscribe">
+    <span>📅 Subscribe in your calendar app:</span>
+    <a class="sub-btn" href="nfl.ics">🏈 NFL</a>
+    <a class="sub-btn" href="nba.ics">🏀 NBA</a>
+    <a class="sub-btn" href="mlb.ics">⚾ MLB</a>
+    <a class="sub-btn" href="nhl.ics">🏒 NHL</a>
+</div>
 
-    <script>
-        function show(id, el) {{
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-            el.classList.add('active');
-        }}
+<main>
+    <div id="nfl" class="section active"><div class="card">{nfl_html}</div></div>
+    <div id="nba" class="section"><div class="card">{nba_html}</div></div>
+    <div id="mlb" class="section"><div class="card">{mlb_html}</div></div>
+    <div id="nhl" class="section"><div class="card">{nhl_html}</div></div>
+</main>
 
-        function convertTimes() {{
-            document.querySelectorAll('td[data-utc]').forEach(td => {{
-                const utc = td.getAttribute('data-utc');
-                const local = new Date(utc);
-                const dateStr = local.toLocaleDateString(undefined, {{ weekday: 'short', month: 'short', day: 'numeric' }});
-                const timeStr = local.toLocaleTimeString(undefined, {{ hour: '2-digit', minute: '2-digit' }});
-                td.textContent = timeStr;
-                // Also update the date cell
-                const row = td.closest('tr');
-                if (row) row.cells[0].textContent = dateStr;
-            }});
-        }}
+<footer>
+    <p>Updated: {updated} &nbsp;·&nbsp; Data from ESPN &nbsp;·&nbsp;
+    <a href="#subscribe">Subscribe via iCal</a> &nbsp;·&nbsp; Free forever</p>
+</footer>
 
-        convertTimes();
-    </script>
+<script>
+    function show(id, el) {{
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        el.classList.add('active');
+    }}
+
+    function convertTimes() {{
+        document.querySelectorAll('.game-time[data-utc]').forEach(el => {{
+            const utc = el.getAttribute('data-utc');
+            const local = new Date(utc);
+            if (!isNaN(local)) {{
+                el.textContent = local.toLocaleTimeString(undefined, {{
+                    hour: '2-digit', minute: '2-digit'
+                }});
+            }}
+        }});
+    }}
+
+    convertTimes();
+</script>
+
 </body>
 </html>"""
 
