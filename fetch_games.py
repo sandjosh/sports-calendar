@@ -166,7 +166,13 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
                         <span class='team-name'>{g['home']}</span>
                     </div>
                     <span class='game-time' data-utc='{g['time']}'>{g['time']}</span>
-                    <a class='tickets-btn' href='https://seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")} &datetime_local.gte={g["time"][:10]}' target='_blank'>🎟 Tickets</a>
+                    <div class='ticket-wrap'>
+                        <button class='tickets-btn' onclick='toggleDropdown(this)'>🎟 Tickets ▾</button>
+                        <div class='ticket-dropdown'>
+                            <a href='https://www.seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")}' target='_blank'>SeatGeek</a>
+                            <a href='https://www.stubhub.com/search?q={g["away"].replace(" ", "+")}+{g["home"].replace(" ", "+")}' target='_blank'>StubHub</a>
+                        </div>
+                    </div>
                 </div>"""
         return html
 
@@ -252,11 +258,19 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
         /* Footer */
         footer {{ text-align: center; padding: 2rem 1rem; color: #b0b7c9; font-size: 12px; }}
         footer a {{ color: #9099b0; text-decoration: none; }}
+        .ticket-wrap {{ position: relative; flex-shrink: 0; margin-left: 8px; }}
         .tickets-btn {{ font-size: 11px; color: #1a6ef5; border: 1px solid #d0e0fd;
                         border-radius: 20px; padding: 3px 10px; background: #f0f5ff;
-                        text-decoration: none; white-space: nowrap; flex-shrink: 0;
-                        margin-left: 8px; }}
+                        white-space: nowrap; cursor: pointer; }}
         .tickets-btn:hover {{ background: #1a6ef5; color: #ffffff; }}
+        .ticket-dropdown {{ display: none; position: absolute; right: 0; top: 110%;
+                            background: #ffffff; border: 1px solid #eaecf4;
+                            border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                            z-index: 100; min-width: 130px; overflow: hidden; }}
+        .ticket-dropdown a {{ display: block; padding: 0.6rem 1rem; font-size: 13px;
+                              color: #1a1f2e; text-decoration: none; }}
+        .ticket-dropdown a:hover {{ background: #f0f5ff; color: #1a6ef5; }}
+        .ticket-dropdown.open {{ display: block; }}
     </style>
 </head>
 <body>
@@ -315,6 +329,16 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
 </footer>
 
 <script>
+    function toggleDropdown(btn) {{
+        const dropdown = btn.nextElementSibling;
+        dropdown.classList.toggle('open');
+        document.addEventListener('click', function closeHandler(e) {{
+            if (!btn.parentElement.contains(e.target)) {{
+                dropdown.classList.remove('open');
+                document.removeEventListener('click', closeHandler);
+            }}
+        }});
+    }}
     function show(id, el) {{
         document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
