@@ -359,7 +359,7 @@ if __name__ == "__main__":
     epl = fetch_games("soccer", "soccer/eng.1", "Premier League")
     print(f"  Got {len(epl)} games")
 
-print("Fetching Cricket games...")
+    print("Fetching Cricket games...")
     cricket_leagues = [
         "icc.t20",
         "icc.odi",
