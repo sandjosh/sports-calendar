@@ -86,7 +86,7 @@ def build_ical(games, sport_name):
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines)
 
-def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games):
+def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_games):
     def games_html(games):
         if not games:
             return "<p class='no-games'>No games scheduled.</p>"
@@ -116,11 +116,12 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games):
 
     updated = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
 
-    nfl_html  = games_html(nfl_games)
-    nba_html  = games_html(nba_games)
-    mlb_html  = games_html(mlb_games)
-    nhl_html  = games_html(nhl_games)
-    epl_html  = games_html(epl_games)
+    nfl_html     = games_html(nfl_games)
+    nba_html     = games_html(nba_games)
+    mlb_html     = games_html(mlb_games)
+    nhl_html     = games_html(nhl_games)
+    epl_html     = games_html(epl_games)
+    cricket_html = games_html(cricket_games)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -226,6 +227,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games):
     <button class="tab" onclick="show('mlb', this)">⚾ MLB</button>
     <button class="tab" onclick="show('nhl', this)">🏒 NHL</button>
     <button class="tab" onclick="show('epl', this)">⚽ Premier League</button>
+    <button class="tab" onclick="show('cricket', this)">🏏 Cricket</button>
 </div>
 
 <div class="subscribe-bar" id="subscribe">
@@ -235,6 +237,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games):
     <a class="sub-btn" href="mlb.ics">⚾ MLB</a>
     <a class="sub-btn" href="nhl.ics">🏒 NHL</a>
     <a class="sub-btn" href="epl.ics">⚽ EPL</a>
+    <a class="sub-btn" href="cricket.ics">🏏 Cricket</a>
 </div>
 
 <main>
@@ -243,6 +246,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games):
     <div id="mlb" class="section"><div class="card">{mlb_html}</div></div>
     <div id="nhl" class="section"><div class="card">{nhl_html}</div></div>
     <div id="epl" class="section"><div class="card">{epl_html}</div></div>
+    <div id="cricket" class="section"><div class="card">{cricket_html}</div></div>
 </main>
 
 <footer>
@@ -297,12 +301,29 @@ if __name__ == "__main__":
     epl = fetch_games("soccer", "soccer/eng.1", "Premier League")
     print(f"  Got {len(epl)} games")
 
-    html = build_html(nfl, nba, mlb, nhl, epl)
+    print("Fetching Cricket games...")
+    cricket_leagues = [
+        "cricket/icc.world",
+        "cricket/icc.t20",
+        "cricket/icc.odi",
+        "cricket/ind.domestic",
+        "cricket/aus.domestic",
+        "cricket/eng.domestic",
+    ]
+    cricket = []
+    for league in cricket_leagues:
+        matches = fetch_games("cricket", league, "Cricket")
+        cricket.extend(matches)
+    cricket = list({f"{g['date']}{g['home']}{g['away']}": g for g in cricket}.values())
+    cricket.sort(key=lambda x: x['time'])
+    print(f"  Got {len(cricket)} cricket games total")
+
+    html = build_html(nfl, nba, mlb, nhl, epl, cricket)
     with open("index.html", "w") as f:
         f.write(html)
     print("index.html written.")
 
-    for sport_name, games in [("NFL", nfl), ("NBA", nba), ("MLB", mlb), ("NHL", nhl), ("EPL", epl)]:
+    for sport_name, games in [("NFL", nfl), ("NBA", nba), ("MLB", mlb), ("NHL", nhl), ("EPL", epl), ("Cricket", cricket)]:
         ical = build_ical(games, sport_name)
         filename = f"{sport_name.lower()}.ics"
         with open(filename, "w") as f:
