@@ -194,9 +194,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
         header {{ background: #ffffff; border-bottom: 1px solid #eaecf4; padding: 0.9rem 1.5rem;
                   display: flex; align-items: center; justify-content: space-between; }}
         .logo-wrap {{ display: flex; align-items: center; gap: 9px; text-decoration: none; }}
-        .logo-icon {{ width: 30px; height: 30px; background: #1a6ef5; border-radius: 7px;
-                      display: flex; align-items: center; justify-content: center; flex-shrink: 0; }}
-        .logo-icon svg {{ width: 16px; height: 16px; }}
+        .logo-icon {{ width: 30px; height: 30px; background: #1a6ef5; border-radius: 7px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }}
         .logo-text {{ font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.5px; }}
         .logo-text span {{ color: #1a6ef5; }}
         nav {{ display: flex; gap: 1.5rem; }}
