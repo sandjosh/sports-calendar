@@ -66,6 +66,7 @@ def fetch_games_schedule(league_path, league_name):
         print(f"Error fetching schedule for {league_name}: {e}")
         return []
 
+    print(f"  Keys in response: {list(data.keys())}")
     games = []
     for event in data.get("events", []):
         try:
