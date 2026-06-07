@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlyCal — Every game. Every timezone. Free.</title>
+    <title>PlyCal - Every game. Every timezone. Free.</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -13,9 +13,7 @@
         header { background: #ffffff; border-bottom: 1px solid #eaecf4; padding: 0.9rem 1.5rem;
                   display: flex; align-items: center; justify-content: space-between; }
         .logo-wrap { display: flex; align-items: center; gap: 9px; text-decoration: none; }
-        .logo-icon { width: 30px; height: 30px; background: #1a6ef5; border-radius: 7px;
-                      display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .logo-icon svg { width: 16px; height: 16px; }
+        .logo-icon { width: 30px; height: 30px; background: #1a6ef5; border-radius: 7px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .logo-text { font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.5px; }
         .logo-text span { color: #1a6ef5; }
         nav { display: flex; gap: 1.5rem; }
@@ -73,6 +71,11 @@
         /* Footer */
         footer { text-align: center; padding: 2rem 1rem; color: #b0b7c9; font-size: 12px; }
         footer a { color: #9099b0; text-decoration: none; }
+        .tickets-btn { font-size: 11px; color: #1a6ef5; border: 1px solid #d0e0fd;
+                        border-radius: 20px; padding: 3px 10px; background: #f0f5ff;
+                        text-decoration: none; white-space: nowrap; flex-shrink: 0;
+                        margin-left: 8px; }
+        .tickets-btn:hover { background: #1a6ef5; color: #ffffff; }
     </style>
 </head>
 <body>
@@ -130,6 +133,7 @@
                         <span class='team-name'>New York Knicks</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T00:30:00Z'>2026-06-09T00:30:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=San+Antonio+Spurs+vs+New+York+Knicks' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Thu Jun 11</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -142,6 +146,7 @@
                         <span class='team-name'>New York Knicks</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T00:30:00Z'>2026-06-11T00:30:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=San+Antonio+Spurs+vs+New+York+Knicks' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Sun Jun 14</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -154,6 +159,7 @@
                         <span class='team-name'>San Antonio Spurs</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T00:30:00Z'>2026-06-14T00:30:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Knicks+vs+San+Antonio+Spurs' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Wed Jun 17</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -166,6 +172,7 @@
                         <span class='team-name'>New York Knicks</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-17T00:30:00Z'>2026-06-17T00:30:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=San+Antonio+Spurs+vs+New+York+Knicks' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Sat Jun 20</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -178,6 +185,7 @@
                         <span class='team-name'>San Antonio Spurs</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-20T00:30:00Z'>2026-06-20T00:30:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Knicks+vs+San+Antonio+Spurs' target='_blank'>🎟 Tickets</a>
                 </div></div></div>
     <div id="mlb" class="section"><div class="card"><div class='date-header'>Sun Jun 07</div>
                 <div class='game-row'>
@@ -191,6 +199,7 @@
                         <span class='team-name'>New York Yankees</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T17:35:00Z'>2026-06-07T17:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Boston+Red+Sox+vs+New+York+Yankees' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -203,6 +212,7 @@
                         <span class='team-name'>Philadelphia Phillies</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T17:35:00Z'>2026-06-07T17:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Chicago+White+Sox+vs+Philadelphia+Phillies' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -215,6 +225,7 @@
                         <span class='team-name'>Atlanta Braves</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T17:35:00Z'>2026-06-07T17:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Pittsburgh+Pirates+vs+Atlanta+Braves' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -227,6 +238,7 @@
                         <span class='team-name'>Toronto Blue Jays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T17:37:00Z'>2026-06-07T17:37:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Baltimore+Orioles+vs+Toronto+Blue+Jays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -239,6 +251,7 @@
                         <span class='team-name'>Detroit Tigers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T17:40:00Z'>2026-06-07T17:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Detroit+Tigers' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -251,6 +264,7 @@
                         <span class='team-name'>Miami Marlins</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T17:40:00Z'>2026-06-07T17:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Tampa+Bay+Rays+vs+Miami+Marlins' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -263,6 +277,7 @@
                         <span class='team-name'>Houston Astros</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T18:10:00Z'>2026-06-07T18:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Athletics+vs+Houston+Astros' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -275,6 +290,7 @@
                         <span class='team-name'>Minnesota Twins</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T18:10:00Z'>2026-06-07T18:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Kansas+City+Royals+vs+Minnesota+Twins' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -287,6 +303,7 @@
                         <span class='team-name'>St. Louis Cardinals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T18:15:00Z'>2026-06-07T18:15:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Cincinnati+Reds+vs+St.+Louis+Cardinals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -299,6 +316,7 @@
                         <span class='team-name'>Texas Rangers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T18:35:00Z'>2026-06-07T18:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Cleveland+Guardians+vs+Texas+Rangers' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -311,6 +329,7 @@
                         <span class='team-name'>Colorado Rockies</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T19:10:00Z'>2026-06-07T19:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Milwaukee+Brewers+vs+Colorado+Rockies' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -323,6 +342,7 @@
                         <span class='team-name'>Arizona Diamondbacks</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T19:15:00Z'>2026-06-07T19:15:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Washington+Nationals+vs+Arizona+Diamondbacks' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -335,6 +355,7 @@
                         <span class='team-name'>Los Angeles Dodgers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T20:10:00Z'>2026-06-07T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Los+Angeles+Angels+vs+Los+Angeles+Dodgers' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -347,6 +368,7 @@
                         <span class='team-name'>San Diego Padres</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-07T20:10:00Z'>2026-06-07T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Mets+vs+San+Diego+Padres' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Mon Jun 08</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -359,6 +381,7 @@
                         <span class='team-name'>Chicago Cubs</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-08T00:30:00Z'>2026-06-08T00:30:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=San+Francisco+Giants+vs+Chicago+Cubs' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -371,6 +394,7 @@
                         <span class='team-name'>Baltimore Orioles</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-08T22:35:00Z'>2026-06-08T22:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Baltimore+Orioles' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -383,6 +407,7 @@
                         <span class='team-name'>Tampa Bay Rays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-08T22:40:00Z'>2026-06-08T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Boston+Red+Sox+vs+Tampa+Bay+Rays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -395,6 +420,7 @@
                         <span class='team-name'>Cleveland Guardians</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-08T22:40:00Z'>2026-06-08T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Yankees+vs+Cleveland+Guardians' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -407,6 +433,7 @@
                         <span class='team-name'>Toronto Blue Jays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-08T23:07:00Z'>2026-06-08T23:07:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Philadelphia+Phillies+vs+Toronto+Blue+Jays' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Tue Jun 09</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -419,6 +446,7 @@
                         <span class='team-name'>Los Angeles Angels</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T01:38:00Z'>2026-06-09T01:38:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Houston+Astros+vs+Los+Angeles+Angels' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -431,6 +459,7 @@
                         <span class='team-name'>San Diego Padres</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T01:40:00Z'>2026-06-09T01:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Cincinnati+Reds+vs+San+Diego+Padres' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -443,6 +472,7 @@
                         <span class='team-name'>San Francisco Giants</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T01:45:00Z'>2026-06-09T01:45:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Washington+Nationals+vs+San+Francisco+Giants' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -455,6 +485,7 @@
                         <span class='team-name'>Athletics</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T02:05:00Z'>2026-06-09T02:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Milwaukee+Brewers+vs+Athletics' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -467,6 +498,7 @@
                         <span class='team-name'>Baltimore Orioles</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T22:35:00Z'>2026-06-09T22:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Baltimore+Orioles' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -479,6 +511,7 @@
                         <span class='team-name'>Miami Marlins</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T22:40:00Z'>2026-06-09T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Arizona+Diamondbacks+vs+Miami+Marlins' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -491,6 +524,7 @@
                         <span class='team-name'>Tampa Bay Rays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T22:40:00Z'>2026-06-09T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Boston+Red+Sox+vs+Tampa+Bay+Rays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -503,6 +537,7 @@
                         <span class='team-name'>Pittsburgh Pirates</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T22:40:00Z'>2026-06-09T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Los+Angeles+Dodgers+vs+Pittsburgh+Pirates' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -515,6 +550,7 @@
                         <span class='team-name'>Detroit Tigers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T22:40:00Z'>2026-06-09T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Minnesota+Twins+vs+Detroit+Tigers' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -527,6 +563,7 @@
                         <span class='team-name'>Cleveland Guardians</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T22:40:00Z'>2026-06-09T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Yankees+vs+Cleveland+Guardians' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -539,6 +576,7 @@
                         <span class='team-name'>Toronto Blue Jays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T23:07:00Z'>2026-06-09T23:07:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Philadelphia+Phillies+vs+Toronto+Blue+Jays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -551,6 +589,7 @@
                         <span class='team-name'>New York Mets</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T23:10:00Z'>2026-06-09T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=St.+Louis+Cardinals+vs+New+York+Mets' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -563,6 +602,7 @@
                         <span class='team-name'>Chicago White Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T23:40:00Z'>2026-06-09T23:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Atlanta+Braves+vs+Chicago+White+Sox' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -575,6 +615,7 @@
                         <span class='team-name'>Kansas City Royals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-09T23:40:00Z'>2026-06-09T23:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Texas+Rangers+vs+Kansas+City+Royals' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Wed Jun 10</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -587,6 +628,7 @@
                         <span class='team-name'>Colorado Rockies</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T00:40:00Z'>2026-06-10T00:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Chicago+Cubs+vs+Colorado+Rockies' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -599,6 +641,7 @@
                         <span class='team-name'>Los Angeles Angels</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T01:38:00Z'>2026-06-10T01:38:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Houston+Astros+vs+Los+Angeles+Angels' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -611,6 +654,7 @@
                         <span class='team-name'>San Diego Padres</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T01:40:00Z'>2026-06-10T01:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Cincinnati+Reds+vs+San+Diego+Padres' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -623,6 +667,7 @@
                         <span class='team-name'>San Francisco Giants</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T01:45:00Z'>2026-06-10T01:45:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Washington+Nationals+vs+San+Francisco+Giants' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -635,6 +680,7 @@
                         <span class='team-name'>Athletics</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T02:05:00Z'>2026-06-10T02:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Milwaukee+Brewers+vs+Athletics' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -647,6 +693,7 @@
                         <span class='team-name'>Tampa Bay Rays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T17:10:00Z'>2026-06-10T17:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Boston+Red+Sox+vs+Tampa+Bay+Rays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -659,6 +706,7 @@
                         <span class='team-name'>Cleveland Guardians</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T17:10:00Z'>2026-06-10T17:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Yankees+vs+Cleveland+Guardians' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -671,6 +719,7 @@
                         <span class='team-name'>San Francisco Giants</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T19:45:00Z'>2026-06-10T19:45:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Washington+Nationals+vs+San+Francisco+Giants' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -683,6 +732,7 @@
                         <span class='team-name'>San Diego Padres</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T20:10:00Z'>2026-06-10T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Cincinnati+Reds+vs+San+Diego+Padres' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -695,6 +745,7 @@
                         <span class='team-name'>Baltimore Orioles</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T22:35:00Z'>2026-06-10T22:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Baltimore+Orioles' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -707,6 +758,7 @@
                         <span class='team-name'>Miami Marlins</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T22:40:00Z'>2026-06-10T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Arizona+Diamondbacks+vs+Miami+Marlins' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -719,6 +771,7 @@
                         <span class='team-name'>Pittsburgh Pirates</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T22:40:00Z'>2026-06-10T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Los+Angeles+Dodgers+vs+Pittsburgh+Pirates' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -731,6 +784,7 @@
                         <span class='team-name'>Detroit Tigers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T22:40:00Z'>2026-06-10T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Minnesota+Twins+vs+Detroit+Tigers' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -743,6 +797,7 @@
                         <span class='team-name'>Toronto Blue Jays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T23:07:00Z'>2026-06-10T23:07:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Philadelphia+Phillies+vs+Toronto+Blue+Jays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -755,6 +810,7 @@
                         <span class='team-name'>New York Mets</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T23:10:00Z'>2026-06-10T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=St.+Louis+Cardinals+vs+New+York+Mets' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -767,6 +823,7 @@
                         <span class='team-name'>Chicago White Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T23:40:00Z'>2026-06-10T23:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Atlanta+Braves+vs+Chicago+White+Sox' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -779,6 +836,7 @@
                         <span class='team-name'>Kansas City Royals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T23:40:00Z'>2026-06-10T23:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Texas+Rangers+vs+Kansas+City+Royals' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Thu Jun 11</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -791,6 +849,7 @@
                         <span class='team-name'>Colorado Rockies</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T00:40:00Z'>2026-06-11T00:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Chicago+Cubs+vs+Colorado+Rockies' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -803,6 +862,7 @@
                         <span class='team-name'>Athletics</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T01:05:00Z'>2026-06-11T01:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Milwaukee+Brewers+vs+Athletics' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -815,6 +875,7 @@
                         <span class='team-name'>Los Angeles Angels</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T01:38:00Z'>2026-06-11T01:38:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Houston+Astros+vs+Los+Angeles+Angels' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -827,6 +888,7 @@
                         <span class='team-name'>Miami Marlins</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T17:10:00Z'>2026-06-11T17:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Arizona+Diamondbacks+vs+Miami+Marlins' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -839,6 +901,7 @@
                         <span class='team-name'>Detroit Tigers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T17:10:00Z'>2026-06-11T17:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Minnesota+Twins+vs+Detroit+Tigers' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -851,6 +914,7 @@
                         <span class='team-name'>New York Mets</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T17:10:00Z'>2026-06-11T17:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=St.+Louis+Cardinals+vs+New+York+Mets' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -863,6 +927,7 @@
                         <span class='team-name'>Kansas City Royals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T18:10:00Z'>2026-06-11T18:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Texas+Rangers+vs+Kansas+City+Royals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -875,6 +940,7 @@
                         <span class='team-name'>Colorado Rockies</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T19:10:00Z'>2026-06-11T19:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Chicago+Cubs+vs+Colorado+Rockies' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -887,6 +953,7 @@
                         <span class='team-name'>Pittsburgh Pirates</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T22:40:00Z'>2026-06-11T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Los+Angeles+Dodgers+vs+Pittsburgh+Pirates' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -899,6 +966,7 @@
                         <span class='team-name'>Baltimore Orioles</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T23:00:00Z'>2026-06-11T23:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Baltimore+Orioles' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -911,6 +979,7 @@
                         <span class='team-name'>Chicago White Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-11T23:40:00Z'>2026-06-11T23:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Atlanta+Braves+vs+Chicago+White+Sox' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Fri Jun 12</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -923,6 +992,7 @@
                         <span class='team-name'>Pittsburgh Pirates</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T22:40:00Z'>2026-06-12T22:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Miami+Marlins+vs+Pittsburgh+Pirates' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -935,6 +1005,7 @@
                         <span class='team-name'>Washington Nationals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T22:45:00Z'>2026-06-12T22:45:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Washington+Nationals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -947,6 +1018,7 @@
                         <span class='team-name'>Baltimore Orioles</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:05:00Z'>2026-06-12T23:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=San+Diego+Padres+vs+Baltimore+Orioles' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -959,6 +1031,7 @@
                         <span class='team-name'>Cincinnati Reds</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:10:00Z'>2026-06-12T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Arizona+Diamondbacks+vs+Cincinnati+Reds' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -971,6 +1044,7 @@
                         <span class='team-name'>New York Mets</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:10:00Z'>2026-06-12T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Atlanta+Braves+vs+New+York+Mets' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -983,6 +1057,7 @@
                         <span class='team-name'>Cleveland Guardians</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:10:00Z'>2026-06-12T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Detroit+Tigers+vs+Cleveland+Guardians' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -995,6 +1070,7 @@
                         <span class='team-name'>Boston Red Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:10:00Z'>2026-06-12T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Texas+Rangers+vs+Boston+Red+Sox' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1007,6 +1083,7 @@
                         <span class='team-name'>Toronto Blue Jays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:37:00Z'>2026-06-12T23:37:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Yankees+vs+Toronto+Blue+Jays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1019,6 +1096,7 @@
                         <span class='team-name'>Chicago White Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:40:00Z'>2026-06-12T23:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Los+Angeles+Dodgers+vs+Chicago+White+Sox' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1031,6 +1109,7 @@
                         <span class='team-name'>Milwaukee Brewers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T23:40:00Z'>2026-06-12T23:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Philadelphia+Phillies+vs+Milwaukee+Brewers' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Sat Jun 13</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1043,6 +1122,7 @@
                         <span class='team-name'>Kansas City Royals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T00:10:00Z'>2026-06-13T00:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Houston+Astros+vs+Kansas+City+Royals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1055,6 +1135,7 @@
                         <span class='team-name'>Minnesota Twins</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T00:10:00Z'>2026-06-13T00:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=St.+Louis+Cardinals+vs+Minnesota+Twins' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1067,6 +1148,7 @@
                         <span class='team-name'>Los Angeles Angels</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T01:38:00Z'>2026-06-13T01:38:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Tampa+Bay+Rays+vs+Los+Angeles+Angels' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1079,6 +1161,7 @@
                         <span class='team-name'>Athletics</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T02:05:00Z'>2026-06-13T02:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Colorado+Rockies+vs+Athletics' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1091,6 +1174,7 @@
                         <span class='team-name'>San Francisco Giants</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T02:15:00Z'>2026-06-13T02:15:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Chicago+Cubs+vs+San+Francisco+Giants' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1103,6 +1187,7 @@
                         <span class='team-name'>Minnesota Twins</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T18:10:00Z'>2026-06-13T18:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=St.+Louis+Cardinals+vs+Minnesota+Twins' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1115,6 +1200,7 @@
                         <span class='team-name'>Toronto Blue Jays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T19:07:00Z'>2026-06-13T19:07:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Yankees+vs+Toronto+Blue+Jays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1127,6 +1213,7 @@
                         <span class='team-name'>Pittsburgh Pirates</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:05:00Z'>2026-06-13T20:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Miami+Marlins+vs+Pittsburgh+Pirates' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1139,6 +1226,7 @@
                         <span class='team-name'>Baltimore Orioles</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:05:00Z'>2026-06-13T20:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=San+Diego+Padres+vs+Baltimore+Orioles' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1151,6 +1239,7 @@
                         <span class='team-name'>Washington Nationals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:05:00Z'>2026-06-13T20:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Washington+Nationals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1163,6 +1252,7 @@
                         <span class='team-name'>Cincinnati Reds</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:10:00Z'>2026-06-13T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Arizona+Diamondbacks+vs+Cincinnati+Reds' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1175,6 +1265,7 @@
                         <span class='team-name'>New York Mets</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:10:00Z'>2026-06-13T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Atlanta+Braves+vs+New+York+Mets' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1187,6 +1278,7 @@
                         <span class='team-name'>Cleveland Guardians</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:10:00Z'>2026-06-13T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Detroit+Tigers+vs+Cleveland+Guardians' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1199,6 +1291,7 @@
                         <span class='team-name'>Boston Red Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:10:00Z'>2026-06-13T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Texas+Rangers+vs+Boston+Red+Sox' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1211,6 +1304,7 @@
                         <span class='team-name'>Chicago White Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T20:10:00Z'>2026-06-13T20:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Los+Angeles+Dodgers+vs+Chicago+White+Sox' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1223,6 +1317,7 @@
                         <span class='team-name'>Kansas City Royals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T23:10:00Z'>2026-06-13T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Houston+Astros+vs+Kansas+City+Royals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1235,6 +1330,7 @@
                         <span class='team-name'>Milwaukee Brewers</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-13T23:10:00Z'>2026-06-13T23:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Philadelphia+Phillies+vs+Milwaukee+Brewers' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Sun Jun 14</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1247,6 +1343,7 @@
                         <span class='team-name'>San Francisco Giants</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T02:05:00Z'>2026-06-14T02:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Chicago+Cubs+vs+San+Francisco+Giants' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1259,6 +1356,7 @@
                         <span class='team-name'>Athletics</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T02:05:00Z'>2026-06-14T02:05:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Colorado+Rockies+vs+Athletics' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1271,6 +1369,7 @@
                         <span class='team-name'>Los Angeles Angels</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T02:07:00Z'>2026-06-14T02:07:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Tampa+Bay+Rays+vs+Los+Angeles+Angels' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1283,6 +1382,7 @@
                         <span class='team-name'>Pittsburgh Pirates</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T16:15:00Z'>2026-06-14T16:15:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Miami+Marlins+vs+Pittsburgh+Pirates' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1295,6 +1395,7 @@
                         <span class='team-name'>Baltimore Orioles</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T17:35:00Z'>2026-06-14T17:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=San+Diego+Padres+vs+Baltimore+Orioles' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1307,6 +1408,7 @@
                         <span class='team-name'>Washington Nationals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T17:35:00Z'>2026-06-14T17:35:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Seattle+Mariners+vs+Washington+Nationals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1319,6 +1421,7 @@
                         <span class='team-name'>Toronto Blue Jays</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T17:37:00Z'>2026-06-14T17:37:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=New+York+Yankees+vs+Toronto+Blue+Jays' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1331,6 +1434,7 @@
                         <span class='team-name'>Cincinnati Reds</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T17:40:00Z'>2026-06-14T17:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Arizona+Diamondbacks+vs+Cincinnati+Reds' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1343,6 +1447,7 @@
                         <span class='team-name'>New York Mets</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T17:40:00Z'>2026-06-14T17:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Atlanta+Braves+vs+New+York+Mets' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1355,6 +1460,7 @@
                         <span class='team-name'>Cleveland Guardians</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T17:40:00Z'>2026-06-14T17:40:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Detroit+Tigers+vs+Cleveland+Guardians' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1367,6 +1473,7 @@
                         <span class='team-name'>Kansas City Royals</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T18:10:00Z'>2026-06-14T18:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Houston+Astros+vs+Kansas+City+Royals' target='_blank'>🎟 Tickets</a>
                 </div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1379,6 +1486,7 @@
                         <span class='team-name'>Chicago White Sox</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-14T18:10:00Z'>2026-06-14T18:10:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Los+Angeles+Dodgers+vs+Chicago+White+Sox' target='_blank'>🎟 Tickets</a>
                 </div></div></div>
     <div id="nhl" class="section"><div class="card"><div class='date-header'>Wed Jun 10</div>
                 <div class='game-row'>
@@ -1392,6 +1500,7 @@
                         <span class='team-name'>Vegas Golden Knights</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-10T00:00:00Z'>2026-06-10T00:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Carolina+Hurricanes+vs+Vegas+Golden+Knights' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Fri Jun 12</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1404,6 +1513,7 @@
                         <span class='team-name'>Carolina Hurricanes</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-12T00:00:00Z'>2026-06-12T00:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Vegas+Golden+Knights+vs+Carolina+Hurricanes' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Mon Jun 15</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1416,6 +1526,7 @@
                         <span class='team-name'>Vegas Golden Knights</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-15T00:00:00Z'>2026-06-15T00:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Carolina+Hurricanes+vs+Vegas+Golden+Knights' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Thu Jun 18</div>
                 <div class='game-row'>
                     <div class='team-pill'>
@@ -1428,73 +1539,209 @@
                         <span class='team-name'>Carolina Hurricanes</span>
                     </div>
                     <span class='game-time' data-utc='2026-06-18T00:00:00Z'>2026-06-18T00:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Vegas+Golden+Knights+vs+Carolina+Hurricanes' target='_blank'>🎟 Tickets</a>
                 </div></div></div>
     <div id="epl" class="section"><div class="card"><p class='no-games'>No games scheduled.</p></div></div>
-    <div id="cricket" class="section"><div class="card"><div class='date-header'>Mon Jun 08</div>
+    <div id="cricket" class="section"><div class="card"><div class='date-header'>Tue Jun 09</div>
                 <div class='game-row'>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='Netherlands' onerror='this.style.display="none"'/>
-                        <span class='team-name'>Netherlands</span>
+                        <img class='team-logo' src='' alt='South Africa Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>South Africa Women</span>
                     </div>
                     <span class='vs-text'>vs</span>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='United States Of America' onerror='this.style.display="none"'/>
-                        <span class='team-name'>United States Of America</span>
+                        <img class='team-logo' src='' alt='New Zealand Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>New Zealand Women</span>
                     </div>
-                    <span class='game-time' data-utc='2026-06-08T00:00:00Z'>2026-06-08T00:00:00Z</span>
+                    <span class='game-time' data-utc='2026-06-09T14:00:00Z'>2026-06-09T14:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=South+Africa+Women+vs+New+Zealand+Women' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Wed Jun 10</div>
                 <div class='game-row'>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='Canada' onerror='this.style.display="none"'/>
-                        <span class='team-name'>Canada</span>
+                        <img class='team-logo' src='' alt='India Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>India Women</span>
                     </div>
                     <span class='vs-text'>vs</span>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='Netherlands' onerror='this.style.display="none"'/>
-                        <span class='team-name'>Netherlands</span>
+                        <img class='team-logo' src='' alt='England Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>England Women</span>
                     </div>
-                    <span class='game-time' data-utc='2026-06-10T00:00:00Z'>2026-06-10T00:00:00Z</span>
-                </div><div class='date-header'>Fri Jun 12</div>
+                    <span class='game-time' data-utc='2026-06-10T09:00:00Z'>2026-06-10T09:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=India+Women+vs+England+Women' target='_blank'>🎟 Tickets</a>
+                </div>
                 <div class='game-row'>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='United States Of America' onerror='this.style.display="none"'/>
-                        <span class='team-name'>United States Of America</span>
+                        <img class='team-logo' src='' alt='West Indies Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>West Indies Women</span>
                     </div>
                     <span class='vs-text'>vs</span>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='Canada' onerror='this.style.display="none"'/>
-                        <span class='team-name'>Canada</span>
+                        <img class='team-logo' src='' alt='Australia Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Australia Women</span>
                     </div>
-                    <span class='game-time' data-utc='2026-06-12T00:00:00Z'>2026-06-12T00:00:00Z</span>
+                    <span class='game-time' data-utc='2026-06-10T14:00:00Z'>2026-06-10T14:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=West+Indies+Women+vs+Australia+Women' target='_blank'>🎟 Tickets</a>
                 </div><div class='date-header'>Sun Jun 14</div>
                 <div class='game-row'>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='United States Of America' onerror='this.style.display="none"'/>
-                        <span class='team-name'>United States Of America</span>
+                        <img class='team-logo' src='' alt='Jersey Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Jersey Women</span>
                     </div>
                     <span class='vs-text'>vs</span>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='Netherlands' onerror='this.style.display="none"'/>
-                        <span class='team-name'>Netherlands</span>
+                        <img class='team-logo' src='' alt='Guernsey Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Guernsey Women</span>
                     </div>
-                    <span class='game-time' data-utc='2026-06-14T00:00:00Z'>2026-06-14T00:00:00Z</span>
-                </div><div class='date-header'>Tue Jun 16</div>
+                    <span class='game-time' data-utc='2026-06-14T09:00:00Z'>2026-06-14T09:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Jersey+Women+vs+Guernsey+Women' target='_blank'>🎟 Tickets</a>
+                </div>
                 <div class='game-row'>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='Netherlands' onerror='this.style.display="none"'/>
-                        <span class='team-name'>Netherlands</span>
+                        <img class='team-logo' src='' alt='Jersey Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Jersey Women</span>
                     </div>
                     <span class='vs-text'>vs</span>
                     <div class='team-pill'>
-                        <img class='team-logo' src='' alt='Canada' onerror='this.style.display="none"'/>
-                        <span class='team-name'>Canada</span>
+                        <img class='team-logo' src='' alt='Guernsey Women' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Guernsey Women</span>
                     </div>
-                    <span class='game-time' data-utc='2026-06-16T00:00:00Z'>2026-06-16T00:00:00Z</span>
+                    <span class='game-time' data-utc='2026-06-14T13:30:00Z'>2026-06-14T13:30:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Jersey+Women+vs+Guernsey+Women' target='_blank'>🎟 Tickets</a>
+                </div><div class='date-header'>Fri Jun 19</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Namibia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Namibia</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Hong Kong' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Hong Kong</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-19T12:00:00Z'>2026-06-19T12:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Namibia+vs+Hong+Kong' target='_blank'>🎟 Tickets</a>
+                </div><div class='date-header'>Sat Jun 20</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Namibia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Namibia</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Nigeria' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Nigeria</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-20T12:00:00Z'>2026-06-20T12:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Namibia+vs+Nigeria' target='_blank'>🎟 Tickets</a>
+                </div><div class='date-header'>Mon Jun 22</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Namibia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Namibia</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Hong Kong' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Hong Kong</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-22T12:00:00Z'>2026-06-22T12:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Namibia+vs+Hong+Kong' target='_blank'>🎟 Tickets</a>
+                </div><div class='date-header'>Tue Jun 23</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Namibia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Namibia</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Nigeria' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Nigeria</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-23T12:00:00Z'>2026-06-23T12:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Namibia+vs+Nigeria' target='_blank'>🎟 Tickets</a>
+                </div><div class='date-header'>Fri Jun 26</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Luxembourg' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Luxembourg</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Serbia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Serbia</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-26T09:00:00Z'>2026-06-26T09:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Luxembourg+vs+Serbia' target='_blank'>🎟 Tickets</a>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Czech Republic' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Czech Republic</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Luxembourg' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Luxembourg</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-26T13:00:00Z'>2026-06-26T13:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Czech+Republic+vs+Luxembourg' target='_blank'>🎟 Tickets</a>
+                </div><div class='date-header'>Sat Jun 27</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Czech Republic' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Czech Republic</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Serbia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Serbia</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-27T09:00:00Z'>2026-06-27T09:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Czech+Republic+vs+Serbia' target='_blank'>🎟 Tickets</a>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Luxembourg' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Luxembourg</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Serbia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Serbia</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-27T13:00:00Z'>2026-06-27T13:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Luxembourg+vs+Serbia' target='_blank'>🎟 Tickets</a>
+                </div><div class='date-header'>Sun Jun 28</div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Czech Republic' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Czech Republic</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Luxembourg' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Luxembourg</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-28T09:00:00Z'>2026-06-28T09:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Czech+Republic+vs+Luxembourg' target='_blank'>🎟 Tickets</a>
+                </div>
+                <div class='game-row'>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Czech Republic' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Czech Republic</span>
+                    </div>
+                    <span class='vs-text'>vs</span>
+                    <div class='team-pill'>
+                        <img class='team-logo' src='' alt='Serbia' onerror='this.style.display="none"'/>
+                        <span class='team-name'>Serbia</span>
+                    </div>
+                    <span class='game-time' data-utc='2026-06-28T13:00:00Z'>2026-06-28T13:00:00Z</span>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q=Czech+Republic+vs+Serbia' target='_blank'>🎟 Tickets</a>
                 </div></div></div>
 </main>
 
 <footer>
-    <p>Updated: June 07, 2026 at 05:53 UTC &nbsp;·&nbsp; Data from ESPN & CricketData &nbsp;·&nbsp;
+    <p>Updated: June 07, 2026 at 16:42 UTC &nbsp;·&nbsp; Data from ESPN & CricketData &nbsp;·&nbsp;
     <a href="#subscribe">Subscribe via iCal</a> &nbsp;·&nbsp; Free forever</p>
 </footer>
 
