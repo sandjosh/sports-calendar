@@ -22,6 +22,8 @@ jobs:
 
       - name: Run fetch script
         run: python fetch_games.py
+        env:
+          CRICKET_API_KEY: ${{ secrets.CRICKET_API_KEY }}
 
       - name: Commit and push updated files
         run: |
