@@ -166,7 +166,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
                         <span class='team-name'>{g['home']}</span>
                     </div>
                     <span class='game-time' data-utc='{g['time']}'>{g['time']}</span>
-                    <a class='tickets-btn' href='https://seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")}' target='_blank'>🎟 Tickets</a>
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")} &datetime_local.gte={g["time"][:10]}' target='_blank'>🎟 Tickets</a>
                 </div>"""
         return html
 
