@@ -166,7 +166,8 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
                         <span class='team-name'>{g['home']}</span>
                     </div>
                     <span class='game-time' data-utc='{g['time']}'>{g['time']}</span>
-                </div>"""
+                    <a class='tickets-btn' href='https://seatgeek.com/search?q={g['away'].replace(" ", "+")}+vs+{g['home'].replace(" ", "+")}' target='_blank'>🎟 Tickets</a>
+                </div>
         return html
 
     updated = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
@@ -253,6 +254,11 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
         /* Footer */
         footer {{ text-align: center; padding: 2rem 1rem; color: #b0b7c9; font-size: 12px; }}
         footer a {{ color: #9099b0; text-decoration: none; }}
+        .tickets-btn {{ font-size: 11px; color: #1a6ef5; border: 1px solid #d0e0fd;
+                        border-radius: 20px; padding: 3px 10px; background: #f0f5ff;
+                        text-decoration: none; white-space: nowrap; flex-shrink: 0;
+                        margin-left: 8px; }}
+        .tickets-btn:hover {{ background: #1a6ef5; color: #ffffff; }}
     </style>
 </head>
 <body>
