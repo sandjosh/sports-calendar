@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PlyCal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+               background: #f7f8fc; color: #1a1f2e; min-height: 100vh; }
+
+        header { background: #ffffff; border-bottom: 1px solid #eaecf4; padding: 0.9rem 1.5rem;
+                 display: flex; align-items: center; justify-content: space-between; }
+        .logo-wrap { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+        .logo-icon { width: 30px; height: 30px; background: #1a6ef5; border-radius: 7px;
+                     display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .logo-icon svg { width: 16px; height: 16px; }
+        .logo-text { font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.5px; }
+        .logo-text span { color: #1a6ef5; }
+        nav { display: flex; gap: 1.5rem; }
+        nav a { font-size: 13px; color: #9099b0; text-decoration: none; }
+        nav a.active { color: #1a6ef5; font-weight: 500; }
+
+        main { max-width: 680px; margin: 3rem auto; padding: 0 1.5rem; }
+
+        .hero { margin-bottom: 3rem; }
+        .hero h1 { font-size: 2rem; font-weight: 700; color: #111827; letter-spacing: -0.5px;
+                   margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; color: #4a5568; line-height: 1.7; }
+
+        .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                   gap: 1.25rem; margin-bottom: 3rem; }
+        .pillar { background: #ffffff; border: 0.5px solid #eaecf4; border-radius: 10px;
+                  padding: 1.5rem; }
+        .pillar-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+        .pillar h3 { font-size: 1rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem; }
+        .pillar p { font-size: 0.9rem; color: #6b7280; line-height: 1.6; }
+
+        .sports { background: #ffffff; border: 0.5px solid #eaecf4; border-radius: 10px;
+                  padding: 1.5rem; margin-bottom: 3rem; }
+        .sports h2 { font-size: 1.1rem; font-weight: 600; color: #111827; margin-bottom: 1rem; }
+        .sports-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+        .sport-tag { font-size: 13px; background: #f0f5ff; color: #1a6ef5; border: 1px solid #d0e0fd;
+                     border-radius: 20px; padding: 4px 14px; }
+
+        .cta { text-align: center; padding: 2.5rem; background: #1a6ef5; border-radius: 12px;
+               margin-bottom: 3rem; }
+        .cta h2 { font-size: 1.4rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem; }
+        .cta p { color: rgba(255,255,255,0.8); margin-bottom: 1.25rem; font-size: 0.95rem; }
+        .cta a { background: #ffffff; color: #1a6ef5; font-weight: 600; font-size: 0.95rem;
+                 padding: 0.65rem 1.75rem; border-radius: 25px; text-decoration: none; }
+        .cta a:hover { background: #f0f5ff; }
+
+        footer { text-align: center; padding: 2rem 1rem; color: #b0b7c9; font-size: 12px;
+                 border-top: 1px solid #eaecf4; }
+        footer a { color: #9099b0; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a class="logo-wrap" href="/">
+        <div class="logo-icon">
+            <svg viewBox="0 0 16 16" fill="none">
+                <rect x="1" y="3" width="14" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+                <path d="M1 6.5h14" stroke="white" stroke-width="1.5"/>
+                <path d="M5 1v3M11 1v3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="5.5" cy="10" r="1" fill="white"/>
+                <circle cx="8" cy="10" r="1" fill="white"/>
+                <circle cx="10.5" cy="10" r="1" fill="white"/>
+            </svg>
+        </div>
+        <div class="logo-text">Ply<span>Cal</span></div>
+    </a>
+    <nav>
+        <a href="/">Schedule</a>
+        <a href="/about.html" class="active">About</a>
+    </nav>
+</header>
+
+<main>
+    <div class="hero">
+        <h1>Every game. Every timezone. Free.</h1>
+        <p>PlyCal is a global sports calendar built for fans who follow more than one sport, more than one league, and more than one timezone. No account needed. No subscription. No ads. Just a clean, reliable schedule that updates itself every day.</p>
+    </div>
+
+    <div class="pillars">
+        <div class="pillar">
+            <div class="pillar-icon">🌍</div>
+            <h3>Truly global</h3>
+            <p>From the NFL to international cricket, PlyCal covers the sports that matter to fans worldwide — not just one country or one league.</p>
+        </div>
+        <div class="pillar">
+            <div class="pillar-icon">🕐</div>
+            <h3>Your local time, always</h3>
+            <p>Every game time is automatically converted to your local timezone. No mental math, no UTC confusion — just the right time for wherever you are.</p>
+        </div>
+        <div class="pillar">
+            <div class="pillar-icon">📅</div>
+            <h3>Subscribe, don't check</h3>
+            <p>Add any sport's schedule directly to Google Calendar, Apple Calendar, or Outlook with one URL. Your calendar stays current automatically.</p>
+        </div>
+        <div class="pillar">
+            <div class="pillar-icon">✅</div>
+            <h3>Free, forever</h3>
+            <p>No account. No signup. No ads. PlyCal is and will always be completely free to use. Just open it and go.</p>
+        </div>
+    </div>
+
+    <div class="sports">
+        <h2>Sports we cover</h2>
+        <div class="sports-grid">
+            <span class="sport-tag">🏈 NFL</span>
+            <span class="sport-tag">🏀 NBA</span>
+            <span class="sport-tag">⚾ MLB</span>
+            <span class="sport-tag">🏒 NHL</span>
+            <span class="sport-tag">⚽ Premier League</span>
+            <span class="sport-tag">🏏 Cricket</span>
+            <span class="sport-tag">⚽ FIFA World Cup</span>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #9099b0;">More sports and leagues added regularly.</p>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to never miss a game?</h2>
+        <p>Subscribe to your sport's calendar feed and it stays updated automatically.</p>
+        <a href="/#subscribe">Subscribe for free</a>
+    </div>
+</main>
+
+<footer>
+    <p>Data from ESPN & CricketData &nbsp;·&nbsp; <a href="/">Back to schedule</a> &nbsp;·&nbsp; Free forever</p>
+</footer>
+
+</body>
+</html>
