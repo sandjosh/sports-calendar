@@ -292,6 +292,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
     </a>
     <nav>
         <a href="/" class="active">Schedule</a>
+        <a href="/about.html">About</a>
         <a href="#subscribe">Subscribe</a>
     </nav>
 </header>
