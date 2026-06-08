@@ -272,6 +272,9 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
         .ticket-dropdown a:hover {{ background: #f0f5ff; color: #1a6ef5; }}
         .ticket-dropdown.open {{ display: block; }}
         .vendor-logo {{ width: 16px; height: 16px; margin-right: 6px; vertical-align: middle; border-radius: 3px; }}
+        .about-btn {{ background: #1a6ef5; color: #ffffff !important; padding: 5px 16px;
+                      border-radius: 20px; font-weight: 500; }}
+        .about-btn:hover {{ background: #1557d0; }}
     </style>
 </head>
 <body>
@@ -292,8 +295,8 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
     </a>
     <nav>
         <a href="/" class="active">Schedule</a>
-        <a href="/about.html">About</a>
         <a href="#subscribe">Subscribe</a>
+        <a href="/about.html" class="about-btn">About</a>
     </nav>
 </header>
 
