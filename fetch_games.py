@@ -36,8 +36,8 @@ def fetch_games(sport, league_path, league_name, days_ahead=28):
                 "time": readable_time,
                 "home": home["team"]["displayName"],
                 "away": away["team"]["displayName"],
-                "home_logo": f"https://flagcdn.com/40x30/{FLAG_CODES.get(home, '')}.png" if FLAG_CODES.get(home) else "",
-                "away_logo": f"https://flagcdn.com/40x30/{FLAG_CODES.get(away, '')}.png" if FLAG_CODES.get(away) else "",
+                "home_logo": home["team"].get("logo", ""),
+                "away_logo": away["team"].get("logo", ""),
                 "status": event["status"]["type"]["description"]
             })
         except Exception:
@@ -184,20 +184,11 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                         "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
                         "home": home,
                         "away": away,
-                        "home_logo": "",
-                        "away_logo": "",
+                        "home_logo": f"https://flagsapi.com/{FLAG_CODES.get(home, '').upper()}/flat/32.png" if FLAG_CODES.get(home) else "",
+                        "away_logo": f"https://flagsapi.com/{FLAG_CODES.get(away, '').upper()}/flat/32.png" if FLAG_CODES.get(away) else "",
                         "status": status or "Cricket"
                     })
 
-                    games.append({
-                        "date": dt.strftime("%a %b %d"),
-                        "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
-                        "home": home,
-                        "away": away,
-                        "home_logo": "",
-                        "away_logo": "",
-                        "status": match_type or "Cricket"
-                    })
                 except Exception:
                     continue
         except Exception as e:
