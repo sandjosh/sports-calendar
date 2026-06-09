@@ -62,20 +62,21 @@ def fetch_cricket_games(days_ahead=28):
     today = datetime.utcnow()
     end = today + timedelta(days=days_ahead)
 
-    url = f"https://api.cricapi.com/v1/matches?apikey={api_key}&offset=0"
-    try:
-        with urllib.request.urlopen(url) as response:
-            data = json.loads(response.read())
-    except Exception as e:
-        print(f"  Error fetching cricket: {e}")
-        return []
-
-    if data.get("status") != "success":
-        print(f"  Cricket API error: {data.get('status')}")
-        return []
-
     games = []
-    for match in data.get("data", []):
+    for offset in [0, 25, 50]:
+        url = f"https://api.cricapi.com/v1/matches?apikey={api_key}&offset={offset}&per_page=25"
+        try:
+            with urllib.request.urlopen(url) as response:
+                data = json.loads(response.read())
+        except Exception as e:
+            print(f"  Error fetching cricket offset {offset}: {e}")
+            continue
+
+        if data.get("status") != "success":
+            print(f"  Cricket API error at offset {offset}: {data.get('status')}")
+            continue
+
+        for match in data.get("data", []):
         try:
             date_str = match.get("dateTimeGMT", "")
             if not date_str:
