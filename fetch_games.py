@@ -62,7 +62,7 @@ def fetch_cricket_games(days_ahead=28):
     end = today + timedelta(days=days_ahead)
     games = []
     for offset in [0, 25, 50]:
-        url = f"https://api.cricapi.com/v1/matches?apikey={api_key}&offset={offset}&per_page=25"
+        url = f"https://api.cricapi.com/v1/currentMatches?apikey={api_key}&offset={offset}&per_page=25"
         try:
             with urllib.request.urlopen(url) as response:
                 data = json.loads(response.read())
