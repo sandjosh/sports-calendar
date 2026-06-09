@@ -138,30 +138,30 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                     summary = str(component.get("SUMMARY", "Cricket Match"))
                     location = str(component.get("LOCATION", ""))
 
-                    # Parse "1st T20I England v India" style
-                    # Strip match number prefix if present
                     import re
-                    # Remove leading "1st ODI", "2nd T20I" etc
-                    clean = re.sub(r'^\d+\w+\s+(T20I|ODI|Test|T20)\s+', '', summary)
-                    match_type = ""
-                    mt = re.search(r'(T20I|ODI|Test|T20)', summary)
-                    if mt:
-                        match_type = mt.group(1)
-
-                    # Split on " v " or " vs "
-                    if " v " in clean:
-                        parts = clean.split(" v ", 1)
-                    elif " vs " in clean:
-                        parts = clean.split(" vs ", 1)
+                    # Extract match type prefix e.g. "1st T20I", "2nd ODI", "3rd Test"
+                    prefix_match = re.match(r'^(\d+\w+\s+(?:T20I|ODI|Test|T20))\s+(.+)$', summary)
+                    if prefix_match:
+                        match_label = prefix_match.group(1)
+                        rest = prefix_match.group(2)
                     else:
-                        parts = [clean, ""]
+                        match_label = ""
+                        rest = summary
+
+                    # Split teams on " v " or " vs "
+                    if " v " in rest:
+                        parts = rest.split(" v ", 1)
+                    elif " vs " in rest:
+                        parts = rest.split(" vs ", 1)
+                    else:
+                        parts = [rest, ""]
 
                     home = parts[0].strip()
                     away = parts[1].strip() if len(parts) > 1 else ""
 
-                    status = match_type
+                    status = match_label
                     if location:
-                        status += f" · {location}" if match_type else location
+                        status += f" · {location}" if match_label else location
 
                     games.append({
                         "date": dt.strftime("%a %b %d"),
