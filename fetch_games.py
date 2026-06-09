@@ -98,6 +98,81 @@ def fetch_cricket_games(days_ahead=28):
                 continue
     return games
 
+def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
+    from datetime import timedelta
+    try:
+        from icalendar import Calendar
+    except ImportError:
+        print("  icalendar library not available")
+        return []
+
+    today = datetime.utcnow()
+    end = today + timedelta(days=days_ahead)
+    games = []
+
+    import os as _os
+    ics_files = [f for f in _os.listdir(folder) if f.endswith(".ics")]
+    print(f"  Found {len(ics_files)} .ics files in {folder}/")
+
+    for filename in ics_files:
+        filepath = _os.path.join(folder, filename)
+        try:
+            with open(filepath, "rb") as f:
+                cal = Calendar.from_ical(f.read())
+            for component in cal.walk():
+                if component.name != "VEVENT":
+                    continue
+                try:
+                    dtstart = component.get("DTSTART").dt
+                    if hasattr(dtstart, "hour"):
+                        dt = dtstart.replace(tzinfo=None)
+                    else:
+                        from datetime import datetime as dt_cls
+                        dt = dt_cls.combine(dtstart, dt_cls.min.time())
+
+                    if dt < today or dt > end:
+                        continue
+
+                    summary = str(component.get("SUMMARY", "Cricket Match"))
+                    parts = summary.split(" v ")
+                    if len(parts) == 2:
+                        away = parts[0].strip()
+                        home = parts[1].strip()
+                    else:
+                        parts2 = summary.split(" vs ")
+                        if len(parts2) == 2:
+                            away = parts2[0].strip()
+                            home = parts2[1].strip()
+                        else:
+                            away = summary
+                            home = ""
+
+                    description = str(component.get("DESCRIPTION", ""))
+                    match_type = ""
+                    for line in description.split("\\n"):
+                        if "Test" in line or "ODI" in line or "T20" in line:
+                            match_type = line.strip()
+                            break
+
+                    games.append({
+                        "date": dt.strftime("%a %b %d"),
+                        "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
+                        "home": home,
+                        "away": away,
+                        "home_logo": "",
+                        "away_logo": "",
+                        "status": match_type or "Cricket"
+                    })
+                except Exception:
+                    continue
+        except Exception as e:
+            print(f"  Error reading {filename}: {e}")
+            continue
+
+    games.sort(key=lambda x: x["time"])
+    print(f"  Got {len(games)} cricket matches from .ics files")
+    return games
+
 def build_ical(games, sport_name):
     lines = [
         "BEGIN:VCALENDAR",
@@ -133,7 +208,7 @@ def build_ical(games, sport_name):
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines)
 
-def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_games, wc_games, tennis_games):
+def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, tennis_games, cricket_games):
     def games_html(games):
         if not games:
             return "<p class='no-games'>No games scheduled.</p>"
@@ -178,6 +253,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
     cricket_html = games_html(cricket_games)
     wc_html      = games_html(wc_games)
     tennis_html  = games_html(tennis_games)
+    cricket_html = games_html(cricket_games)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -329,7 +405,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, cricket_ga
 </main>
 
 <footer>
-    <p>Updated: {updated} &nbsp;·&nbsp; Data from ESPN & CricketData &nbsp;·&nbsp;
+    <p>Updated: {updated} &nbsp;·&nbsp; Data from ESPN & ESPNCricinfo &nbsp;·&nbsp;
     <a href="#subscribe">Subscribe via iCal</a> &nbsp;·&nbsp; Free forever</p>
 </footer>
 
@@ -401,17 +477,15 @@ if __name__ == "__main__":
     tennis.sort(key=lambda x: x['time'])
     print(f"  Got {len(tennis)} tennis matches total")
 
-    print("Fetching Cricket games...")
-    cricket = fetch_cricket_games()
-    cricket.sort(key=lambda x: x['time'])
-    print(f"  Got {len(cricket)} cricket games total")
+    print("Fetching Cricket games from .ics files...")
+    cricket = fetch_cricket_from_ics()
 
-    html = build_html(nfl, nba, mlb, nhl, epl, cricket, wc, tennis)
+    html = build_html(nfl, nba, mlb, nhl, epl, wc, tennis, cricket)
     with open("index.html", "w") as f:
         f.write(html)
     print("index.html written.")
 
-    for sport_name, games in [("NFL", nfl), ("NBA", nba), ("MLB", mlb), ("NHL", nhl), ("EPL", epl), ("Cricket", cricket), ("WC", wc), ("Tennis", tennis)]:
+    for sport_name, games in [("NFL", nfl), ("NBA", nba), ("MLB", mlb), ("NHL", nhl), ("EPL", epl), ("WC", wc), ("Tennis", tennis), ("Cricket", cricket)]:
         ical = build_ical(games, sport_name)
         filename = f"{sport_name.lower()}.ics"
         with open(filename, "w") as f:
