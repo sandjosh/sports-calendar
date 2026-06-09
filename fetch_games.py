@@ -125,8 +125,10 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                 try:
                     dtstart = component.get("DTSTART").dt
                     if hasattr(dtstart, "hour"):
+                        # datetime object — strip timezone
                         dt = dtstart.replace(tzinfo=None)
                     else:
+                        # date object — convert to datetime
                         from datetime import datetime as dt_cls
                         dt = dt_cls.combine(dtstart, dt_cls.min.time())
 
@@ -134,25 +136,42 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                         continue
 
                     summary = str(component.get("SUMMARY", "Cricket Match"))
-                    parts = summary.split(" v ")
-                    if len(parts) == 2:
-                        away = parts[0].strip()
-                        home = parts[1].strip()
-                    else:
-                        parts2 = summary.split(" vs ")
-                        if len(parts2) == 2:
-                            away = parts2[0].strip()
-                            home = parts2[1].strip()
-                        else:
-                            away = summary
-                            home = ""
+                    location = str(component.get("LOCATION", ""))
 
-                    description = str(component.get("DESCRIPTION", ""))
+                    # Parse "1st T20I England v India" style
+                    # Strip match number prefix if present
+                    import re
+                    # Remove leading "1st ODI", "2nd T20I" etc
+                    clean = re.sub(r'^\d+\w+\s+(T20I|ODI|Test|T20)\s+', '', summary)
                     match_type = ""
-                    for line in description.split("\\n"):
-                        if "Test" in line or "ODI" in line or "T20" in line:
-                            match_type = line.strip()
-                            break
+                    mt = re.search(r'(T20I|ODI|Test|T20)', summary)
+                    if mt:
+                        match_type = mt.group(1)
+
+                    # Split on " v " or " vs "
+                    if " v " in clean:
+                        parts = clean.split(" v ", 1)
+                    elif " vs " in clean:
+                        parts = clean.split(" vs ", 1)
+                    else:
+                        parts = [clean, ""]
+
+                    home = parts[0].strip()
+                    away = parts[1].strip() if len(parts) > 1 else ""
+
+                    status = match_type
+                    if location:
+                        status += f" · {location}" if match_type else location
+
+                    games.append({
+                        "date": dt.strftime("%a %b %d"),
+                        "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
+                        "home": home,
+                        "away": away,
+                        "home_logo": "",
+                        "away_logo": "",
+                        "status": status or "Cricket"
+                    })
 
                     games.append({
                         "date": dt.strftime("%a %b %d"),
