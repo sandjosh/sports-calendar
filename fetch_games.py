@@ -175,6 +175,23 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                     home = parts[0].strip()
                     away = parts[1].strip() if len(parts) > 1 else ""
 
+                    # Skip Tour matches
+                    if "Tour Match" in home or "Tour Match" in away:
+                        continue
+
+                    # Extract (Day X) from team names
+                    import re as re2
+                    day_match_home = re2.search(r'\(Day (\d+)\)', home)
+                    day_match_away = re2.search(r'\(Day (\d+)\)', away)
+                    if day_match_home:
+                        day_label = f"Day {day_match_home.group(1)}"
+                        home = re2.sub(r'\s*\(Day \d+\)', '', home).strip()
+                        match_label = f"{match_label} · {day_label}" if match_label else day_label
+                    elif day_match_away:
+                        day_label = f"Day {day_match_away.group(1)}"
+                        away = re2.sub(r'\s*\(Day \d+\)', '', away).strip()
+                        match_label = f"{match_label} · {day_label}" if match_label else day_label
+
                     status = match_label
                     if location:
                         status += f" · {location}" if match_label else location
