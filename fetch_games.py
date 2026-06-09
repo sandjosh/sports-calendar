@@ -211,7 +211,8 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                         "away": away,
                         "home_logo": get_cricket_flag(home, FLAG_CODES),
                         "away_logo": get_cricket_flag(away, FLAG_CODES),
-
+                        "status": status or "Cricket"
+                    })
                 except Exception:
                     continue
         except Exception as e:
