@@ -103,7 +103,7 @@ def get_cricket_flag(team, flag_codes):
     if not code:
         return ""
     if code == "WI":
-        return "https://flagsapi.com/BB/flat/32.png"
+        return "https://sandjosh.github.io/sports-calendar/cwi.png"
     return f"https://flagsapi.com/{code}/flat/32.png"
 
 def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
