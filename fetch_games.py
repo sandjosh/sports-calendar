@@ -102,7 +102,7 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
     FLAG_CODES = {
         "India": "in", "England": "gb", "Australia": "au",
         "Pakistan": "pk", "South Africa": "za", "New Zealand": "nz",
-        "West Indies": "bb", "Sri Lanka": "lk", "Bangladesh": "bd",
+        "West Indies": "wi", "Sri Lanka": "lk", "Bangladesh": "bd",
         "Zimbabwe": "zw", "Afghanistan": "af", "Ireland": "ie",
         "Scotland": "gb-sct", "Netherlands": "nl", "Canada": "ca",
         "United States Of America": "us", "USA": "us", "Kenya": "ke",
@@ -112,7 +112,7 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
         "Hong Kong": "hk", "Singapore": "sg", "Malaysia": "my",
         "India Women": "in", "England Women": "gb", "Australia Women": "au",
         "Pakistan Women": "pk", "South Africa Women": "za",
-        "New Zealand Women": "nz", "West Indies Women": "bb",
+        "New Zealand Women": "nz", "West Indies Women": "wi",
         "Sri Lanka Women": "lk", "Bangladesh Women": "bd",
         "Ireland Women": "ie", "Scotland Women": "gb-sct",
         "Netherlands Women": "nl",
@@ -201,8 +201,8 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                         "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
                         "home": home,
                         "away": away,
-                        "home_logo": f"https://flagsapi.com/{FLAG_CODES.get(home, '').upper()}/flat/32.png" if FLAG_CODES.get(home) else "",
-                        "away_logo": f"https://flagsapi.com/{FLAG_CODES.get(away, '').upper()}/flat/32.png" if FLAG_CODES.get(away) else "",
+                        "home_logo": "https://www.cricketwi.com/wp-content/uploads/2020/02/CWI-Logo.png" if FLAG_CODES.get(home) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(home, '').upper()}/flat/32.png" if FLAG_CODES.get(home) else ""),
+                        "away_logo": "https://www.cricketwi.com/wp-content/uploads/2020/02/CWI-Logo.png" if FLAG_CODES.get(away) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(away, '').upper()}/flat/32.png" if FLAG_CODES.get(away) else ""),
                         "status": status or "Cricket"
                     })
 
