@@ -21,7 +21,9 @@ jobs:
           python-version: '3.11'
 
       - name: Run fetch script
-        run: python fetch_games.py
+        run: |
+          pip install icalendar --quiet
+          python fetch_games.py
         env:
           CRICKET_API_KEY: ${{ secrets.CRICKET_API_KEY }}
 
