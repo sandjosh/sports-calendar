@@ -57,11 +57,9 @@ def fetch_cricket_games(days_ahead=28):
     if not api_key:
         print("  No CRICKET_API_KEY found, skipping cricket")
         return []
-
     from datetime import timedelta
     today = datetime.utcnow()
     end = today + timedelta(days=days_ahead)
-
     games = []
     for offset in [0, 25, 50]:
         url = f"https://api.cricapi.com/v1/matches?apikey={api_key}&offset={offset}&per_page=25"
@@ -71,40 +69,33 @@ def fetch_cricket_games(days_ahead=28):
         except Exception as e:
             print(f"  Error fetching cricket offset {offset}: {e}")
             continue
-
         if data.get("status") != "success":
             print(f"  Cricket API error at offset {offset}: {data.get('status')}")
             continue
-
         for match in data.get("data", []):
-        try:
-            date_str = match.get("dateTimeGMT", "")
-            if not date_str:
+            try:
+                date_str = match.get("dateTimeGMT", "")
+                if not date_str:
+                    continue
+                dt = datetime.strptime(date_str[:19], "%Y-%m-%dT%H:%M:%S")
+                if dt < today or dt > end:
+                    continue
+                teams = match.get("teams", [])
+                if len(teams) < 2:
+                    continue
+                match_type = match.get("matchType", "").upper()
+                series = match.get("series", "")
+                games.append({
+                    "date": dt.strftime("%a %b %d"),
+                    "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
+                    "home": teams[1],
+                    "away": teams[0],
+                    "home_logo": "",
+                    "away_logo": "",
+                    "status": f"{match_type} · {series}" if series else match_type
+                })
+            except Exception:
                 continue
-            dt = datetime.strptime(date_str[:19], "%Y-%m-%dT%H:%M:%S")
-            if dt < today or dt > end:
-                continue
-
-            teams = match.get("teams", [])
-            if len(teams) < 2:
-                continue
-
-            name = match.get("name", "")
-            match_type = match.get("matchType", "").upper()
-            series = match.get("series", "")
-
-            games.append({
-                "date": dt.strftime("%a %b %d"),
-                "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
-                "home": teams[1],
-                "away": teams[0],
-                "home_logo": "",
-                "away_logo": "",
-                "status": f"{match_type} · {series}" if series else match_type
-            })
-        except Exception:
-            continue
-
     return games
 
 def build_ical(games, sport_name):
