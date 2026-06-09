@@ -201,9 +201,8 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                         "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
                         "home": home,
                         "away": away,
-                        "home_logo": "https://www.cricketwi.com/wp-content/uploads/2020/02/CWI-Logo.png" if FLAG_CODES.get(home) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(home, '').upper()}/flat/32.png" if FLAG_CODES.get(home) else ""),
-                        "away_logo": "https://www.cricketwi.com/wp-content/uploads/2020/02/CWI-Logo.png" if FLAG_CODES.get(away) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(away, '').upper()}/flat/32.png" if FLAG_CODES.get(away) else ""),
-                        "status": status or "Cricket"
+                        "home_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/West_Indies_Cricket_Board_Logo.svg/100px-West_Indies_Cricket_Board_Logo.svg.png" if FLAG_CODES.get(home) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(home, '').upper()}/flat/32.png" if FLAG_CODES.get(home) else ""),
+                        "away_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/West_Indies_Cricket_Board_Logo.svg/100px-West_Indies_Cricket_Board_Logo.svg.png" if FLAG_CODES.get(away) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(away, '').upper()}/flat/32.png" if FLAG_CODES.get(away) else ""),                      "status": status or "Cricket"
                     })
 
                 except Exception:
