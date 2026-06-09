@@ -1,0 +1,405 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1528711_1
+SUMMARY:1st Test Australia v New Zealand (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-1st-test-1528711/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Perth Stadium
+DTSTAMP:20260609T035542Z
+DTSTART:20261209T022000Z
+DTEND:20261209T102000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528711_2
+SUMMARY:1st Test Australia v New Zealand (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-1st-test-1528711/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Perth Stadium
+DTSTAMP:20260609T035542Z
+DTSTART:20261210T022000Z
+DTEND:20261210T102000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528711_3
+SUMMARY:1st Test Australia v New Zealand (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-1st-test-1528711/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Perth Stadium
+DTSTAMP:20260609T035542Z
+DTSTART:20261211T022000Z
+DTEND:20261211T102000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528711_4
+SUMMARY:1st Test Australia v New Zealand (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-1st-test-1528711/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Perth Stadium
+DTSTAMP:20260609T035542Z
+DTSTART:20261212T022000Z
+DTEND:20261212T102000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528711_5
+SUMMARY:1st Test Australia v New Zealand (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-1st-test-1528711/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Perth Stadium
+DTSTAMP:20260609T035542Z
+DTSTART:20261213T022000Z
+DTEND:20261213T102000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528712_1
+SUMMARY:2nd Test Australia v New Zealand (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-2nd-test-1528712/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Adelaide Oval
+DTSTAMP:20260609T035542Z
+DTSTART:20261217T003000Z
+DTEND:20261217T083000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528712_2
+SUMMARY:2nd Test Australia v New Zealand (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-2nd-test-1528712/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Adelaide Oval
+DTSTAMP:20260609T035542Z
+DTSTART:20261218T003000Z
+DTEND:20261218T083000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528712_3
+SUMMARY:2nd Test Australia v New Zealand (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-2nd-test-1528712/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Adelaide Oval
+DTSTAMP:20260609T035542Z
+DTSTART:20261219T003000Z
+DTEND:20261219T083000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528712_4
+SUMMARY:2nd Test Australia v New Zealand (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-2nd-test-1528712/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Adelaide Oval
+DTSTAMP:20260609T035542Z
+DTSTART:20261220T003000Z
+DTEND:20261220T083000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528712_5
+SUMMARY:2nd Test Australia v New Zealand (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-2nd-test-1528712/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Adelaide Oval
+DTSTAMP:20260609T035542Z
+DTSTART:20261221T003000Z
+DTEND:20261221T083000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528713_1
+SUMMARY:3rd Test Australia v New Zealand (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-3rd-test-1528713/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Melbourne Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20261225T233000Z
+DTEND:20261226T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528713_2
+SUMMARY:3rd Test Australia v New Zealand (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-3rd-test-1528713/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Melbourne Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20261226T233000Z
+DTEND:20261227T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528713_3
+SUMMARY:3rd Test Australia v New Zealand (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-3rd-test-1528713/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Melbourne Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20261227T233000Z
+DTEND:20261228T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528713_4
+SUMMARY:3rd Test Australia v New Zealand (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-3rd-test-1528713/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Melbourne Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20261228T233000Z
+DTEND:20261229T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528713_5
+SUMMARY:3rd Test Australia v New Zealand (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-3rd-test-1528713/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Melbourne Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20261229T233000Z
+DTEND:20261230T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528714_1
+SUMMARY:4th Test Australia v New Zealand (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-4th-test-1528714/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sydney Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20270103T233000Z
+DTEND:20270104T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528714_2
+SUMMARY:4th Test Australia v New Zealand (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-4th-test-1528714/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sydney Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20270104T233000Z
+DTEND:20270105T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528714_3
+SUMMARY:4th Test Australia v New Zealand (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-4th-test-1528714/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sydney Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20270105T233000Z
+DTEND:20270106T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528714_4
+SUMMARY:4th Test Australia v New Zealand (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-4th-test-1528714/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sydney Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20270106T233000Z
+DTEND:20270107T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528714_5
+SUMMARY:4th Test Australia v New Zealand (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of Australia news at: https://www.espnc
+ ricinfo.com/series/new-zealand-in-australia-2026-27-1528680/australia-vs-ne
+ w-zealand-4th-test-1528714/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sydney Cricket Ground
+DTSTAMP:20260609T035542Z
+DTSTART:20270107T233000Z
+DTEND:20270108T073000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

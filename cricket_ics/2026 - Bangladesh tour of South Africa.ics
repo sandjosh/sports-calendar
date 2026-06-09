@@ -1,0 +1,325 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1525662_1
+SUMMARY:1st Test South Africa v Bangladesh (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-1st-test-1525662/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035454Z
+DTSTART:20261115T080000Z
+DTEND:20261115T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525662_2
+SUMMARY:1st Test South Africa v Bangladesh (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-1st-test-1525662/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035454Z
+DTSTART:20261116T080000Z
+DTEND:20261116T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525662_3
+SUMMARY:1st Test South Africa v Bangladesh (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-1st-test-1525662/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035454Z
+DTSTART:20261117T080000Z
+DTEND:20261117T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525662_4
+SUMMARY:1st Test South Africa v Bangladesh (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-1st-test-1525662/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035454Z
+DTSTART:20261118T080000Z
+DTEND:20261118T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525662_5
+SUMMARY:1st Test South Africa v Bangladesh (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-1st-test-1525662/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035454Z
+DTSTART:20261119T080000Z
+DTEND:20261119T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525663_1
+SUMMARY:2nd Test South Africa v Bangladesh (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-2nd-test-1525663/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035454Z
+DTSTART:20261123T080000Z
+DTEND:20261123T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525663_2
+SUMMARY:2nd Test South Africa v Bangladesh (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-2nd-test-1525663/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035454Z
+DTSTART:20261124T080000Z
+DTEND:20261124T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525663_3
+SUMMARY:2nd Test South Africa v Bangladesh (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-2nd-test-1525663/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035454Z
+DTSTART:20261125T080000Z
+DTEND:20261125T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525663_4
+SUMMARY:2nd Test South Africa v Bangladesh (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-2nd-test-1525663/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035454Z
+DTSTART:20261126T080000Z
+DTEND:20261126T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525663_5
+SUMMARY:2nd Test South Africa v Bangladesh (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-2nd-test-1525663/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035454Z
+DTSTART:20261127T080000Z
+DTEND:20261127T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525664_1
+SUMMARY:1st ODI South Africa v Bangladesh
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-1st-odi-1525664/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Buffalo Park, East London
+DTSTAMP:20260609T035454Z
+DTSTART:20261201T113000Z
+DTEND:20261201T193000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525665_1
+SUMMARY:2nd ODI South Africa v Bangladesh
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-2nd-odi-1525665/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:St George's Park, Gqeberha
+DTSTAMP:20260609T035454Z
+DTSTART:20261204T113000Z
+DTEND:20261204T193000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525666_1
+SUMMARY:3rd ODI South Africa v Bangladesh
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-3rd-odi-1525666/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Newlands, Cape Town
+DTSTAMP:20260609T035454Z
+DTSTART:20261207T113000Z
+DTEND:20261207T193000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525667_1
+SUMMARY:1st T20I South Africa v Bangladesh
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-1st-t20i-1525667/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Diamond Oval, Kimberley
+DTSTAMP:20260609T035454Z
+DTSTART:20261210T160000Z
+DTEND:20261210T200000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525668_1
+SUMMARY:2nd T20I South Africa v Bangladesh
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-2nd-t20i-1525668/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Willowmoore Park, Benoni
+DTSTAMP:20260609T035454Z
+DTSTART:20261212T123000Z
+DTEND:20261212T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525669_1
+SUMMARY:3rd T20I South Africa v Bangladesh
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Bangladesh tour of South Africa news at: https://www.esp
+ ncricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-afric
+ a-vs-bangladesh-3rd-t20i-1525669/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035454Z
+DTSTART:20261213T123000Z
+DTEND:20261213T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

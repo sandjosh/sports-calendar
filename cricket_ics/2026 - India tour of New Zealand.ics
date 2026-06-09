@@ -1,0 +1,405 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1539432_1
+SUMMARY:1st T20I New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1s
+ t-t20i-1539432/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035407Z
+DTSTART:20261022T070000Z
+DTEND:20261022T110000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539433_1
+SUMMARY:2nd T20I New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2n
+ d-t20i-1539433/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035407Z
+DTSTART:20261024T070000Z
+DTEND:20261024T110000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539434_1
+SUMMARY:3rd T20I New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3r
+ d-t20i-1539434/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hnry Stadium, Wellington
+DTSTAMP:20260609T035407Z
+DTSTART:20261027T070000Z
+DTEND:20261027T110000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539435_1
+SUMMARY:4th T20I New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4t
+ h-t20i-1539435/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Eden Park, Auckland
+DTSTAMP:20260609T035407Z
+DTSTART:20261030T070000Z
+DTEND:20261030T110000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539436_1
+SUMMARY:5th T20I New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5t
+ h-t20i-1539436/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Seddon Park, Hamilton
+DTSTAMP:20260609T035407Z
+DTSTART:20261101T070000Z
+DTEND:20261101T110000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539437_1
+SUMMARY:1st ODI New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1s
+ t-odi-1539437/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Eden Park, Auckland
+DTSTAMP:20260609T035407Z
+DTSTART:20261104T020000Z
+DTEND:20261104T100000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539438_1
+SUMMARY:2nd ODI New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2n
+ d-odi-1539438/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hnry Stadium, Wellington
+DTSTAMP:20260609T035407Z
+DTSTART:20261107T020000Z
+DTEND:20261107T100000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539439_1
+SUMMARY:3rd ODI New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3r
+ d-odi-1539439/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Seddon Park, Hamilton
+DTSTAMP:20260609T035407Z
+DTSTART:20261110T020000Z
+DTEND:20261110T100000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539440_1
+SUMMARY:4th ODI New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4t
+ h-odi-1539440/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bay Oval, Mount Maunganui
+DTSTAMP:20260609T035407Z
+DTSTART:20261113T020000Z
+DTEND:20261113T100000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539441_1
+SUMMARY:5th ODI New Zealand v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5t
+ h-odi-1539441/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bay Oval, Mount Maunganui
+DTSTAMP:20260609T035407Z
+DTSTART:20261115T020000Z
+DTEND:20261115T100000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539442_1
+SUMMARY:1st Test New Zealand v India (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1s
+ t-test-1539442/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Basin Reserve, Wellington
+DTSTAMP:20260609T035407Z
+DTSTART:20261118T220000Z
+DTEND:20261119T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539442_2
+SUMMARY:1st Test New Zealand v India (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1s
+ t-test-1539442/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Basin Reserve, Wellington
+DTSTAMP:20260609T035407Z
+DTSTART:20261119T220000Z
+DTEND:20261120T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539442_3
+SUMMARY:1st Test New Zealand v India (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1s
+ t-test-1539442/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Basin Reserve, Wellington
+DTSTAMP:20260609T035407Z
+DTSTART:20261120T220000Z
+DTEND:20261121T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539442_4
+SUMMARY:1st Test New Zealand v India (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1s
+ t-test-1539442/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Basin Reserve, Wellington
+DTSTAMP:20260609T035407Z
+DTSTART:20261121T220000Z
+DTEND:20261122T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539442_5
+SUMMARY:1st Test New Zealand v India (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1s
+ t-test-1539442/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Basin Reserve, Wellington
+DTSTAMP:20260609T035407Z
+DTSTART:20261122T220000Z
+DTEND:20261123T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539443_1
+SUMMARY:2nd Test New Zealand v India (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2n
+ d-test-1539443/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035407Z
+DTSTART:20261126T220000Z
+DTEND:20261127T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539443_2
+SUMMARY:2nd Test New Zealand v India (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2n
+ d-test-1539443/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035407Z
+DTSTART:20261127T220000Z
+DTEND:20261128T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539443_3
+SUMMARY:2nd Test New Zealand v India (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2n
+ d-test-1539443/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035407Z
+DTSTART:20261128T220000Z
+DTEND:20261129T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539443_4
+SUMMARY:2nd Test New Zealand v India (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2n
+ d-test-1539443/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035407Z
+DTSTART:20261129T220000Z
+DTEND:20261130T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539443_5
+SUMMARY:2nd Test New Zealand v India (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of New Zealand news at: https://www.espncrici
+ nfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2n
+ d-test-1539443/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035407Z
+DTSTART:20261130T220000Z
+DTEND:20261201T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

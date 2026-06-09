@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1529241_1
+SUMMARY:1st ODI India v Zimbabwe
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Zimbabwe tour of India news at: https://www.espncricinfo
+ .com/series/zimbabwe-in-india-2026-27-1529223/india-vs-zimbabwe-1st-odi-152
+ 9241/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Eden Gardens, Kolkata
+DTSTAMP:20260609T035706Z
+DTSTART:20270103T083000Z
+DTEND:20270103T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529242_1
+SUMMARY:2nd ODI India v Zimbabwe
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Zimbabwe tour of India news at: https://www.espncricinfo
+ .com/series/zimbabwe-in-india-2026-27-1529223/india-vs-zimbabwe-2nd-odi-152
+ 9242/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Rajiv Gandhi International Stadium, Uppal, Hyderabad
+DTSTAMP:20260609T035706Z
+DTSTART:20270106T083000Z
+DTEND:20270106T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529243_1
+SUMMARY:3rd ODI India v Zimbabwe
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Zimbabwe tour of India news at: https://www.espncricinfo
+ .com/series/zimbabwe-in-india-2026-27-1529223/india-vs-zimbabwe-3rd-odi-152
+ 9243/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Wankhede Stadium, Mumbai
+DTSTAMP:20260609T035706Z
+DTSTART:20270109T083000Z
+DTEND:20270109T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

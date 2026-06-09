@@ -1,0 +1,325 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1539444_1
+SUMMARY:1st ODI New Zealand v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-1st-odi-1539444/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:McLean Park, Napier
+DTSTAMP:20260609T035731Z
+DTSTART:20270115T220000Z
+DTEND:20270116T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539445_1
+SUMMARY:2nd ODI New Zealand v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-2nd-odi-1539445/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Basin Reserve, Wellington
+DTSTAMP:20260609T035731Z
+DTSTART:20270118T220000Z
+DTEND:20270119T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539446_1
+SUMMARY:3rd ODI New Zealand v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-3rd-odi-1539446/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:University Oval, Dunedin
+DTSTAMP:20260609T035731Z
+DTSTART:20270121T220000Z
+DTEND:20270122T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539447_1
+SUMMARY:1st T20I New Zealand v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-1st-t20i-1539447/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Hagley Oval, Christchurch
+DTSTAMP:20260609T035731Z
+DTSTART:20270126T050000Z
+DTEND:20270126T090000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539448_1
+SUMMARY:2nd T20I New Zealand v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-2nd-t20i-1539448/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Saxton Oval, Nelson
+DTSTAMP:20260609T035731Z
+DTSTART:20270129T030000Z
+DTEND:20270129T070000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539449_1
+SUMMARY:3rd T20I New Zealand v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-3rd-t20i-1539449/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Saxton Oval, Nelson
+DTSTAMP:20260609T035731Z
+DTSTART:20270131T000000Z
+DTEND:20270131T040000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539450_1
+SUMMARY:1st Test New Zealand v Sri Lanka (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-1st-test-1539450/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bay Oval, Mount Maunganui
+DTSTAMP:20260609T035731Z
+DTSTART:20270203T220000Z
+DTEND:20270204T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539450_2
+SUMMARY:1st Test New Zealand v Sri Lanka (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-1st-test-1539450/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bay Oval, Mount Maunganui
+DTSTAMP:20260609T035731Z
+DTSTART:20270204T220000Z
+DTEND:20270205T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539450_3
+SUMMARY:1st Test New Zealand v Sri Lanka (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-1st-test-1539450/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bay Oval, Mount Maunganui
+DTSTAMP:20260609T035731Z
+DTSTART:20270205T220000Z
+DTEND:20270206T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539450_4
+SUMMARY:1st Test New Zealand v Sri Lanka (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-1st-test-1539450/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bay Oval, Mount Maunganui
+DTSTAMP:20260609T035731Z
+DTSTART:20270206T220000Z
+DTEND:20270207T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539450_5
+SUMMARY:1st Test New Zealand v Sri Lanka (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-1st-test-1539450/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bay Oval, Mount Maunganui
+DTSTAMP:20260609T035731Z
+DTSTART:20270207T220000Z
+DTEND:20270208T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539451_1
+SUMMARY:2nd Test New Zealand v Sri Lanka (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-2nd-test-1539451/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Seddon Park, Hamilton
+DTSTAMP:20260609T035731Z
+DTSTART:20270211T220000Z
+DTEND:20270212T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539451_2
+SUMMARY:2nd Test New Zealand v Sri Lanka (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-2nd-test-1539451/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Seddon Park, Hamilton
+DTSTAMP:20260609T035731Z
+DTSTART:20270212T220000Z
+DTEND:20270213T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539451_3
+SUMMARY:2nd Test New Zealand v Sri Lanka (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-2nd-test-1539451/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Seddon Park, Hamilton
+DTSTAMP:20260609T035731Z
+DTSTART:20270213T220000Z
+DTEND:20270214T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539451_4
+SUMMARY:2nd Test New Zealand v Sri Lanka (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-2nd-test-1539451/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Seddon Park, Hamilton
+DTSTAMP:20260609T035731Z
+DTSTART:20270214T220000Z
+DTEND:20270215T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1539451_5
+SUMMARY:2nd Test New Zealand v Sri Lanka (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of New Zealand news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-new-zealand-2026-27-1539425/new-zealand-vs-
+ sri-lanka-2nd-test-1539451/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Seddon Park, Hamilton
+DTSTAMP:20260609T035731Z
+DTSTART:20270215T220000Z
+DTEND:20270216T060000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

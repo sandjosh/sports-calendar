@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1528548_1
+SUMMARY:1st T20I Ireland v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of Ireland news at: https://www.espncricinfo.
+ com/series/india-in-ireland-2026-1528532/ireland-vs-india-1st-t20i-1528548/
+ live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Civil Service Cricket Club, Stormont, Belfast
+DTSTAMP:20260609T034730Z
+DTSTART:20260626T140000Z
+DTEND:20260626T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528549_1
+SUMMARY:2nd T20I Ireland v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of Ireland news at: https://www.espncricinfo.
+ com/series/india-in-ireland-2026-1528532/ireland-vs-india-2nd-t20i-1528549/
+ live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Civil Service Cricket Club, Stormont, Belfast
+DTSTAMP:20260609T034730Z
+DTSTART:20260628T140000Z
+DTEND:20260628T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

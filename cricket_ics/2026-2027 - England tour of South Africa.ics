@@ -1,0 +1,465 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1525670_1
+SUMMARY:Tour Match Cricket South Africa Invitation XI v England (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/cricket-south-afr
+ ica-invitation-xi-vs-england-tour-match-1525670/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kingsmead, Durban
+DTSTAMP:20260609T035515Z
+DTSTART:20261209T073000Z
+DTEND:20261209T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525670_2
+SUMMARY:Tour Match Cricket South Africa Invitation XI v England (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/cricket-south-afr
+ ica-invitation-xi-vs-england-tour-match-1525670/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kingsmead, Durban
+DTSTAMP:20260609T035515Z
+DTSTART:20261210T073000Z
+DTEND:20261210T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525670_3
+SUMMARY:Tour Match Cricket South Africa Invitation XI v England (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/cricket-south-afr
+ ica-invitation-xi-vs-england-tour-match-1525670/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kingsmead, Durban
+DTSTAMP:20260609T035515Z
+DTSTART:20261211T073000Z
+DTEND:20261211T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525670_4
+SUMMARY:Tour Match Cricket South Africa Invitation XI v England (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/cricket-south-afr
+ ica-invitation-xi-vs-england-tour-match-1525670/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kingsmead, Durban
+DTSTAMP:20260609T035515Z
+DTSTART:20261212T073000Z
+DTEND:20261212T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525670_5
+SUMMARY:Tour Match Cricket South Africa Invitation XI v England (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/cricket-south-afr
+ ica-invitation-xi-vs-england-tour-match-1525670/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kingsmead, Durban
+DTSTAMP:20260609T035515Z
+DTSTART:20261213T073000Z
+DTEND:20261213T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525671_1
+SUMMARY:1st Test South Africa v England (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-1st-test-1525671/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035515Z
+DTSTART:20261217T080000Z
+DTEND:20261217T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525671_2
+SUMMARY:1st Test South Africa v England (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-1st-test-1525671/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035515Z
+DTSTART:20261218T080000Z
+DTEND:20261218T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525671_3
+SUMMARY:1st Test South Africa v England (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-1st-test-1525671/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035515Z
+DTSTART:20261219T080000Z
+DTEND:20261219T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525671_4
+SUMMARY:1st Test South Africa v England (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-1st-test-1525671/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035515Z
+DTSTART:20261220T080000Z
+DTEND:20261220T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525671_5
+SUMMARY:1st Test South Africa v England (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-1st-test-1525671/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Wanderers Stadium, Johannesburg
+DTSTAMP:20260609T035515Z
+DTSTART:20261221T080000Z
+DTEND:20261221T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525672_1
+SUMMARY:2nd Test South Africa v England (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-2nd-test-1525672/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035515Z
+DTSTART:20261226T080000Z
+DTEND:20261226T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525672_2
+SUMMARY:2nd Test South Africa v England (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-2nd-test-1525672/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035515Z
+DTSTART:20261227T080000Z
+DTEND:20261227T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525672_3
+SUMMARY:2nd Test South Africa v England (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-2nd-test-1525672/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035515Z
+DTSTART:20261228T080000Z
+DTEND:20261228T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525672_4
+SUMMARY:2nd Test South Africa v England (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-2nd-test-1525672/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035515Z
+DTSTART:20261229T080000Z
+DTEND:20261229T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525672_5
+SUMMARY:2nd Test South Africa v England (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-2nd-test-1525672/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:SuperSport Park, Centurion
+DTSTAMP:20260609T035515Z
+DTSTART:20261230T080000Z
+DTEND:20261230T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525673_1
+SUMMARY:3rd Test South Africa v England (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-3rd-test-1525673/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Newlands, Cape Town
+DTSTAMP:20260609T035515Z
+DTSTART:20270103T083000Z
+DTEND:20270103T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525673_2
+SUMMARY:3rd Test South Africa v England (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-3rd-test-1525673/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Newlands, Cape Town
+DTSTAMP:20260609T035515Z
+DTSTART:20270104T083000Z
+DTEND:20270104T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525673_3
+SUMMARY:3rd Test South Africa v England (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-3rd-test-1525673/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Newlands, Cape Town
+DTSTAMP:20260609T035515Z
+DTSTART:20270105T083000Z
+DTEND:20270105T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525673_4
+SUMMARY:3rd Test South Africa v England (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-3rd-test-1525673/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Newlands, Cape Town
+DTSTAMP:20260609T035515Z
+DTSTART:20270106T083000Z
+DTEND:20270106T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525673_5
+SUMMARY:3rd Test South Africa v England (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-3rd-test-1525673/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Newlands, Cape Town
+DTSTAMP:20260609T035515Z
+DTSTART:20270107T083000Z
+DTEND:20270107T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525674_1
+SUMMARY:1st ODI South Africa v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-1st-odi-1525674/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Boland Park, Paarl
+DTSTAMP:20260609T035515Z
+DTSTART:20270110T080000Z
+DTEND:20270110T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525675_1
+SUMMARY:2nd ODI South Africa v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-2nd-odi-1525675/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Mangaung Oval, Bloemfontein
+DTSTAMP:20260609T035515Z
+DTSTART:20270113T113000Z
+DTEND:20270113T193000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1525676_1
+SUMMARY:3rd ODI South Africa v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of South Africa news at: https://www.espncr
+ icinfo.com/series/england-in-south-africa-2026-27-1525641/south-africa-vs-e
+ ngland-3rd-odi-1525676/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Mangaung Oval, Bloemfontein
+DTSTAMP:20260609T035515Z
+DTSTART:20270115T080000Z
+DTEND:20270115T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

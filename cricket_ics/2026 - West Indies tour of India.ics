@@ -1,0 +1,167 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1529227_1
+SUMMARY:1st ODI India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-1s
+ t-odi-1529227/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Greenfield International Stadium, Thiruvananthapuram
+DTSTAMP:20260609T035340Z
+DTSTART:20260927T083000Z
+DTEND:20260927T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529228_1
+SUMMARY:2nd ODI India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-2n
+ d-odi-1529228/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Barsapara Cricket Stadium, Guwahati
+DTSTAMP:20260609T035340Z
+DTSTART:20260930T083000Z
+DTEND:20260930T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529229_1
+SUMMARY:3rd ODI India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-3r
+ d-odi-1529229/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Maharaja Yadavindra Singh International Cricket Stadium, New Chand
+ igarh
+DTSTAMP:20260609T035340Z
+DTSTART:20261003T083000Z
+DTEND:20261003T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529230_1
+SUMMARY:1st T20I India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-1s
+ t-t20i-1529230/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Luck
+ now
+DTSTAMP:20260609T035340Z
+DTSTART:20261006T133000Z
+DTEND:20261006T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529231_1
+SUMMARY:2nd T20I India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-2n
+ d-t20i-1529231/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:JSCA International Stadium Complex, Ranchi
+DTSTAMP:20260609T035340Z
+DTSTART:20261009T133000Z
+DTEND:20261009T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529232_1
+SUMMARY:3rd T20I India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-3r
+ d-t20i-1529232/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Holkar Cricket Stadium, Indore
+DTSTAMP:20260609T035340Z
+DTSTART:20261011T133000Z
+DTEND:20261011T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529233_1
+SUMMARY:4th T20I India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-4t
+ h-t20i-1529233/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Rajiv Gandhi International Stadium, Uppal, Hyderabad
+DTSTAMP:20260609T035340Z
+DTSTART:20261014T133000Z
+DTEND:20261014T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529234_1
+SUMMARY:5th T20I India v West Indies
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest West Indies tour of India news at: https://www.espncrici
+ nfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-5t
+ h-t20i-1529234/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:M Chinnaswamy Stadium, Bengaluru
+DTSTAMP:20260609T035340Z
+DTSTART:20261017T133000Z
+DTEND:20261017T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

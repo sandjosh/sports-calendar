@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1528550_1
+SUMMARY:1st ODI Ireland v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of Ireland news at: https://www.espncri
+ cinfo.com/series/afghanistan-in-ireland-2026-1528534/ireland-vs-afghanistan
+ -1st-odi-1528550/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bready Cricket Club, Magheramason, Bready
+DTSTAMP:20260609T034942Z
+DTSTART:20260805T094500Z
+DTEND:20260805T174500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528551_1
+SUMMARY:2nd ODI Ireland v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of Ireland news at: https://www.espncri
+ cinfo.com/series/afghanistan-in-ireland-2026-1528534/ireland-vs-afghanistan
+ -2nd-odi-1528551/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bready Cricket Club, Magheramason, Bready
+DTSTAMP:20260609T034942Z
+DTSTART:20260807T094500Z
+DTEND:20260807T174500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528552_1
+SUMMARY:3rd ODI Ireland v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of Ireland news at: https://www.espncri
+ cinfo.com/series/afghanistan-in-ireland-2026-1528534/ireland-vs-afghanistan
+ -3rd-odi-1528552/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Civil Service Cricket Club, Stormont, Belfast
+DTSTAMP:20260609T034942Z
+DTSTART:20260810T094500Z
+DTEND:20260810T174500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528553_1
+SUMMARY:4th ODI Ireland v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of Ireland news at: https://www.espncri
+ cinfo.com/series/afghanistan-in-ireland-2026-1528534/ireland-vs-afghanistan
+ -4th-odi-1528553/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Civil Service Cricket Club, Stormont, Belfast
+DTSTAMP:20260609T034942Z
+DTSTART:20260812T094500Z
+DTEND:20260812T174500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528554_1
+SUMMARY:5th ODI Ireland v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of Ireland news at: https://www.espncri
+ cinfo.com/series/afghanistan-in-ireland-2026-1528534/ireland-vs-afghanistan
+ -5th-odi-1528554/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Civil Service Cricket Club, Stormont, Belfast
+DTSTAMP:20260609T034942Z
+DTSTART:20260814T094500Z
+DTEND:20260814T174500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

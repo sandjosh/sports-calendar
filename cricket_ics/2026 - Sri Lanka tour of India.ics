@@ -1,0 +1,125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1529235_1
+SUMMARY:1st ODI India v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of India news at: https://www.espncricinf
+ o.com/series/sri-lanka-in-india-2026-27-1529220/india-vs-sri-lanka-1st-odi-
+ 1529235/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Arun Jaitley Stadium, Delhi
+DTSTAMP:20260609T035641Z
+DTSTART:20261213T083000Z
+DTEND:20261213T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529236_1
+SUMMARY:2nd ODI India v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of India news at: https://www.espncricinf
+ o.com/series/sri-lanka-in-india-2026-27-1529220/india-vs-sri-lanka-2nd-odi-
+ 1529236/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:M Chinnaswamy Stadium, Bengaluru
+DTSTAMP:20260609T035641Z
+DTSTART:20261216T083000Z
+DTEND:20261216T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529237_1
+SUMMARY:3rd ODI India v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of India news at: https://www.espncricinf
+ o.com/series/sri-lanka-in-india-2026-27-1529220/india-vs-sri-lanka-3rd-odi-
+ 1529237/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Narendra Modi Stadium, Ahmedabad
+DTSTAMP:20260609T035641Z
+DTSTART:20261219T083000Z
+DTEND:20261219T163000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529238_1
+SUMMARY:1st T20I India v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of India news at: https://www.espncricinf
+ o.com/series/sri-lanka-in-india-2026-27-1529220/india-vs-sri-lanka-1st-t20i
+ -1529238/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Niranjan Shah Stadium, Rajkot
+DTSTAMP:20260609T035641Z
+DTSTART:20261222T133000Z
+DTEND:20261222T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529239_1
+SUMMARY:2nd T20I India v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of India news at: https://www.espncricinf
+ o.com/series/sri-lanka-in-india-2026-27-1529220/india-vs-sri-lanka-2nd-t20i
+ -1529239/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Barabati Stadium, Cuttack
+DTSTAMP:20260609T035641Z
+DTSTART:20261224T133000Z
+DTEND:20261224T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529240_1
+SUMMARY:3rd T20I India v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of India news at: https://www.espncricinf
+ o.com/series/sri-lanka-in-india-2026-27-1529220/india-vs-sri-lanka-3rd-t20i
+ -1529240/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Maharashtra Cricket Association Stadium, Pune
+DTSTAMP:20260609T035641Z
+DTSTART:20261227T133000Z
+DTEND:20261227T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

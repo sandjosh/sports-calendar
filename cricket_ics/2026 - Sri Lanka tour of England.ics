@@ -1,0 +1,125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1496585_1
+SUMMARY:1st T20I England v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of England news at: https://www.espncrici
+ nfo.com/series/sri-lanka-in-england-2026-1496567/england-vs-sri-lanka-1st-t
+ 20i-1496585/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Rose Bowl, Southampton
+DTSTAMP:20260609T035247Z
+DTSTART:20260915T173000Z
+DTEND:20260915T213000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496586_1
+SUMMARY:2nd T20I England v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of England news at: https://www.espncrici
+ nfo.com/series/sri-lanka-in-england-2026-1496567/england-vs-sri-lanka-2nd-t
+ 20i-1496586/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sophia Gardens, Cardiff
+DTSTAMP:20260609T035247Z
+DTSTART:20260917T173000Z
+DTEND:20260917T213000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496587_1
+SUMMARY:3rd T20I England v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of England news at: https://www.espncrici
+ nfo.com/series/sri-lanka-in-england-2026-1496567/england-vs-sri-lanka-3rd-t
+ 20i-1496587/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Old Trafford, Manchester
+DTSTAMP:20260609T035247Z
+DTSTART:20260919T100000Z
+DTEND:20260919T140000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496588_1
+SUMMARY:1st ODI England v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of England news at: https://www.espncrici
+ nfo.com/series/sri-lanka-in-england-2026-1496567/england-vs-sri-lanka-1st-o
+ di-1496588/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Riverside Ground, Chester-le-Street
+DTSTAMP:20260609T035247Z
+DTSTART:20260922T113000Z
+DTEND:20260922T193000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496589_1
+SUMMARY:2nd ODI England v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of England news at: https://www.espncrici
+ nfo.com/series/sri-lanka-in-england-2026-1496567/england-vs-sri-lanka-2nd-o
+ di-1496589/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Headingley, Leeds
+DTSTAMP:20260609T035247Z
+DTSTART:20260924T113000Z
+DTEND:20260924T193000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496590_1
+SUMMARY:3rd ODI England v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of England news at: https://www.espncrici
+ nfo.com/series/sri-lanka-in-england-2026-1496567/england-vs-sri-lanka-3rd-o
+ di-1496590/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kennington Oval, London
+DTSTAMP:20260609T035247Z
+DTSTART:20260927T093000Z
+DTEND:20260927T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

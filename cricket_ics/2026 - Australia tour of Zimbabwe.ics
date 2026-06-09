@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1530203_1
+SUMMARY:1st ODI Zimbabwe v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Zimbabwe news at: https://www.espncric
+ info.com/series/australia-in-zimbabwe-2026-1530201/zimbabwe-vs-australia-1s
+ t-odi-1530203/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Harare Sports Club
+DTSTAMP:20260609T035224Z
+DTSTART:20260915T073000Z
+DTEND:20260915T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1530204_1
+SUMMARY:2nd ODI Zimbabwe v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Zimbabwe news at: https://www.espncric
+ info.com/series/australia-in-zimbabwe-2026-1530201/zimbabwe-vs-australia-2n
+ d-odi-1530204/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Harare Sports Club
+DTSTAMP:20260609T035224Z
+DTSTART:20260918T073000Z
+DTEND:20260918T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1530205_1
+SUMMARY:3rd ODI Zimbabwe v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Zimbabwe news at: https://www.espncric
+ info.com/series/australia-in-zimbabwe-2026-1530201/zimbabwe-vs-australia-3r
+ d-odi-1530205/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Harare Sports Club
+DTSTAMP:20260609T035224Z
+DTSTART:20260920T073000Z
+DTEND:20260920T153000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

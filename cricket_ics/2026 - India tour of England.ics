@@ -1,0 +1,165 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1496574_1
+SUMMARY:1st T20I England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-1st-t20i-1496574/
+ live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Riverside Ground, Chester-le-Street
+DTSTAMP:20260609T023035Z
+DTSTART:20260701T163000Z
+DTEND:20260701T203000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496575_1
+SUMMARY:2nd T20I England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-2nd-t20i-1496575/
+ live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Old Trafford, Manchester
+DTSTAMP:20260609T023035Z
+DTSTART:20260704T133000Z
+DTEND:20260704T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496576_1
+SUMMARY:3rd T20I England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-3rd-t20i-1496576/
+ live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Trent Bridge, Nottingham
+DTSTAMP:20260609T023035Z
+DTSTART:20260707T163000Z
+DTEND:20260707T203000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496577_1
+SUMMARY:4th T20I England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-4th-t20i-1496577/
+ live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:County Ground, Bristol
+DTSTAMP:20260609T023035Z
+DTSTART:20260709T163000Z
+DTEND:20260709T203000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496578_1
+SUMMARY:5th T20I England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-5th-t20i-1496578/
+ live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:The Rose Bowl, Southampton
+DTSTAMP:20260609T023035Z
+DTSTART:20260711T133000Z
+DTEND:20260711T173000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496579_1
+SUMMARY:1st ODI England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-1st-odi-1496579/l
+ ive-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Edgbaston, Birmingham
+DTSTAMP:20260609T023035Z
+DTSTART:20260714T100000Z
+DTEND:20260714T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496580_1
+SUMMARY:2nd ODI England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-2nd-odi-1496580/l
+ ive-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sophia Gardens, Cardiff
+DTSTAMP:20260609T023035Z
+DTSTART:20260716T120000Z
+DTEND:20260716T200000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496581_1
+SUMMARY:3rd ODI England v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of England news at: https://www.espncricinfo.
+ com/series/india-in-england-2026-1496488/england-vs-india-3rd-odi-1496581/l
+ ive-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Lord's, London
+DTSTAMP:20260609T023035Z
+DTSTART:20260719T100000Z
+DTEND:20260719T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

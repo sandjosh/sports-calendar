@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1538624_1
+SUMMARY:1st ODI West Indies v New Zealand
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of West Indies news at: https://www.esp
+ ncricinfo.com/series/new-zealand-tour-of-west-indies-2026-1538619/west-indi
+ es-vs-new-zealand-1st-odi-1538624/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Providence Stadium, Guyana
+DTSTAMP:20260609T034819Z
+DTSTART:20260711T183000Z
+DTEND:20260712T023000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538625_1
+SUMMARY:2nd ODI West Indies v New Zealand
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of West Indies news at: https://www.esp
+ ncricinfo.com/series/new-zealand-tour-of-west-indies-2026-1538619/west-indi
+ es-vs-new-zealand-2nd-odi-1538625/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Providence Stadium, Guyana
+DTSTAMP:20260609T034819Z
+DTSTART:20260714T183000Z
+DTEND:20260715T023000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538626_1
+SUMMARY:3rd ODI West Indies v New Zealand
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of West Indies news at: https://www.esp
+ ncricinfo.com/series/new-zealand-tour-of-west-indies-2026-1538619/west-indi
+ es-vs-new-zealand-3rd-odi-1538626/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Providence Stadium, Guyana
+DTSTAMP:20260609T034819Z
+DTSTART:20260717T183000Z
+DTEND:20260718T023000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538627_1
+SUMMARY:4th ODI West Indies v New Zealand
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of West Indies news at: https://www.esp
+ ncricinfo.com/series/new-zealand-tour-of-west-indies-2026-1538619/west-indi
+ es-vs-new-zealand-4th-odi-1538627/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kensington Oval, Bridgetown, Barbados
+DTSTAMP:20260609T034819Z
+DTSTART:20260719T183000Z
+DTEND:20260720T023000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538628_1
+SUMMARY:5th ODI West Indies v New Zealand
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of West Indies news at: https://www.esp
+ ncricinfo.com/series/new-zealand-tour-of-west-indies-2026-1538619/west-indi
+ es-vs-new-zealand-5th-odi-1538628/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kensington Oval, Bridgetown, Barbados
+DTSTAMP:20260609T034819Z
+DTSTART:20260721T183000Z
+DTEND:20260722T023000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

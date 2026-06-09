@@ -1,0 +1,305 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1538629_1
+SUMMARY:Tour Match TBA v Pakistan (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/tba-vs-pakistan-tour
+ -match-1538629/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260718T140000Z
+DTEND:20260718T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538629_2
+SUMMARY:Tour Match TBA v Pakistan (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/tba-vs-pakistan-tour
+ -match-1538629/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260719T140000Z
+DTEND:20260719T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538629_3
+SUMMARY:Tour Match TBA v Pakistan (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/tba-vs-pakistan-tour
+ -match-1538629/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260720T140000Z
+DTEND:20260720T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538629_4
+SUMMARY:Tour Match TBA v Pakistan (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/tba-vs-pakistan-tour
+ -match-1538629/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260721T140000Z
+DTEND:20260721T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538629_5
+SUMMARY:Tour Match TBA v Pakistan (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/tba-vs-pakistan-tour
+ -match-1538629/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260722T140000Z
+DTEND:20260722T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538630_1
+SUMMARY:1st Test West Indies v Pakistan (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-1st-test-1538630/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260725T140000Z
+DTEND:20260725T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538630_2
+SUMMARY:1st Test West Indies v Pakistan (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-1st-test-1538630/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260726T140000Z
+DTEND:20260726T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538630_3
+SUMMARY:1st Test West Indies v Pakistan (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-1st-test-1538630/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260727T140000Z
+DTEND:20260727T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538630_4
+SUMMARY:1st Test West Indies v Pakistan (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-1st-test-1538630/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260728T140000Z
+DTEND:20260728T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538630_5
+SUMMARY:1st Test West Indies v Pakistan (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-1st-test-1538630/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brian Lara Stadium, Tarouba, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260729T140000Z
+DTEND:20260729T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538631_1
+SUMMARY:2nd Test West Indies v Pakistan (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-2nd-test-1538631/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Queen's Park Oval, Port of Spain, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260802T140000Z
+DTEND:20260802T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538631_2
+SUMMARY:2nd Test West Indies v Pakistan (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-2nd-test-1538631/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Queen's Park Oval, Port of Spain, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260803T140000Z
+DTEND:20260803T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538631_3
+SUMMARY:2nd Test West Indies v Pakistan (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-2nd-test-1538631/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Queen's Park Oval, Port of Spain, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260804T140000Z
+DTEND:20260804T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538631_4
+SUMMARY:2nd Test West Indies v Pakistan (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-2nd-test-1538631/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Queen's Park Oval, Port of Spain, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260805T140000Z
+DTEND:20260805T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538631_5
+SUMMARY:2nd Test West Indies v Pakistan (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of West Indies news at: https://www.espncr
+ icinfo.com/series/pakistan-in-west-indies-2026-1538621/west-indies-vs-pakis
+ tan-2nd-test-1538631/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Queen's Park Oval, Port of Spain, Trinidad
+DTSTAMP:20260609T034851Z
+DTSTART:20260806T140000Z
+DTEND:20260806T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

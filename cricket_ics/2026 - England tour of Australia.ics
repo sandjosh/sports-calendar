@@ -1,0 +1,165 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1528703_1
+SUMMARY:1st ODI Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-1s
+ t-odi-1528703/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Perth Stadium
+DTSTAMP:20260609T035432Z
+DTSTART:20261113T033000Z
+DTEND:20261113T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528704_1
+SUMMARY:2nd ODI Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-2n
+ d-odi-1528704/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Adelaide Oval
+DTSTAMP:20260609T035432Z
+DTSTART:20261115T033000Z
+DTEND:20261115T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528705_1
+SUMMARY:3rd ODI Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3r
+ d-odi-1528705/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bellerive Oval, Hobart
+DTSTAMP:20260609T035432Z
+DTSTART:20261118T033000Z
+DTEND:20261118T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528706_1
+SUMMARY:1st T20I Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-1s
+ t-t20i-1528706/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Melbourne Cricket Ground
+DTSTAMP:20260609T035432Z
+DTSTART:20261121T081500Z
+DTEND:20261121T121500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528707_1
+SUMMARY:2nd T20I Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-2n
+ d-t20i-1528707/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Carrara Oval
+DTSTAMP:20260609T035432Z
+DTSTART:20261124T081500Z
+DTEND:20261124T121500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528708_1
+SUMMARY:3rd T20I Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3r
+ d-t20i-1528708/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Brisbane Cricket Ground, Woolloongabba, Brisbane
+DTSTAMP:20260609T035432Z
+DTSTART:20261127T081500Z
+DTEND:20261127T121500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528709_1
+SUMMARY:4th T20I Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-4t
+ h-t20i-1528709/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sydney Cricket Ground
+DTSTAMP:20260609T035432Z
+DTSTART:20261129T081500Z
+DTEND:20261129T121500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1528710_1
+SUMMARY:5th T20I Australia v England
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest England tour of Australia news at: https://www.espncrici
+ nfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-5t
+ h-t20i-1528710/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Manuka Oval, Canberra
+DTSTAMP:20260609T035432Z
+DTSTART:20261202T081500Z
+DTEND:20261202T121500Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

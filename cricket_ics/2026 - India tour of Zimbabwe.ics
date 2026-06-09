@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1530060_1
+SUMMARY:1st T20I Zimbabwe v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of Zimbabwe news at: https://www.espncricinfo
+ .com/series/india-in-zimbabwe-2026-1530058/zimbabwe-vs-india-1st-t20i-15300
+ 60/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Harare Sports Club
+DTSTAMP:20260609T034920Z
+DTSTART:20260723T110000Z
+DTEND:20260723T150000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1530061_1
+SUMMARY:2nd T20I Zimbabwe v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of Zimbabwe news at: https://www.espncricinfo
+ .com/series/india-in-zimbabwe-2026-1530058/zimbabwe-vs-india-2nd-t20i-15300
+ 61/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Harare Sports Club
+DTSTAMP:20260609T034920Z
+DTSTART:20260725T110000Z
+DTEND:20260725T150000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1530062_1
+SUMMARY:3rd T20I Zimbabwe v India
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest India tour of Zimbabwe news at: https://www.espncricinfo
+ .com/series/india-in-zimbabwe-2026-1530058/zimbabwe-vs-india-3rd-t20i-15300
+ 62/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Harare Sports Club
+DTSTAMP:20260609T034920Z
+DTSTART:20260726T110000Z
+DTEND:20260726T150000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

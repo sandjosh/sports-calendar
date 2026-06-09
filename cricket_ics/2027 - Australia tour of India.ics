@@ -1,0 +1,505 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1529244_1
+SUMMARY:1st Test India v Australia (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-1st-test
+ -1529244/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Vidarbha Cricket Association Stadium, Jamtha, Nagpur
+DTSTAMP:20260609T035752Z
+DTSTART:20270121T040000Z
+DTEND:20270121T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529244_2
+SUMMARY:1st Test India v Australia (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-1st-test
+ -1529244/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Vidarbha Cricket Association Stadium, Jamtha, Nagpur
+DTSTAMP:20260609T035752Z
+DTSTART:20270122T040000Z
+DTEND:20270122T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529244_3
+SUMMARY:1st Test India v Australia (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-1st-test
+ -1529244/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Vidarbha Cricket Association Stadium, Jamtha, Nagpur
+DTSTAMP:20260609T035752Z
+DTSTART:20270123T040000Z
+DTEND:20270123T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529244_4
+SUMMARY:1st Test India v Australia (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-1st-test
+ -1529244/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Vidarbha Cricket Association Stadium, Jamtha, Nagpur
+DTSTAMP:20260609T035752Z
+DTSTART:20270124T040000Z
+DTEND:20270124T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529244_5
+SUMMARY:1st Test India v Australia (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-1st-test
+ -1529244/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Vidarbha Cricket Association Stadium, Jamtha, Nagpur
+DTSTAMP:20260609T035752Z
+DTSTART:20270125T040000Z
+DTEND:20270125T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529245_1
+SUMMARY:2nd Test India v Australia (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-2nd-test
+ -1529245/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:MA Chidambaram Stadium, Chepauk, Chennai
+DTSTAMP:20260609T035752Z
+DTSTART:20270129T040000Z
+DTEND:20270129T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529245_2
+SUMMARY:2nd Test India v Australia (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-2nd-test
+ -1529245/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:MA Chidambaram Stadium, Chepauk, Chennai
+DTSTAMP:20260609T035752Z
+DTSTART:20270130T040000Z
+DTEND:20270130T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529245_3
+SUMMARY:2nd Test India v Australia (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-2nd-test
+ -1529245/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:MA Chidambaram Stadium, Chepauk, Chennai
+DTSTAMP:20260609T035752Z
+DTSTART:20270131T040000Z
+DTEND:20270131T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529245_4
+SUMMARY:2nd Test India v Australia (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-2nd-test
+ -1529245/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:MA Chidambaram Stadium, Chepauk, Chennai
+DTSTAMP:20260609T035752Z
+DTSTART:20270201T040000Z
+DTEND:20270201T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529245_5
+SUMMARY:2nd Test India v Australia (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-2nd-test
+ -1529245/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:MA Chidambaram Stadium, Chepauk, Chennai
+DTSTAMP:20260609T035752Z
+DTSTART:20270202T040000Z
+DTEND:20270202T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529246_1
+SUMMARY:3rd Test India v Australia (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-3rd-test
+ -1529246/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Barsapara Cricket Stadium, Guwahati
+DTSTAMP:20260609T035752Z
+DTSTART:20270211T033000Z
+DTEND:20270211T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529246_2
+SUMMARY:3rd Test India v Australia (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-3rd-test
+ -1529246/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Barsapara Cricket Stadium, Guwahati
+DTSTAMP:20260609T035752Z
+DTSTART:20270212T033000Z
+DTEND:20270212T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529246_3
+SUMMARY:3rd Test India v Australia (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-3rd-test
+ -1529246/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Barsapara Cricket Stadium, Guwahati
+DTSTAMP:20260609T035752Z
+DTSTART:20270213T033000Z
+DTEND:20270213T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529246_4
+SUMMARY:3rd Test India v Australia (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-3rd-test
+ -1529246/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Barsapara Cricket Stadium, Guwahati
+DTSTAMP:20260609T035752Z
+DTSTART:20270214T033000Z
+DTEND:20270214T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529246_5
+SUMMARY:3rd Test India v Australia (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-3rd-test
+ -1529246/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Barsapara Cricket Stadium, Guwahati
+DTSTAMP:20260609T035752Z
+DTSTART:20270215T033000Z
+DTEND:20270215T113000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529247_1
+SUMMARY:4th Test India v Australia (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-4th-test
+ -1529247/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:JSCA International Stadium Complex, Ranchi
+DTSTAMP:20260609T035752Z
+DTSTART:20270219T040000Z
+DTEND:20270219T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529247_2
+SUMMARY:4th Test India v Australia (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-4th-test
+ -1529247/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:JSCA International Stadium Complex, Ranchi
+DTSTAMP:20260609T035752Z
+DTSTART:20270220T040000Z
+DTEND:20270220T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529247_3
+SUMMARY:4th Test India v Australia (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-4th-test
+ -1529247/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:JSCA International Stadium Complex, Ranchi
+DTSTAMP:20260609T035752Z
+DTSTART:20270221T040000Z
+DTEND:20270221T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529247_4
+SUMMARY:4th Test India v Australia (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-4th-test
+ -1529247/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:JSCA International Stadium Complex, Ranchi
+DTSTAMP:20260609T035752Z
+DTSTART:20270222T040000Z
+DTEND:20270222T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529247_5
+SUMMARY:4th Test India v Australia (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-4th-test
+ -1529247/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:JSCA International Stadium Complex, Ranchi
+DTSTAMP:20260609T035752Z
+DTSTART:20270223T040000Z
+DTEND:20270223T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529248_1
+SUMMARY:5th Test India v Australia (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-5th-test
+ -1529248/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Narendra Modi Stadium, Ahmedabad
+DTSTAMP:20260609T035752Z
+DTSTART:20270227T040000Z
+DTEND:20270227T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529248_2
+SUMMARY:5th Test India v Australia (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-5th-test
+ -1529248/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Narendra Modi Stadium, Ahmedabad
+DTSTAMP:20260609T035752Z
+DTSTART:20270228T040000Z
+DTEND:20270228T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529248_3
+SUMMARY:5th Test India v Australia (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-5th-test
+ -1529248/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Narendra Modi Stadium, Ahmedabad
+DTSTAMP:20260609T035752Z
+DTSTART:20270301T040000Z
+DTEND:20270301T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529248_4
+SUMMARY:5th Test India v Australia (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-5th-test
+ -1529248/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Narendra Modi Stadium, Ahmedabad
+DTSTAMP:20260609T035752Z
+DTSTART:20270302T040000Z
+DTEND:20270302T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1529248_5
+SUMMARY:5th Test India v Australia (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of India news at: https://www.espncricinf
+ o.com/series/australia-in-india-2026-27-1529225/india-vs-australia-5th-test
+ -1529248/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Narendra Modi Stadium, Ahmedabad
+DTSTAMP:20260609T035752Z
+DTSTART:20270303T040000Z
+DTEND:20270303T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

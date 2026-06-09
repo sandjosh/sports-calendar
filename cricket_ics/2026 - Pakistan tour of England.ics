@@ -1,0 +1,305 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1496582_1
+SUMMARY:1st Test England v Pakistan (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-1st
+ -test-1496582/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Headingley, Leeds
+DTSTAMP:20260609T035202Z
+DTSTART:20260819T100000Z
+DTEND:20260819T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496582_2
+SUMMARY:1st Test England v Pakistan (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-1st
+ -test-1496582/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Headingley, Leeds
+DTSTAMP:20260609T035202Z
+DTSTART:20260820T100000Z
+DTEND:20260820T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496582_3
+SUMMARY:1st Test England v Pakistan (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-1st
+ -test-1496582/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Headingley, Leeds
+DTSTAMP:20260609T035202Z
+DTSTART:20260821T100000Z
+DTEND:20260821T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496582_4
+SUMMARY:1st Test England v Pakistan (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-1st
+ -test-1496582/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Headingley, Leeds
+DTSTAMP:20260609T035202Z
+DTSTART:20260822T100000Z
+DTEND:20260822T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496582_5
+SUMMARY:1st Test England v Pakistan (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-1st
+ -test-1496582/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Headingley, Leeds
+DTSTAMP:20260609T035202Z
+DTSTART:20260823T100000Z
+DTEND:20260823T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496583_1
+SUMMARY:2nd Test England v Pakistan (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-2nd
+ -test-1496583/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Lord's, London
+DTSTAMP:20260609T035202Z
+DTSTART:20260827T100000Z
+DTEND:20260827T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496583_2
+SUMMARY:2nd Test England v Pakistan (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-2nd
+ -test-1496583/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Lord's, London
+DTSTAMP:20260609T035202Z
+DTSTART:20260828T100000Z
+DTEND:20260828T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496583_3
+SUMMARY:2nd Test England v Pakistan (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-2nd
+ -test-1496583/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Lord's, London
+DTSTAMP:20260609T035202Z
+DTSTART:20260829T100000Z
+DTEND:20260829T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496583_4
+SUMMARY:2nd Test England v Pakistan (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-2nd
+ -test-1496583/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Lord's, London
+DTSTAMP:20260609T035202Z
+DTSTART:20260830T100000Z
+DTEND:20260830T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496583_5
+SUMMARY:2nd Test England v Pakistan (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-2nd
+ -test-1496583/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Lord's, London
+DTSTAMP:20260609T035202Z
+DTSTART:20260831T100000Z
+DTEND:20260831T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496584_1
+SUMMARY:3rd Test England v Pakistan (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-3rd
+ -test-1496584/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Edgbaston, Birmingham
+DTSTAMP:20260609T035202Z
+DTSTART:20260909T100000Z
+DTEND:20260909T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496584_2
+SUMMARY:3rd Test England v Pakistan (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-3rd
+ -test-1496584/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Edgbaston, Birmingham
+DTSTAMP:20260609T035202Z
+DTSTART:20260910T100000Z
+DTEND:20260910T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496584_3
+SUMMARY:3rd Test England v Pakistan (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-3rd
+ -test-1496584/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Edgbaston, Birmingham
+DTSTAMP:20260609T035202Z
+DTSTART:20260911T100000Z
+DTEND:20260911T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496584_4
+SUMMARY:3rd Test England v Pakistan (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-3rd
+ -test-1496584/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Edgbaston, Birmingham
+DTSTAMP:20260609T035202Z
+DTSTART:20260912T100000Z
+DTEND:20260912T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496584_5
+SUMMARY:3rd Test England v Pakistan (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Pakistan tour of England news at: https://www.espncricin
+ fo.com/series/pakistan-tour-in-england-2026-1496563/england-vs-pakistan-3rd
+ -test-1496584/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Edgbaston, Birmingham
+DTSTAMP:20260609T035202Z
+DTSTART:20260913T100000Z
+DTEND:20260913T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
