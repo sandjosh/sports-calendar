@@ -119,9 +119,7 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
         try:
             with open(filepath, "rb") as f:
                 cal = Calendar.from_ical(f.read())
-            for component in cal.walk():
-                if component.name != "VEVENT":
-                    continue
+            for component in cal.walk("VEVENT"):
                 try:
                     dtstart = component.get("DTSTART").dt
                     if hasattr(dtstart, "hour"):
