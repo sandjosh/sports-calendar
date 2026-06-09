@@ -98,6 +98,14 @@ def fetch_cricket_games(days_ahead=28):
                 continue
     return games
 
+def get_cricket_flag(team, flag_codes):
+    code = flag_codes.get(team, "")
+    if not code:
+        return ""
+    if code == "WI":
+        return "https://flagsapi.com/BB/flat/32.png"
+    return f"https://flagsapi.com/{code}/flat/32.png"
+
 def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
     FLAG_CODES = {
         "India": "IN", "England": "GB", "Australia": "AU",
@@ -201,8 +209,8 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                         "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
                         "home": home,
                         "away": away,
-                        "home_logo": f"https://flagsapi.com/{FLAG_CODES.get(home, '')}/flat/32.png" if FLAG_CODES.get(home) and FLAG_CODES.get(home) != "WI" else ("https://flagsapi.com/BB/flat/32.png" if FLAG_CODES.get(home) == "WI" else ""),
-                        "away_logo": f"https://flagsapi.com/{FLAG_CODES.get(away, '')}/flat/32.png" if FLAG_CODES.get(away) and FLAG_CODES.get(away) != "WI" else ("https://flagsapi.com/BB/flat/32.png" if FLAG_CODES.get(away) == "WI" else ""),
+                        "home_logo": get_cricket_flag(home, FLAG_CODES),
+                        "away_logo": get_cricket_flag(away, FLAG_CODES),
 
                 except Exception:
                     continue
