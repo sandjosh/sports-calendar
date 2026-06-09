@@ -1,0 +1,385 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1538306_1
+SUMMARY:3rd ODI West Indies v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-3rd-odi-1538306/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sabina Park, Kingston, Jamaica
+DTSTAMP:20260609T045300Z
+DTSTART:20260608T193000Z
+DTEND:20260609T033000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538307_1
+SUMMARY:1st T20I West Indies v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-1st-t20i-1538307/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sabina Park, Kingston, Jamaica
+DTSTAMP:20260609T045300Z
+DTSTART:20260612T003000Z
+DTEND:20260612T043000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538308_1
+SUMMARY:2nd T20I West Indies v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-2nd-t20i-1538308/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sabina Park, Kingston, Jamaica
+DTSTAMP:20260609T045300Z
+DTSTART:20260614T003000Z
+DTEND:20260614T043000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538309_1
+SUMMARY:3rd T20I West Indies v Sri Lanka
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-3rd-t20i-1538309/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sabina Park, Kingston, Jamaica
+DTSTAMP:20260609T045300Z
+DTSTART:20260615T003000Z
+DTEND:20260615T043000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538310_1
+SUMMARY:Tour Match West Indies v Sri Lanka (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-tour-match-1538310/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260618T140000Z
+DTEND:20260618T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538310_2
+SUMMARY:Tour Match West Indies v Sri Lanka (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-tour-match-1538310/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260619T140000Z
+DTEND:20260619T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538310_3
+SUMMARY:Tour Match West Indies v Sri Lanka (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-tour-match-1538310/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260620T140000Z
+DTEND:20260620T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538310_4
+SUMMARY:Tour Match West Indies v Sri Lanka (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-tour-match-1538310/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260621T140000Z
+DTEND:20260621T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538310_5
+SUMMARY:Tour Match West Indies v Sri Lanka (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-tour-match-1538310/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260622T140000Z
+DTEND:20260622T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538311_1
+SUMMARY:1st Test West Indies v Sri Lanka (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-1st-test-1538311/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260625T140000Z
+DTEND:20260625T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538311_2
+SUMMARY:1st Test West Indies v Sri Lanka (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-1st-test-1538311/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260626T140000Z
+DTEND:20260626T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538311_3
+SUMMARY:1st Test West Indies v Sri Lanka (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-1st-test-1538311/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260627T140000Z
+DTEND:20260627T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538311_4
+SUMMARY:1st Test West Indies v Sri Lanka (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-1st-test-1538311/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260628T140000Z
+DTEND:20260628T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538311_5
+SUMMARY:1st Test West Indies v Sri Lanka (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-1st-test-1538311/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260629T140000Z
+DTEND:20260629T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538312_1
+SUMMARY:2nd Test West Indies v Sri Lanka (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-2nd-test-1538312/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260703T140000Z
+DTEND:20260703T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538312_2
+SUMMARY:2nd Test West Indies v Sri Lanka (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-2nd-test-1538312/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260704T140000Z
+DTEND:20260704T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538312_3
+SUMMARY:2nd Test West Indies v Sri Lanka (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-2nd-test-1538312/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260705T140000Z
+DTEND:20260705T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538312_4
+SUMMARY:2nd Test West Indies v Sri Lanka (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-2nd-test-1538312/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260706T140000Z
+DTEND:20260706T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1538312_5
+SUMMARY:2nd Test West Indies v Sri Lanka (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Sri Lanka tour of West Indies news at: https://www.espnc
+ ricinfo.com/series/sri-lanka-in-west-indies-2026-1538292/west-indies-vs-sri
+ -lanka-2nd-test-1538312/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Sir Vivian Richards Stadium, North Sound, Antigua
+DTSTAMP:20260609T045300Z
+DTSTART:20260707T140000Z
+DTEND:20260707T220000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

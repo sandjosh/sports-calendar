@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1527151_1
+SUMMARY:1st ODI India v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of India news at: https://www.espncrici
+ nfo.com/series/afghanistan-in-india-2026-1527147/india-vs-afghanistan-1st-o
+ di-1527151/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Himachal Pradesh Cricket Association Stadium, Dharamsala
+DTSTAMP:20260609T045352Z
+DTSTART:20260613T080000Z
+DTEND:20260613T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1527152_1
+SUMMARY:2nd ODI India v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of India news at: https://www.espncrici
+ nfo.com/series/afghanistan-in-india-2026-1527147/india-vs-afghanistan-2nd-o
+ di-1527152/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Luck
+ now
+DTSTAMP:20260609T045352Z
+DTSTART:20260617T080000Z
+DTEND:20260617T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1527153_1
+SUMMARY:3rd ODI India v Afghanistan
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Afghanistan tour of India news at: https://www.espncrici
+ nfo.com/series/afghanistan-in-india-2026-1527147/india-vs-afghanistan-3rd-o
+ di-1527153/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:MA Chidambaram Stadium, Chepauk, Chennai
+DTSTAMP:20260609T045352Z
+DTSTART:20260620T080000Z
+DTEND:20260620T160000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

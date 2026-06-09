@@ -1,0 +1,205 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1496572_1
+SUMMARY:2nd Test England v New Zealand (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -2nd-test-1496572/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kennington Oval, London
+DTSTAMP:20260609T045435Z
+DTSTART:20260617T100000Z
+DTEND:20260617T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496572_2
+SUMMARY:2nd Test England v New Zealand (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -2nd-test-1496572/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kennington Oval, London
+DTSTAMP:20260609T045435Z
+DTSTART:20260618T100000Z
+DTEND:20260618T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496572_3
+SUMMARY:2nd Test England v New Zealand (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -2nd-test-1496572/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kennington Oval, London
+DTSTAMP:20260609T045435Z
+DTSTART:20260619T100000Z
+DTEND:20260619T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496572_4
+SUMMARY:2nd Test England v New Zealand (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -2nd-test-1496572/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kennington Oval, London
+DTSTAMP:20260609T045435Z
+DTSTART:20260620T100000Z
+DTEND:20260620T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496572_5
+SUMMARY:2nd Test England v New Zealand (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -2nd-test-1496572/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Kennington Oval, London
+DTSTAMP:20260609T045435Z
+DTSTART:20260621T100000Z
+DTEND:20260621T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496573_1
+SUMMARY:3rd Test England v New Zealand (Day 1)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -3rd-test-1496573/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Trent Bridge, Nottingham
+DTSTAMP:20260609T045435Z
+DTSTART:20260625T100000Z
+DTEND:20260625T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496573_2
+SUMMARY:3rd Test England v New Zealand (Day 2)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -3rd-test-1496573/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Trent Bridge, Nottingham
+DTSTAMP:20260609T045435Z
+DTSTART:20260626T100000Z
+DTEND:20260626T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496573_3
+SUMMARY:3rd Test England v New Zealand (Day 3)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -3rd-test-1496573/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Trent Bridge, Nottingham
+DTSTAMP:20260609T045435Z
+DTSTART:20260627T100000Z
+DTEND:20260627T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496573_4
+SUMMARY:3rd Test England v New Zealand (Day 4)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -3rd-test-1496573/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Trent Bridge, Nottingham
+DTSTAMP:20260609T045435Z
+DTSTART:20260628T100000Z
+DTEND:20260628T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1496573_5
+SUMMARY:3rd Test England v New Zealand (Day 5)
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest New Zealand tour of England news at: https://www.espncri
+ cinfo.com/series/new-zealand-in-england-2026-1496491/england-vs-new-zealand
+ -3rd-test-1496573/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Trent Bridge, Nottingham
+DTSTAMP:20260609T045435Z
+DTSTART:20260629T100000Z
+DTEND:20260629T180000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1532480_1
+SUMMARY:1st ODI Bangladesh v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Bangladesh news at: https://www.espncr
+ icinfo.com/series/australia-in-bangladesh-2026-1532475/bangladesh-vs-austra
+ lia-1st-odi-1532480/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Shere Bangla National Stadium, Mirpur
+DTSTAMP:20260609T045511Z
+DTSTART:20260609T050000Z
+DTEND:20260609T130000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1532481_1
+SUMMARY:2nd ODI Bangladesh v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Bangladesh news at: https://www.espncr
+ icinfo.com/series/australia-in-bangladesh-2026-1532475/bangladesh-vs-austra
+ lia-2nd-odi-1532481/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Shere Bangla National Stadium, Mirpur
+DTSTAMP:20260609T045511Z
+DTSTART:20260611T050000Z
+DTEND:20260611T130000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1532482_1
+SUMMARY:3rd ODI Bangladesh v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Bangladesh news at: https://www.espncr
+ icinfo.com/series/australia-in-bangladesh-2026-1532475/bangladesh-vs-austra
+ lia-3rd-odi-1532482/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Shere Bangla National Stadium, Mirpur
+DTSTAMP:20260609T045511Z
+DTSTART:20260614T050000Z
+DTEND:20260614T130000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1532483_1
+SUMMARY:1st T20I Bangladesh v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Bangladesh news at: https://www.espncr
+ icinfo.com/series/australia-in-bangladesh-2026-1532475/bangladesh-vs-austra
+ lia-1st-t20i-1532483/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bir Sreshtho Flight Lieutenant Matiur Rahman Stadium, Chattogram
+DTSTAMP:20260609T045511Z
+DTSTART:20260617T080000Z
+DTEND:20260617T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1532484_1
+SUMMARY:2nd T20I Bangladesh v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Bangladesh news at: https://www.espncr
+ icinfo.com/series/australia-in-bangladesh-2026-1532475/bangladesh-vs-austra
+ lia-2nd-t20i-1532484/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bir Sreshtho Flight Lieutenant Matiur Rahman Stadium, Chattogram
+DTSTAMP:20260609T045511Z
+DTSTART:20260619T080000Z
+DTEND:20260619T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1532485_1
+SUMMARY:3rd T20I Bangladesh v Australia
+DESCRIPTION:Follow every ball of every international match live on ESPNcric
+ info.com.
+ Get all the latest Australia tour of Bangladesh news at: https://www.espncr
+ icinfo.com/series/australia-in-bangladesh-2026-1532475/bangladesh-vs-austra
+ lia-3rd-t20i-1532485/live-cricket-score 
+STATUS:CONFIRMED
+LOCATION:Bir Sreshtho Flight Lieutenant Matiur Rahman Stadium, Chattogram
+DTSTAMP:20260609T045511Z
+DTSTART:20260621T080000Z
+DTEND:20260621T120000Z
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
