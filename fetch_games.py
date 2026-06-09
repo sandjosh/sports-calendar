@@ -36,8 +36,8 @@ def fetch_games(sport, league_path, league_name, days_ahead=28):
                 "time": readable_time,
                 "home": home["team"]["displayName"],
                 "away": away["team"]["displayName"],
-                "home_logo": f"https://flagcdn.com/w40/{FLAG_CODES.get(home, '')}.png" if FLAG_CODES.get(home) else "",
-                "away_logo": f"https://flagcdn.com/w40/{FLAG_CODES.get(away, '')}.png" if FLAG_CODES.get(away) else "",
+                "home_logo": f"https://flagcdn.com/40x30/{FLAG_CODES.get(home, '')}.png" if FLAG_CODES.get(home) else "",
+                "away_logo": f"https://flagcdn.com/40x30/{FLAG_CODES.get(away, '')}.png" if FLAG_CODES.get(away) else "",
                 "status": event["status"]["type"]["description"]
             })
         except Exception:
@@ -257,8 +257,9 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
             html += f"<div class='date-header'>{date}</div>"
             for g in day_games:
                 html += f"""
-                <div class='game-row'>
-                    <span class='match-label'>{g['status']}</span>
+                <div class='game-row-wrapper'>
+                    <div class='match-label'>{g['status']}</div>
+                    <div class='game-row'>
                     <div class='team-pill'>
                         <img class='team-logo' src='{g['away_logo']}' alt='{g['away']}' onerror='this.style.display="none"'/>
                         <span class='team-name'>{g['away']}</span>
@@ -276,7 +277,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
                             <a href='https://www.stubhub.com/search?q={g["away"].replace(" ", "+")}+{g["home"].replace(" ", "+")}' target='_blank'><img src='https://www.google.com/s2/favicons?domain=stubhub.com&sz=16' class='vendor-logo'/>StubHub</a>
                         </div>
                     </div>
-                </div>"""
+                </div></div>"""
         return html
 
     updated = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
@@ -382,6 +383,10 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
                       border-radius: 20px; font-weight: 500; }}
         .about-btn:hover {{ background: #1557d0; }}
         .match-label {{ font-size: 11px; color: #9099b0; white-space: nowrap; flex-shrink: 0; min-width: 70px; }}
+        .game-row-wrapper {{ border-bottom: 0.5px solid #f0f2f8; }}
+        .game-row-wrapper:last-child {{ border-bottom: none; }}
+        .game-row {{ border-bottom: none !important; padding-bottom: 0.2rem; }}
+        .match-label {{ font-size: 11px; color: #9099b0; padding: 0.5rem 1.25rem 0; }}
     </style>
 </head>
 <body>
