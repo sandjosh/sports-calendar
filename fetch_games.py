@@ -36,8 +36,8 @@ def fetch_games(sport, league_path, league_name, days_ahead=28):
                 "time": readable_time,
                 "home": home["team"]["displayName"],
                 "away": away["team"]["displayName"],
-                "home_logo": home["team"].get("logo", ""),
-                "away_logo": away["team"].get("logo", ""),
+                "home_logo": f"https://flagcdn.com/w40/{FLAG_CODES.get(home, '')}.png" if FLAG_CODES.get(home) else "",
+                "away_logo": f"https://flagcdn.com/w40/{FLAG_CODES.get(away, '')}.png" if FLAG_CODES.get(away) else "",
                 "status": event["status"]["type"]["description"]
             })
         except Exception:
@@ -99,6 +99,24 @@ def fetch_cricket_games(days_ahead=28):
     return games
 
 def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
+    FLAG_CODES = {
+        "India": "in", "England": "gb", "Australia": "au",
+        "Pakistan": "pk", "South Africa": "za", "New Zealand": "nz",
+        "West Indies": "bb", "Sri Lanka": "lk", "Bangladesh": "bd",
+        "Zimbabwe": "zw", "Afghanistan": "af", "Ireland": "ie",
+        "Scotland": "gb-sct", "Netherlands": "nl", "Canada": "ca",
+        "United States Of America": "us", "USA": "us", "Kenya": "ke",
+        "Namibia": "na", "Uganda": "ug", "Nepal": "np",
+        "Oman": "om", "UAE": "ae", "Papua New Guinea": "pg",
+        "Jersey": "je", "Guernsey": "gg", "Nigeria": "ng",
+        "Hong Kong": "hk", "Singapore": "sg", "Malaysia": "my",
+        "India Women": "in", "England Women": "gb", "Australia Women": "au",
+        "Pakistan Women": "pk", "South Africa Women": "za",
+        "New Zealand Women": "nz", "West Indies Women": "bb",
+        "Sri Lanka Women": "lk", "Bangladesh Women": "bd",
+        "Ireland Women": "ie", "Scotland Women": "gb-sct",
+        "Netherlands Women": "nl",
+    }
     from datetime import timedelta
     try:
         from icalendar import Calendar
@@ -240,6 +258,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
             for g in day_games:
                 html += f"""
                 <div class='game-row'>
+                    <span class='match-label'>{g['status']}</span>
                     <div class='team-pill'>
                         <img class='team-logo' src='{g['away_logo']}' alt='{g['away']}' onerror='this.style.display="none"'/>
                         <span class='team-name'>{g['away']}</span>
@@ -362,6 +381,7 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
         .about-btn {{ background: #1a6ef5; color: #ffffff !important; padding: 5px 16px;
                       border-radius: 20px; font-weight: 500; }}
         .about-btn:hover {{ background: #1557d0; }}
+        .match-label {{ font-size: 11px; color: #9099b0; white-space: nowrap; flex-shrink: 0; min-width: 70px; }}
     </style>
 </head>
 <body>
