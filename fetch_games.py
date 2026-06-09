@@ -100,22 +100,22 @@ def fetch_cricket_games(days_ahead=28):
 
 def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
     FLAG_CODES = {
-        "India": "in", "England": "gb", "Australia": "au",
-        "Pakistan": "pk", "South Africa": "za", "New Zealand": "nz",
-        "West Indies": "wi", "Sri Lanka": "lk", "Bangladesh": "bd",
-        "Zimbabwe": "zw", "Afghanistan": "af", "Ireland": "ie",
-        "Scotland": "gb-sct", "Netherlands": "nl", "Canada": "ca",
-        "United States Of America": "us", "USA": "us", "Kenya": "ke",
-        "Namibia": "na", "Uganda": "ug", "Nepal": "np",
-        "Oman": "om", "UAE": "ae", "Papua New Guinea": "pg",
-        "Jersey": "je", "Guernsey": "gg", "Nigeria": "ng",
-        "Hong Kong": "hk", "Singapore": "sg", "Malaysia": "my",
-        "India Women": "in", "England Women": "gb", "Australia Women": "au",
-        "Pakistan Women": "pk", "South Africa Women": "za",
-        "New Zealand Women": "nz", "West Indies Women": "wi",
-        "Sri Lanka Women": "lk", "Bangladesh Women": "bd",
-        "Ireland Women": "ie", "Scotland Women": "gb-sct",
-        "Netherlands Women": "nl",
+        "India": "IN", "England": "GB", "Australia": "AU",
+        "Pakistan": "PK", "South Africa": "ZA", "New Zealand": "NZ",
+        "West Indies": "WI", "Sri Lanka": "LK", "Bangladesh": "BD",
+        "Zimbabwe": "ZW", "Afghanistan": "AF", "Ireland": "IE",
+        "Scotland": "GB", "Netherlands": "NL", "Canada": "CA",
+        "United States Of America": "US", "USA": "US", "Kenya": "KE",
+        "Namibia": "NA", "Uganda": "UG", "Nepal": "NP",
+        "Oman": "OM", "UAE": "AE", "Papua New Guinea": "PG",
+        "Jersey": "GB", "Guernsey": "GB", "Nigeria": "NG",
+        "Hong Kong": "HK", "Singapore": "SG", "Malaysia": "MY",
+        "India Women": "IN", "England Women": "GB", "Australia Women": "AU",
+        "Pakistan Women": "PK", "South Africa Women": "ZA",
+        "New Zealand Women": "NZ", "West Indies Women": "WI",
+        "Sri Lanka Women": "LK", "Bangladesh Women": "BD",
+        "Ireland Women": "IE", "Scotland Women": "GB",
+        "Netherlands Women": "NL",
     }
     from datetime import timedelta
     try:
@@ -201,9 +201,8 @@ def fetch_cricket_from_ics(folder="cricket_ics", days_ahead=90):
                         "time": dt.strftime("%Y-%m-%dT%H:%M:00Z"),
                         "home": home,
                         "away": away,
-                        "home_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/West_Indies_Cricket_Board_Logo.svg/100px-West_Indies_Cricket_Board_Logo.svg.png" if FLAG_CODES.get(home) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(home, '').upper()}/flat/32.png" if FLAG_CODES.get(home) else ""),
-                        "away_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/West_Indies_Cricket_Board_Logo.svg/100px-West_Indies_Cricket_Board_Logo.svg.png" if FLAG_CODES.get(away) == "wi" else (f"https://flagsapi.com/{FLAG_CODES.get(away, '').upper()}/flat/32.png" if FLAG_CODES.get(away) else ""),                      "status": status or "Cricket"
-                    })
+                        "home_logo": f"https://flagsapi.com/{FLAG_CODES.get(home, '')}/flat/32.png" if FLAG_CODES.get(home) and FLAG_CODES.get(home) != "WI" else ("https://flagsapi.com/BB/flat/32.png" if FLAG_CODES.get(home) == "WI" else ""),
+                        "away_logo": f"https://flagsapi.com/{FLAG_CODES.get(away, '')}/flat/32.png" if FLAG_CODES.get(away) and FLAG_CODES.get(away) != "WI" else ("https://flagsapi.com/BB/flat/32.png" if FLAG_CODES.get(away) == "WI" else ""),
 
                 except Exception:
                     continue
