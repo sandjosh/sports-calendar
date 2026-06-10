@@ -305,6 +305,15 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlyCal - Every game. Every timezone. Free.</title>
+    <meta name="description" content="Free global sports calendar covering NFL, NBA, MLB, NHL, FIFA World Cup, Premier League, Tennis and Cricket. Subscribe to live schedules in Google Calendar, Apple Calendar or Outlook. No signup needed.">
+    <meta name="keywords" content="sports calendar, NFL schedule, NBA schedule, MLB schedule, cricket calendar, FIFA World Cup schedule, Premier League schedule, Google Calendar sports, iCal sports feed">
+    <meta property="og:title" content="PlyCal - Every game. Every timezone. Free.">
+    <meta property="og:description" content="Free global sports calendar. Subscribe to any sport in Google Calendar. No signup needed.">
+    <meta property="og:url" content="https://plycal.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PlyCal - Every game. Every timezone. Free.">
+    <meta name="twitter:description" content="Free global sports calendar. Subscribe to any sport in Google Calendar. No signup needed.">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
