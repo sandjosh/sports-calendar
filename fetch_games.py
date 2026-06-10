@@ -477,13 +477,11 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
         el.classList.add('active');
     }}
 
-    function convertTimes() {{
-        // Group game entries by local date and build date headers
-        document.querySelectorAll('.section.active .card').forEach(card => {{
+function convertTimes() {{
+        document.querySelectorAll('.card').forEach(card => {{
             const entries = Array.from(card.querySelectorAll('.game-entry'));
             if (!entries.length) return;
 
-            // Clear card and rebuild with proper local date grouping
             card.innerHTML = '';
             let currentDate = '';
 
@@ -492,12 +490,10 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
                 const local = new Date(utc);
                 if (isNaN(local)) return;
 
-                // Get local date string
                 const localDate = local.toLocaleDateString(undefined, {{
                     weekday: 'short', month: 'short', day: 'numeric'
                 }}).toUpperCase();
 
-                // Add date header if new date
                 if (localDate !== currentDate) {{
                     currentDate = localDate;
                     const header = document.createElement('div');
@@ -506,16 +502,13 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
                     card.appendChild(header);
                 }}
 
-                // Set game time
                 const timeEl = entry.querySelector('.game-time');
                 if (timeEl) {{
-                    timeEl.setAttribute('data-utc', utc);
                     timeEl.textContent = local.toLocaleTimeString(undefined, {{
                         hour: '2-digit', minute: '2-digit'
                     }});
                 }}
 
-                // Add game row wrapper
                 const row = document.createElement('div');
                 row.className = 'game-row';
                 row.appendChild(entry);
