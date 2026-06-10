@@ -263,38 +263,30 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
         if not games:
             return "<p class='no-games'>No games scheduled.</p>"
 
-        by_date = {}
-        for g in games:
-            by_date.setdefault(g['date'], []).append(g)
-
         html = ""
-        for date, day_games in by_date.items():
-            html += f"<div class='date-header'>{date}</div>"
-            for g in day_games:
-                html += f"""
-                <div class='game-row-wrapper'>
-                    <div class='match-label'>{g['status']}</div>
-                    <div class='game-row'>
-                    <div class='team-pill'>
-                        <img class='team-logo' src='{g['away_logo']}' alt='{g['away']}' onerror='this.style.display="none"'/>
-                        <span class='team-name'>{g['away']}</span>
+        for g in games:
+            html += f"""
+            <div class='game-entry' data-utc='{g['time']}'>
+                <div class='team-pill'>
+                    <img class='team-logo' src='{g['away_logo']}' alt='{g['away']}' onerror='this.style.display="none"'/>
+                    <span class='team-name'>{g['away']}</span>
+                </div>
+                <span class='vs-text'>vs</span>
+                <div class='team-pill'>
+                    <img class='team-logo' src='{g['home_logo']}' alt='{g['home']}' onerror='this.style.display="none"'/>
+                    <span class='team-name'>{g['home']}</span>
+                </div>
+                <span class='game-time'></span>
+                <div class='ticket-wrap'>
+                    <button class='tickets-btn' onclick='toggleDropdown(this)'>🎟 Tickets ▾</button>
+                    <div class='ticket-dropdown'>
+                        <a href='https://www.seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")}' target='_blank'><img src='https://www.google.com/s2/favicons?domain=seatgeek.com&sz=16' class='vendor-logo'/>SeatGeek</a>
+                        <a href='https://www.stubhub.com/search?q={g["away"].replace(" ", "+")}+{g["home"].replace(" ", "+")}' target='_blank'><img src='https://www.google.com/s2/favicons?domain=stubhub.com&sz=16' class='vendor-logo'/>StubHub</a>
                     </div>
-                    <span class='vs-text'>vs</span>
-                    <div class='team-pill'>
-                        <img class='team-logo' src='{g['home_logo']}' alt='{g['home']}' onerror='this.style.display="none"'/>
-                        <span class='team-name'>{g['home']}</span>
-                    </div>
-                    <span class='game-time' data-utc='{g['time']}'>{g['time']}</span>
-                    <div class='ticket-wrap'>
-                        <button class='tickets-btn' onclick='toggleDropdown(this)'>🎟 Tickets ▾</button>
-                        <div class='ticket-dropdown'>
-                            <a href='https://www.seatgeek.com/search?q={g["away"].replace(" ", "+")}+vs+{g["home"].replace(" ", "+")}' target='_blank'><img src='https://www.google.com/s2/favicons?domain=seatgeek.com&sz=16' class='vendor-logo'/>SeatGeek</a>
-                            <a href='https://www.stubhub.com/search?q={g["away"].replace(" ", "+")}+{g["home"].replace(" ", "+")}' target='_blank'><img src='https://www.google.com/s2/favicons?domain=stubhub.com&sz=16' class='vendor-logo'/>StubHub</a>
-                        </div>
-                    </div>
-                </div></div>"""
+                </div>
+            </div>"""
         return html
-
+    
     updated = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
 
     nfl_html     = games_html(nfl_games)
@@ -398,9 +390,10 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
                       border-radius: 20px; font-weight: 500; }}
         .about-btn:hover {{ background: #1557d0; }}
         .match-label {{ font-size: 11px; color: #9099b0; white-space: nowrap; flex-shrink: 0; min-width: 70px; }}
-        .game-row-wrapper {{ border-bottom: 0.5px solid #f0f2f8; }}
-        .game-row-wrapper:last-child {{ border-bottom: none; }}
-        .game-row {{ border-bottom: none !important; padding-bottom: 0.2rem; }}
+        .game-entry {{ display: flex; align-items: center; gap: 8px;
+                      padding: 0.6rem 1.25rem; border-bottom: 0.5px solid #f0f2f8;
+                      width: 100%; }}
+        .game-entry:last-child {{ border-bottom: none; }}
         .match-label {{ font-size: 11px; color: #9099b0; padding: 0.5rem 1.25rem 0; }}
     </style>
 </head>
@@ -485,14 +478,49 @@ def build_html(nfl_games, nba_games, mlb_games, nhl_games, epl_games, wc_games, 
     }}
 
     function convertTimes() {{
-        document.querySelectorAll('.game-time[data-utc]').forEach(el => {{
-            const utc = el.getAttribute('data-utc');
-            const local = new Date(utc);
-            if (!isNaN(local)) {{
-                el.textContent = local.toLocaleTimeString(undefined, {{
-                    hour: '2-digit', minute: '2-digit'
-                }});
-            }}
+        // Group game entries by local date and build date headers
+        document.querySelectorAll('.section.active .card').forEach(card => {{
+            const entries = Array.from(card.querySelectorAll('.game-entry'));
+            if (!entries.length) return;
+
+            // Clear card and rebuild with proper local date grouping
+            card.innerHTML = '';
+            let currentDate = '';
+
+            entries.forEach(entry => {{
+                const utc = entry.getAttribute('data-utc');
+                const local = new Date(utc);
+                if (isNaN(local)) return;
+
+                // Get local date string
+                const localDate = local.toLocaleDateString(undefined, {{
+                    weekday: 'short', month: 'short', day: 'numeric'
+                }}).toUpperCase();
+
+                // Add date header if new date
+                if (localDate !== currentDate) {{
+                    currentDate = localDate;
+                    const header = document.createElement('div');
+                    header.className = 'date-header';
+                    header.textContent = localDate;
+                    card.appendChild(header);
+                }}
+
+                // Set game time
+                const timeEl = entry.querySelector('.game-time');
+                if (timeEl) {{
+                    timeEl.setAttribute('data-utc', utc);
+                    timeEl.textContent = local.toLocaleTimeString(undefined, {{
+                        hour: '2-digit', minute: '2-digit'
+                    }});
+                }}
+
+                // Add game row wrapper
+                const row = document.createElement('div');
+                row.className = 'game-row';
+                row.appendChild(entry);
+                card.appendChild(row);
+            }});
         }});
     }}
 
